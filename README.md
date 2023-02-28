@@ -1,7 +1,5 @@
 # CS-NOTES
-study diary of CS Knowages
-<<<<<<< Updated upstream
-=======
+study diary of CS skills
 
 <br>
 
@@ -15,16 +13,17 @@ study diary of CS Knowages
 ## :pencil2:  Algorithm
 
 - [Leetcode]
-- [School Labs]
+- [self_study]
+- [Exercises]
 
 ## :computer: Computer System
 
 ## :cloud: Web
 - [html/css/js diary](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/html:css:js.md)
-- [HTTP]
+- [HTTP](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/http.md)
 - [node.js](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/node_js.mda)
-- [react.js]
-- [MangoDB]
+- [react.js](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/react_js.md)
+- [MangoDB](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/MangoDB.md)
 
 ## :floppy_disk: mySQL
 
@@ -36,8 +35,8 @@ study diary of CS Knowages
 
 - [Java obj general]
 - [Java obj exercise]
-- [Java JVM](
-- [Java I/O](
+- [Java JVM]
+- [Java I/O]
 
 
->>>>>>> Stashed changes
+
