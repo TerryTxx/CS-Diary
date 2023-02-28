@@ -1,4 +1,5 @@
-# HTML/CSS/JS
+# HTML/CSS/JS/
+# DOM/BOM
 ____________________________
 Basic:
 - [HTML](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/01html.md)
@@ -15,6 +16,7 @@ Upto:
 - [JS General Usage](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/06CSS.md)
 
 JS advanced:
-- [DOM](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/01html.md)
-- [BOM](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/02html.md)
+- [DOM of Nodes](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/09DOM.md)
+- [DOM of Events, Timing and Delay](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/10DOMEvents.md)
+- [BOM](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/11BOM.md)
 - [Object](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/object-general.md)(Detailed in JavaObject)

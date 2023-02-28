@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .modal{
+            width: 400px;
+            height: 140px;
+            background-color: antiquewhite;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top:-70px;
+            margin-left: -200px;
+            display: none;
+        }
+
+    </style>
+</head>
+    <body>
+    <div class="modal" id="modal"></div>
+    <button id="btn">Press</button>
+    </body>
+    <script>
+        var oBtn = document.getElementById('btn');
+        var oModal = document.getElementById('modal');
+
+        //when click, show the modal
+        oBtn.onclick = function (e){
+            // incase propagation to the document
+            e.stopPropagation();
+            oModal.style.display = 'block';
+        }
+        //when click, display the modal
+        document.onclick = function (){
+            oModal.style.display = 'none';
+        }
+        //when click the modal, not close,
+        oModal.onclick = function (e){
+            // incase propagation to the document
+            e.stopPropagation();
+        }
+    </script>
+</html>
