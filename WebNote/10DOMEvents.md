@@ -52,10 +52,9 @@ DOM allows us to use js code to make HTML elements react to events.
 ![event02.jpeg](pics%2Fevent02.jpeg)
 ![event03.jpeg](pics%2Fevent03.jpeg)
 ```text
-
 ```
 
-### [1.1 Demo of onXXX mouse](#1.1 Demo of onXXX mouse)
+### [1.1 Demo of onXXX mouse](#1.1-demo-of-onXXX-mouse)
 ### [1.3 Demo of onXXX form](#1.3 Demo of onXXX form)
 ### [2 Demo of Event propagation order](#2 Demo of Event propagation order)
 ### [3.3 Demo of Event Object functions](#3.3 Demo of Event Object functions)
