@@ -1,11 +1,15 @@
 # HTML/CSS/JS
+____________________________
 
+- [HTML](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/01html.md)
+- [HTML_Exercise](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/02html.md)
+- [CSS General](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/03CSS.md)
+- [CSS Text & Fonts and Box module](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/04CSS.md)
+- [CSS Box Module](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/05CSS.md)
+- [CSS Transition](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/06CSS.md)
+- [CSS Animation & exercises](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/07CSS.md)
+- [JS General Usage](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/06CSS.md)
+- [JS Algorithm](https://github.com/TerryTxx/CS-Diary/blob/master/Algorithm/self_study.md)(Detailed in Algorithm)
+- [JS General Usage](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/06CSS.md)
+- 
 
-- [HTML](WebNote%20-%2001html.md)
-- [HTML_Exercise](WebNote%20-%2002html.md)
-- [CSS General](WebNote%20-%2003CSS.md)
-- [CSS Text & Fonts and Box module](WebNote%20-%2004CSS.md)
-- [JS](WebNote%20-%20死锁.md)
-- [JS](WebNote%20-%20内存管理.md)
-- [JS](WebNote%20-%20设备管理.md)
-- [JS](WebNote%20-%20链接.md)

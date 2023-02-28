@@ -5,11 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e8fc147b-984c-4faa-8bf9-7931f68677de" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebNote/01html.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebNote/02html.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebNote/03CSS.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebNote/04CSS.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebNote/05CSS.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebNote/06CSS.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebNote/07CSS.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebNote/08JS.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebNote/pics/0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebNote/pics/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebNote/pics/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebNote/pics/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebNote/pics/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebNote/pics/a_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebNote/pics/a_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebNote/pics/a_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebNote/pics/a_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebNote/pics/cat.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebNote/pics/dengpao.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebNote/pics/dog.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebNote/pics/guang.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebNote/pics/huojian.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebNote/pics/icon1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebNote/pics/icon2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebNote/pics/icon3.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebNote/pics/icon4.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebNote/html:css:js.md" beforeDir="false" afterPath="$PROJECT_DIR$/WebNote/html:css:js.md" afterDir="false" />
     </list>
@@ -41,6 +58,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -55,6 +73,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/WebNote" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -66,11 +89,14 @@
       <workItem from="1677530823061" duration="2048000" />
       <workItem from="1677573825220" duration="1725000" />
       <workItem from="1677586869154" duration="1444000" />
-      <workItem from="1677588459578" duration="2083000" />
+      <workItem from="1677588459578" duration="3532000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
