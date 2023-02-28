@@ -59,7 +59,7 @@
          
 
 ```
-Exercises:
+
 ### [3.1 onload the Node](#3-1-onload-the-node)
 ### [4.1.a.  Creat a Node](#4-1-a-creat-a-node)
 ### [4.1.b. Moving Node](#4-1-b-moving-node) 
