@@ -1,6 +1,6 @@
 # CS-NOTES
 study diary of CS skills
-&copy;TerryTan
+TerryTan&copy;
 
 <br>
 
