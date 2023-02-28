@@ -19,7 +19,7 @@ study diary of CS skills
 ## :computer: Computer_System
 
 ## :cloud: Web
-- [html/css/js diary](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/html:css:js.md)
+- [Html/CSS/JS/DOM/BOM](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/html:css:js.md)
 - [HTTP](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/http.md)
 - [ES6](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/ES6.md)
 - [Vue.js](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/Vue_js.md)
