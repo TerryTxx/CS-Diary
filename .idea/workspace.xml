@@ -5,30 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e8fc147b-984c-4faa-8bf9-7931f68677de" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/WebNote/05CSS.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebNote/06CSS.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebNote/07CSS.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebNote/08JS.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebNote/pics/0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebNote/pics/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebNote/pics/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebNote/pics/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebNote/pics/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebNote/pics/a_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebNote/pics/a_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebNote/pics/a_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebNote/pics/a_4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebNote/pics/cat.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebNote/pics/dengpao.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebNote/pics/dog.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebNote/pics/guang.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebNote/pics/huojian.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebNote/pics/icon1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebNote/pics/icon2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebNote/pics/icon3.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebNote/pics/icon4.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebNote/ES6.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebNote/Vue_js.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebNote/html:css:js.md" beforeDir="false" afterPath="$PROJECT_DIR$/WebNote/html:css:js.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebNote/http.md" beforeDir="false" afterPath="$PROJECT_DIR$/WebNote/http.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +71,7 @@
       <workItem from="1677530823061" duration="2048000" />
       <workItem from="1677573825220" duration="1725000" />
       <workItem from="1677586869154" duration="1444000" />
-      <workItem from="1677588459578" duration="3532000" />
+      <workItem from="1677588459578" duration="4739000" />
     </task>
     <servers />
   </component>

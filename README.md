@@ -21,9 +21,11 @@ study diary of CS skills
 ## :cloud: Web
 - [html/css/js diary](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/html:css:js.md)
 - [HTTP](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/http.md)
+- [ES6](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/ES6.md)
+- [Vue.js](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/Vue_js.md)
 - [node.js](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/node_js.mda)
-- [react.js](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/react_js.md)
 - [MangoDB](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/MangoDB.md)
+- [react.js](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/react_js.md)
 
 ## :floppy_disk: mySQL(to be updated)
 
