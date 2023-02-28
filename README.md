@@ -12,11 +12,11 @@ study diary of CS skills
 
 ## :pencil2:  Algorithm
 
-- [Leetcode]
-- [self_study]
-- [Exercises]
+- [Leetcode](https://github.com/TerryTxx/CS-Diary/blob/master/Algorithm/Leetcode.md)
+- [self_study](https://github.com/TerryTxx/CS-Diary/blob/master/Algorithm/self_study.md)
+- [Exercises](https://github.com/TerryTxx/CS-Diary/blob/master/Algorithm/Exercises.md)
 
-## :computer: Computer System
+## :computer: Computer System（tobe updated）
 
 ## :cloud: Web
 - [html/css/js diary](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/html:css:js.md)
@@ -25,17 +25,16 @@ study diary of CS skills
 - [react.js](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/react_js.md)
 - [MangoDB](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/MangoDB.md)
 
-## :floppy_disk: mySQL
+## :floppy_disk: mySQL(to be updated)
 
-- [SQL learning]
+- [SQL learning](https://github.com/TerryTxx/CS-Diary/blob/master/mySQL/react_js.md)
 - [SQL exercise]
 
 
 ## :coffee: Java
 
-- [Java obj general]
-- [Java obj exercise]
-- [Java JVM]
+- [Java obj general](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/object-general.md)
+- [Java obj steps](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/studyDiary.md)
 - [Java I/O]
 
 
