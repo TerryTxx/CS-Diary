@@ -20,10 +20,9 @@ study diary of CS Knowages
 ## :computer: Computer System
 
 ## :cloud: Web
-
-- [html/css/js diary]
+- [html/css/js diary](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/html:css:js.md)
 - [HTTP]
-- [node.js]
+- [node.js](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/node_js.mda)
 - [react.js]
 - [MangoDB]
 
