@@ -1,6 +1,6 @@
 # CS-NOTES
 study diary of CS skills
-TerryTan&copy;
+谈潇旭/XiaoxuTan&copy;
 
 <br>
 
