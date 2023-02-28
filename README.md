@@ -3,9 +3,9 @@ study diary of CS skills
 
 <br>
 
-|      &nbsp;&nbsp;Algorithm&nbsp;      |       Computer System        | &nbsp;&nbsp;&nbsp;Web&nbsp;&nbsp;&nbsp; |     &nbsp;&nbsp;mySQL&nbsp;&nbsp;      |     &nbsp;Java-Object Oriented      | 
-|:-------------------------------:|:---------:|:---------------------------------------:|:--------------------------------:|:-----------------------------:|
-| [:pencil2:](#pencil2-Algorithm) | [:computer:](#computer-Computer System) |          [:cloud:](#cloud-Web)          | [:floppy_disk:](#floppy_disk-mySQL) |   [:coffee:](#coffee-Java-Object Oriented)    |
+|      &nbsp;&nbsp;Algorithm&nbsp;      |             Computer_System             | &nbsp;&nbsp;&nbsp;Web&nbsp;&nbsp;&nbsp; |     &nbsp;&nbsp;mySQL&nbsp;&nbsp;      |        &nbsp;Java_Object       | 
+|:-------------------------------:|:---------------------------------------:|:---------------------------------------:|:--------------------------------:|:----------------------------------------:|
+| [:pencil2:](#pencil2-Algorithm) | [:computer:](#computer-Computer_System) |          [:cloud:](#cloud-Web)          | [:floppy_disk:](#floppy_disk-mySQL) | [:coffee:](#coffee-Java_Object) |
 
 <br>
 
@@ -16,7 +16,7 @@ study diary of CS skills
 - [self_study](https://github.com/TerryTxx/CS-Diary/blob/master/Algorithm/self_study.md)
 - [Exercises](https://github.com/TerryTxx/CS-Diary/blob/master/Algorithm/Exercises.md)
 
-## :computer: Computer System（tobe updated）
+## :computer: Computer_System
 
 ## :cloud: Web
 - [html/css/js diary](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/html:css:js.md)
@@ -30,12 +30,10 @@ study diary of CS skills
 - [SQL learning](https://github.com/TerryTxx/CS-Diary/blob/master/mySQL/react_js.md)
 - [SQL exercise]
 
-
-## :coffee: Java
+## :coffee: Java Object
 
 - [Java obj general](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/object-general.md)
 - [Java obj steps](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/studyDiary.md)
-- [Java I/O]
 
 
 
