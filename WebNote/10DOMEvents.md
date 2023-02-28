@@ -54,13 +54,13 @@ DOM allows us to use js code to make HTML elements react to events.
 ```text
 ```
 
-### [1.1 Demo of onXXX mouse](#1.1-demo-of-onXXX-mouse)
-### [1.3 Demo of onXXX form](#1.3 Demo of onXXX form)
-### [2 Demo of Event propagation order](#2 Demo of Event propagation order)
-### [3.3 Demo of Event Object functions](#3.3 Demo of Event Object functions)
-### [3.3.e. Case of using char/keyCode](#3.3.e Case of using char/keyCode)
-### [3.4.a. Case of using preventDefault](#3.4.a Case of using preventDefault)
-### [3.4.b. Case of using stopPropagation](#3.4.b Case of using stopPropagation)
+### [1.1 Demo of onXXX mouse](#1.1-demo-of-onxxx-mouse)
+### [1.3 Demo of onXXX form](#1.3-demo-of-onxxx-form)
+### [2 Demo of Event propagation order](#2-demo-of-event-propagation-order)
+### [3.3 Demo of Event Object functions](#3-3-demo-of-event-object-functions)
+### [3.3.e. Case of using char/keyCode](#3-3-e-case-of-using-char/keycode)
+### [3.4.a. Case of using preventDefault](#3-4-a-case-of-using-preventDefault)
+### [3.4.b. Case of using stopPropagation](#3-4-b-case-of-using-stoppropagation)
 
 
 #### 1.1 Demo of onXXX mouse

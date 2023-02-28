@@ -60,11 +60,11 @@
 
 ```
 Exercises:
-### [3.1 onload the Node](#3.1-onload-the-node)
-### [4.1.a.  Creat a Node](#4.1.a-creat-a-node)
-### [4.1.b. Moving Node](#4.1.b-moving-node) 
-### [4.2. Deleting Node](#4.2-deleting-nodes)
-### [4.3. Clone Node](#4.3-Colne-Node)
+### [3.1 onload the Node](#3-1-onload-the-node)
+### [4.1.a.  Creat a Node](#4-1-a-creat-a-node)
+### [4.1.b. Moving Node](#4-1-b-moving-node) 
+### [4.2. Deleting Node](#4-2-deleting-nodes)
+### [4.3. Clone Node](#4-3-colne-node)
 ### [5. DOM for change elements of HTML](#5-dom-for-change-elements-of-html)
 ### [6. DOM for CSS](#6-dom-for-css)
 
