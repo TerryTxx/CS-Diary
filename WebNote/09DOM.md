@@ -60,7 +60,7 @@
 
 ```
 Exercises:
-### [3.1 onload the Node](3.1 onload the Node)
+### [3.1 onload the Node](#3 onload the Node)
 ### [4.1.a.  Creat a Node](#4.1.a  creat a node)
 ### [4.1.b. Moving Node](#4.1.b Moving node) 
 ### [4.2. Deleting Node](#4.2 Deleting Nodes)
