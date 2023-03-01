@@ -27,12 +27,12 @@
 *****Delayed run: you can make the interface load and then execute the specified code 
 *****by using window.onload = function(){}   -- Can be interpreted as a project or code listener
 ```
-```html
-    a. document.getElementById();--------by id element
-    b. document.getElementByTagName()；--------  by tag name in ARRAY
-    c. document.getElementByClassName();-------- by Class name in Array   
-    d. document.querySelector();-------- only get the first matched element
-    e. document.querySelectorAll();--------get an array, of all elements, must be an array
+```js
+    var a =  document.getElementById();//--------by id element
+    var b = document.getElementByTagName()；//--------  by tag name in ARRAY
+    var c = document.getElementByClassName();//-------- by Class name in Array   
+    var d = document.querySelector();//-------- only get the first matched element
+    var e = document.querySelectorAll();//--------get an array, of all elements, must be an array
 ```
 
 ```

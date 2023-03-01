@@ -12,11 +12,11 @@ Basic:
 - [CSS Box Module](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/05CSS.md)
 - [CSS Transition](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/06CSS.md)
 - [CSS Animation & exercises](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/07CSS.md)
-- [JS General Usage](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/06CSS.md)
+
 
 Upto:
 - [JS Algorithm](https://github.com/TerryTxx/CS-Diary/blob/master/Algorithm/self_study.md)(Detailed in Algorithm)
-- [JS General Usage](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/06CSS.md)
+- [JS General Usage](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/08JS.md)
 
 JS advanced:
 - [DOM of Nodes](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/09DOM.md)
