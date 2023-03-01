@@ -12,46 +12,69 @@ DOM allows us to use js code to make HTML elements react to events.
     Two methods for setting up time listeners: 
         onXXXXX and add Eventlistener(), the difference being in the event propagation
         i.e. the next paragraph--events propagation.
-    onXXXXX:
-      (1) mouse:  onclick, ondblcick, onmousedown, onmouseup, 
-                    onmousemove,  onmouseenter,  onmouseleave, onmousewheel
+     
+ ```
+```js
+onXXXXX:
+    //(1) mouse: 
+            .onclick  .ondblcick  .onmousedown  .onmouseup
+        .onmousemove   .onmouseenter   .onmouseleave  .onmousewheel
+        // demo
+            var oBox = document.getElementById('box');
             oBox.onclick = function(){ // when click the box, the function will run}
-      (2) keyboard: onkeypress , onkeydown,  onkeyup;
-      (3) form: oninput ,onchange, onfocus, oblur, onsubmit, onreset
-      (4) page: onload, onunload
- 
+    //(2) keyboard: 
+        onkeypress  onkeydown  onkeyup;
+    //(3) form
+           .oninput onchange  onfocus  oblur  onsubmit  onreset
+    //(4) page: 
+            onload   onunload
+ ```
+```
 2. Event propagation
     Nested boxes, order of event listening:.
 (1) Capture phase; (from outer box to inner box in first)
     addEventListener() DOM2 could listen all phase;
-    
+```
+```js
     oBox.addEventListener('click', function(){}, true);
-                          no on                  true is capture and false is bubbling
-    
+                        // no on                  true is capture and false is bubbling
+```
+```
 (2) bubbling phase; (from inner to outer box later)
      onXXX can only listen to the bubble phase, so it is DOM0;
      
 (3) the innest is only ordered by the codes order: DOM0 cover the previous, DOM2 by order
+
 3. Event Objects
     (1)The event handler provides a formal parameter, i.e. an object for it, 
             encapsulating the details of this event
-    (2)This event is usually represented by the word Event or e
-        oBox.onmouseove = function(e){};
-    (3)general attribute:
-        a. clientX/clientY
-        b. pageX/PageY
-        c. offsetX/offsetY
-        e.charCode and e.keyCode
-    (4) general function
-        a  e.preventDefault()
-        b  e.stopPropagation()
-        
-
+    (2)This event is usually represented by the word Event or e:
 ```
+```js
+        oBox.onmouseove = function(e){};
+```
+```
+    (3)general attribute:
+```
+```js
+        a. obtn.clientX/clientY
+        b. obtn.pageX/PageY
+        c. obtn.offsetX/offsetY
+        e. obtn.charCode and e.keyCode
+```
+
 ![event01.jpeg](pics%2Fevent01.jpeg)
 ![event02.jpeg](pics%2Fevent02.jpeg)
 ![event03.jpeg](pics%2Fevent03.jpeg)
+
 ```text
+    (4) general function
+ ```       
+```js
+        a  e.preventDefault()
+        b  e.stopPropagation()
+```
+```
 4. Event Delegation
       (1) a.  Add event listeners in batches, usually using loop, but can cause performance problems and excessive memory.
           b.  New elements dynamically bound to events, need to add event listeners separately, 
@@ -61,7 +84,7 @@ DOM allows us to use js code to make HTML elements react to events.
                 As follows, we can listen for the onclick event, 
                 which will be passed to the ancestor via event bubbling, 
                 regardless of whether any li is clicked on.
- ```
+```
 ```html
 <ul id="list">
                         <li>list</li>
