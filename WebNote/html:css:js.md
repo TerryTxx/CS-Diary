@@ -1,7 +1,7 @@
 # HTML/CSS/JS/
 # DOM/BOM
 
-### All texts are summarised and compiled by Xiaoxu Tan personally.
+### All texts are summarised and compiled by Xiaoxu Tan@copyright personally.
 #### Practice questions from [W3school](https://www.w3schools.com/)
 ____________________________
 Basic:
