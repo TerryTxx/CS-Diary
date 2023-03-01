@@ -83,8 +83,8 @@ DOM allows us to use js code to make HTML elements react to events.
 
 ```
 
-### [1.1 Demo of onXXX mouse](#demo-of-oxxx-mouse)
-### [1.3 Demo of onXXX form](#demo-of-onxxx-form)
+### [1.1 Demo of on-sth mouse](#demo-of-on-sth-mouse)
+### [1.3 Demo of on-sth form](#demo-of-on-sth-form)
 ### [2 Demo of Event propagation order](#demo-of-event-propagation-order)
 ### [3.3 Demo of Event Object functions](#demo-of-event-object-functions)
 ### [3.3.e. Case of using char/keyCode](#scase-of-using-char-keycode)
@@ -93,7 +93,7 @@ DOM allows us to use js code to make HTML elements react to events.
 ### [4. Add event listeners in batches](#add-event-listeners-in-batches)
 
 
-## Demo of onXXX mouse
+#### Demo of on-sth mouse
 
 ```html
 <!DOCTYPE html>
@@ -124,7 +124,7 @@ DOM allows us to use js code to make HTML elements react to events.
 </script>
 </html>
 ```
-#### 1.3 Demo of onXXX form
+#### 1.3 Demo of on-sth form
 ```html
 <!DOCTYPE html>
 <html lang="en">
