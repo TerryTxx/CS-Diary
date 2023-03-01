@@ -27,7 +27,7 @@
                <h2 style="color:red;">
         
         3. CSS selector
-               Pseudo-classes
+            (1) Pseudo-classes
                <style>
                a:link{color:blue;}
                a:visited{color:brown;}
@@ -42,7 +42,7 @@
                --others
                a：empty  a:focus  a:enabled  a:disabled   a:checked   a:root(html)
         
-                (2) Compound selector
+           (2) Compound selector
                 //sub selector  ".box(a space)p{}"    means the p in class box
                 .box .spec
         
@@ -52,16 +52,16 @@
                 //Group selector     use"," to group
                 ul,ol
                 
-                (3) label selector
+           (3) label selector
                 (general initialized the label: list-style:none   text-decoration:none)
                 (span usually have no mean, we use to css it)
                 span{color:red}  all label named span use red
                 
-                (4) ID selector
+           (4) ID selector
                 <p id="paral1">XXXX</p>
                 ***   #paral1{color:red;}
                 
-                (5) Class selector
+           (5) Class selector
                 (Atomic Class is often used)
                 <p class="warning">WARNING</p>
                 .warning{color:red}
@@ -70,7 +70,7 @@
                             .warning{color:red}
                             .spec{font-style:italic}   //()
                 
-                （6）Number selector
+           （6）Number selector
                 :first-child    choose the first sub element (.box1 p:first-child{color:red;})
                 <div class="box1"><p>1</p><p>2</p></div> (2 changed)
                 :last-child                last
@@ -81,9 +81,9 @@
                 :nth-last-child(3)
                 :nth-last-of-type(3)
                 
-                (7) Attribute selector(not common)
+            (7) Attribute selector(not common)
         
-                (8) Element Relation Selector
+           (8) Element Relation Selector
                 div>p   (> sub selector, match the direct sub, compatre .box p{})
                 <div><p></p>(p1)<div><p></p>(p2)</div></div><p></p>(p3)
                 .box>p{color:red;} (p1)
@@ -93,14 +93,14 @@
         
         
         4. Pseudo-Elements and selector
-               (1)::before and :: after ( and content to links)
+          (1)::before and :: after ( and content to links)
                a::before{content:'☆；}
                a::after{content:'○';}
                <p>
                <a href="">links</a>
                </p>
                
-               (2)::selection
+          (2)::selection
                .box1::selection{
                background:red;
                color:yellow;
@@ -109,16 +109,16 @@
                <div class="box1">AAAAA</div>
                </p>
                
-               (3)::first-letter   ::first-line
+          (3)::first-letter   ::first-line
                （Elements in the block）
         
         5. Cascading Conflicts
-             (1) Weights：ID>class>label
-           #> .spec > p
+            (1) Weights：ID>class>label
+                #> .spec > p
             
             (2)ID nums, class nums, label nums   (2,1,2)  (2,0,1)  (0,3,1)
         
-             (3)!important(not recommend)
+          (3)!important(not recommend)
            .spec{
            color:blue !important;
            }
