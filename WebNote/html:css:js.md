@@ -20,3 +20,7 @@ JS advanced:
 - [DOM of Events, Timing and Delay](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/10DOMEvents.md)
 - [BOM](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/11BOM.md)
 - [Object](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/object-general.md)(Detailed in JavaObject)
+
+
+
+

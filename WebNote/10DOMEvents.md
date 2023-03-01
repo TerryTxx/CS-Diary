@@ -52,18 +52,49 @@ DOM allows us to use js code to make HTML elements react to events.
 ![event02.jpeg](pics%2Fevent02.jpeg)
 ![event03.jpeg](pics%2Fevent03.jpeg)
 ```text
+4. Event Delegation
+      (1) a.  Add event listeners in batches, usually using loop, but can cause performance problems and excessive memory.
+          b.  New elements dynamically bound to events, need to add event listeners separately, 
+        cannot automatically get event listeners, memory and performance is large.
+      (2) Delegation of events from descendant elements to ancestor elements, using the event bubbling mechanism.
+
+                As follows, we can listen for the onclick event, 
+                which will be passed to the ancestor via event bubbling, 
+                regardless of whether any li is clicked on.
+                <ul id="list">
+                        <li>list</li>
+                        <li>list</li>
+                        <li>list</li>
+                        <li>list</li>
+                        <li>list</li>
+                        <li>list</li>
+                        <li>list</li>
+                    </ul>
+     *** target, the source element that triggered the sub-event.
+        currentTarget, the element to which the event handler is attached.
+        
+        (3) characteristics opposite of (1)
+       *** onmouseenter(not bubble)   onmouseover(bubble)
+       
+ 5. 
+
+
+        
+
 ```
 
-### [1.1 Demo of onXXX mouse](#1.1-demo-of-onxxx-mouse)
-### [1.3 Demo of onXXX form](#1.3-demo-of-onxxx-form)
-### [2 Demo of Event propagation order](#2-demo-of-event-propagation-order)
-### [3.3 Demo of Event Object functions](#3-3-demo-of-event-object-functions)
-### [3.3.e. Case of using char/keyCode](#3-3-e-case-of-using-char/keycode)
-### [3.4.a. Case of using preventDefault](#3-4-a-case-of-using-preventDefault)
-### [3.4.b. Case of using stopPropagation](#3-4-b-case-of-using-stoppropagation)
+### [1.1 Demo of onXXX mouse](#demo-of-oxxx-mouse)
+### [1.3 Demo of onXXX form](#demo-of-onxxx-form)
+### [2 Demo of Event propagation order](#demo-of-event-propagation-order)
+### [3.3 Demo of Event Object functions](#demo-of-event-object-functions)
+### [3.3.e. Case of using char/keyCode](#scase-of-using-char-keycode)
+### [3.4.a. Case of using preventDefault](#case-of-using-preventDefault)
+### [3.4.b. Case of using stopPropagation](#case-of-using-stoppropagation)
+### [4. Add event listeners in batches](#add-event-listeners-in-batches)
 
 
-#### 1.1 Demo of onXXX mouse
+## Demo of onXXX mouse
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -125,7 +156,7 @@ DOM allows us to use js code to make HTML elements react to events.
     </script>
 </html>
 ```
-#### 2 Demo of Event propagation order
+#### Demo of Event propagation order
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -192,7 +223,7 @@ DOM allows us to use js code to make HTML elements react to events.
 </script>
 </html>
 ```
-#### 3.3 Demo of Event Object functions
+#### Demo of Event Object functions
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -233,7 +264,7 @@ DOM allows us to use js code to make HTML elements react to events.
 </script>
 </html>
 ```
-#### 3.3.e Case of using char/keyCode
+#### Case of using char/keyCode
 Exercise: make an orange box moving by keyboard
 ```html
 <!DOCTYPE html>
@@ -284,7 +315,7 @@ Exercise: make an orange box moving by keyboard
 </html>
 ```
 
-#### 3.4.a Case of using preventDefault
+#### Case of using preventDefault
 Exercise: made a text, could not tape uppercase
 ```html
 <!DOCTYPE html>
@@ -354,7 +385,7 @@ Exercise: Create a function that, when the mouse is inside the box, will automat
     </script>
 </html>
 ```
-#### 3.4.b Case of using stopPropagation
+#### Case of using stopPropagation
 to understand the codes of the usage of stopPropagation
 ```html
 <!DOCTYPE html>
@@ -444,6 +475,119 @@ Exercise: make a div, spring out by pressing the button, and fade out by any bla
         oModal.onclick = function (e){
             // incase propagation to the document
             e.stopPropagation();
+        }
+    </script>
+</html>
+```
+
+#### Add event listeners in batches
+Exercise: There is an unordered list <ul> on the page, it has 20 <li> elements inside it,
+        please add click event listeners to them in bulk to achieve the effect:
+        which li element is clicked, which one turns red.
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+    <body>
+    <ul id="list">
+        <li>list</li>
+        <li>list</li>
+        <li>list</li>
+        <li>list</li>
+        <li>list</li>
+        <li>list</li>
+        <li>list</li>
+    </ul>
+    </body>
+    <script>
+        var oList = document.getElementById('list');
+        var lis = oList.getElementsByTagName('li');
+        //alter(lis.length) to check the compiling at current is OK
+        //loop element add listener
+        for (let i = 0; i < lis.length; i++) {
+            lis[i].onclick = function (){
+                this.style.color='red';
+            };
+        }
+    </script>
+</html>
+```
+Eexercise: there is an unordered list <ul> on the page which has no <li> element inside it, 
+        make a button which adds a li by clicking on it and require each added li to have a click-to-red
+        listener event to achieve the effect i.e. point which  turns red.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+    <body>
+    <button id="btn">press to add list</button>
+    <ul id="list">
+    </ul>
+    </body>
+    <script>
+      var oBtn = document.getElementById('btn');
+      var oList = document.getElementById('list');
+      var lis = oList.getElementsByTagName('li')
+
+      // press button event
+      oBtn.onclick = function (){
+          // add a orphan node of li
+          var oLi = document.createElement('li');
+          oLi.innerHTML = 'This is a list'
+          // append to the node tree
+          oList.appendChild(oLi);
+          // add onclick event listening
+          oLi.onclick = function (){
+              this.style.color = 'red';
+          };
+      };
+    </script>
+</html>
+```
+use EVENT DELEGATION
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+    <body>
+    <button id="btn">press to add list</button>
+    <ul id="list">
+        <li>list</li>
+        <li>list</li>
+        <li>list</li>
+        <li>list</li>
+        <li>list</li>
+        <li>list</li>
+        <li>list</li>
+    </ul>
+    </body>
+    <script>
+      var oBtn = document.getElementById('btn');
+      var oList = document.getElementById('list');
+      //var lis = oList.getElementsByTagName('li')
+        oList.onclick = function (e) {
+            // e.target
+            e.target.style.color = 'red';
+        };
+        oBtn.onclick = function (e) {
+            //creat li
+            var oLi = document.createElement('li');
+            //content
+            oLi.innerText = 'new member';
+            //append to Node
+            oList.appendChild(oLi);
         }
     </script>
 </html>

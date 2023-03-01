@@ -60,19 +60,19 @@
 
 ```
 
-### [3.1 onload the Node](#3-1-onload-the-node)
-### [4.1.a.  Creat a Node](#4-1-a-creat-a-node)
-### [4.1.b. Moving Node](#4-1-b-moving-node) 
-### [4.2. Deleting Node](#4-2-deleting-nodes)
-### [4.3. Clone Node](#4-3-colne-node)
-### [5. DOM for change elements of HTML](#5-dom-for-change-elements-of-html)
-### [6. DOM for CSS](#6-dom-for-css)
+### [3.1 onload the Node](#onload-the-node)
+### [4.1.a.  Creat a Node](#creat-a-node)
+### [4.1.b. Moving Node](#moving-node) 
+### [4.2. Deleting Node](#deleting-nodes)
+### [4.3. Clone Node](#colne-node)
+### [5. DOM for change elements of HTML](#dom-for-change-elements-of-html)
+### [6. DOM for CSS](#dom-for-css)
 
 
-#### 3.1 onload the Node
+#### onload the Node
 ```html
 ```
-#### 4.1.a   Creat a node
+#### Creat a node
 exercise01: cereat a oBox with 3 p labels, and an op node, use append and insert
 exercise02: creat a 20*12 form by DOM node
 
@@ -130,7 +130,7 @@ exercise02: creat a 20*12 form by DOM node
 </body>
 </html>
 ```
-#### 4.1.b Moving node
+#### Moving node
 exercise01: move the label p from one div(box1) to another box2
 #### Answer:
 ```html
@@ -165,7 +165,7 @@ exercise01: move the label p from one div(box1) to another box2
 </html>
 ```
 
-#### 4.2 Deleting Nodes
+#### Deleting Nodes
 #### Answer:
 ```html
 <!DOCTYPE html>
@@ -189,7 +189,7 @@ exercise01: move the label p from one div(box1) to another box2
 </html>
 ```
 
-#### 4.3 Colne Node
+#### Colne Node
 #### Answer:
 ```html
 <!DOCTYPE html>
@@ -220,7 +220,7 @@ exercise01: move the label p from one div(box1) to another box2
 </body>
 </html>
 ```
-#### 5 DOM for change elements of HTML
+#### DOM for change elements of HTML
 
 #### Answer:
 ```html
@@ -252,7 +252,7 @@ exercise01: move the label p from one div(box1) to another box2
 </html>
 ```
 
-#### 6 DOM for CSS
+#### DOM for CSS
 #### Answer:
 ```html
 <!DOCTYPE html>

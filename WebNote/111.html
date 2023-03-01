@@ -3,43 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <style>
-        .modal{
-            width: 400px;
-            height: 140px;
-            background-color: antiquewhite;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            margin-top:-70px;
-            margin-left: -200px;
-            display: none;
-        }
-
-    </style>
 </head>
     <body>
-    <div class="modal" id="modal"></div>
-    <button id="btn">Press</button>
+    <button id="btn">press to add list</button>
+    <ul id="list">
+        <li>list</li>
+        <li>list</li>
+        <li>list</li>
+        <li>list</li>
+        <li>list</li>
+        <li>list</li>
+        <li>list</li>
+    </ul>
     </body>
     <script>
-        var oBtn = document.getElementById('btn');
-        var oModal = document.getElementById('modal');
-
-        //when click, show the modal
-        oBtn.onclick = function (e){
-            // incase propagation to the document
-            e.stopPropagation();
-            oModal.style.display = 'block';
-        }
-        //when click, display the modal
-        document.onclick = function (){
-            oModal.style.display = 'none';
-        }
-        //when click the modal, not close,
-        oModal.onclick = function (e){
-            // incase propagation to the document
-            e.stopPropagation();
+      var oBtn = document.getElementById('btn');
+      var oList = document.getElementById('list');
+      //var lis = oList.getElementsByTagName('li')
+        oList.onclick = function (e) {
+            // e.target
+            e.target.style.color = 'red';
+        };
+        oBtn.onclick = function (e) {
+            //creat li
+            var oLi = document.createElement('li');
+            //content
+            oLi.innerText = 'new member';
+            //append to Node
+            oList.appendChild(oLi);
         }
     </script>
 </html>
