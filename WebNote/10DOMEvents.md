@@ -82,15 +82,18 @@ DOM allows us to use js code to make HTML elements react to events.
         
 
 ```
+### Exercise
 
 ### [1.1 Demo of on-sth mouse](#demo-of-on-sth-mouse)
 ### [1.3 Demo of on-sth form](#demo-of-on-sth-form)
-### [2 Demo of Event propagation order](#demo-of-event-propagation-order)
+### [2. Demo of Event propagation order](#demo-of-event-propagation-order)
 ### [3.3 Demo of Event Object functions](#demo-of-event-object-functions)
-### [3.3.e. Case of using char/keyCode](#scase-of-using-char-keycode)
-### [3.4.a. Case of using preventDefault](#case-of-using-preventDefault)
+### [3.3.e. Case of using char/keyCode](#case-of-using-char-keycode)
+### [3.4.a. Case of using preventDefault](#case-of-using-preventdefault)
 ### [3.4.b. Case of using stopPropagation](#case-of-using-stoppropagation)
-### [4. Add event listeners in batches](#add-event-listeners-in-batches)
+### [4.Add event listeners in batches](#add-event-listeners-in-batches)
+### [5.Use of Event Delegation](#use-of-event-delegation)
+
 
 
 #### Demo of on-sth mouse
@@ -124,7 +127,8 @@ DOM allows us to use js code to make HTML elements react to events.
 </script>
 </html>
 ```
-#### 1.3 Demo of on-sth form
+###### [[back to list]](#exercise)
+#### Demo of on-sth form
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -156,6 +160,7 @@ DOM allows us to use js code to make HTML elements react to events.
     </script>
 </html>
 ```
+###### [[back to list]](#exercise)
 #### Demo of Event propagation order
 ```html
 <!DOCTYPE html>
@@ -223,6 +228,7 @@ DOM allows us to use js code to make HTML elements react to events.
 </script>
 </html>
 ```
+###### [[back to list]](#exercise)
 #### Demo of Event Object functions
 ```html
 <!DOCTYPE html>
@@ -264,7 +270,8 @@ DOM allows us to use js code to make HTML elements react to events.
 </script>
 </html>
 ```
-#### Case of using char/keyCode
+###### [[back to list]](#exercise)
+#### Case of using char-keyCode
 Exercise: make an orange box moving by keyboard
 ```html
 <!DOCTYPE html>
@@ -314,7 +321,7 @@ Exercise: make an orange box moving by keyboard
     </script>
 </html>
 ```
-
+###### [[back to list]](#exercise)
 #### Case of using preventDefault
 Exercise: made a text, could not tape uppercase
 ```html
@@ -385,6 +392,7 @@ Exercise: Create a function that, when the mouse is inside the box, will automat
     </script>
 </html>
 ```
+###### [[back to list]](#exercise)
 #### Case of using stopPropagation
 to understand the codes of the usage of stopPropagation
 ```html
@@ -479,7 +487,7 @@ Exercise: make a div, spring out by pressing the button, and fade out by any bla
     </script>
 </html>
 ```
-
+###### [[back to list]](#exercise)
 #### Add event listeners in batches
 Exercise: There is an unordered list <ul> on the page, it has 20 <li> elements inside it,
         please add click event listeners to them in bulk to achieve the effect:
@@ -553,7 +561,8 @@ Eexercise: there is an unordered list <ul> on the page which has no <li> element
     </script>
 </html>
 ```
-use EVENT DELEGATION
+###### [[back to list]](#exercise)
+#### Use of Event Delegation
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -592,3 +601,4 @@ use EVENT DELEGATION
     </script>
 </html>
 ```
+###### [[back to list]](#exercise)

@@ -59,6 +59,7 @@
          
 
 ```
+### Exercise
 
 ### [3.1 onload the Node](#onload-the-node)
 ### [4.1.a.  Creat a Node](#creat-a-node)
@@ -130,6 +131,7 @@ exercise02: creat a 20*12 form by DOM node
 </body>
 </html>
 ```
+###### [[back to list]](#exercise)
 #### Moving node
 exercise01: move the label p from one div(box1) to another box2
 #### Answer:
@@ -164,7 +166,7 @@ exercise01: move the label p from one div(box1) to another box2
 </body>
 </html>
 ```
-
+###### [[back to list]](#exercise)
 #### Deleting Nodes
 #### Answer:
 ```html
@@ -188,7 +190,7 @@ exercise01: move the label p from one div(box1) to another box2
 </body>
 </html>
 ```
-
+###### [[back to list]](#exercise)
 #### Colne Node
 #### Answer:
 ```html
@@ -220,8 +222,8 @@ exercise01: move the label p from one div(box1) to another box2
 </body>
 </html>
 ```
+###### [[back to list]](#exercise)
 #### DOM for change elements of HTML
-
 #### Answer:
 ```html
 <!DOCTYPE html>
@@ -251,7 +253,7 @@ exercise01: move the label p from one div(box1) to another box2
     </script>
 </html>
 ```
-
+###### [[back to list]](#exercise)
 #### DOM for CSS
 #### Answer:
 ```html
@@ -283,3 +285,4 @@ exercise01: move the label p from one div(box1) to another box2
 </script>
 </html>
 ```
+###### [[back to list]](#exercise)
