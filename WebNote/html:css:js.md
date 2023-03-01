@@ -1,5 +1,8 @@
 # HTML/CSS/JS/
 # DOM/BOM
+
+### All texts are summarised and compiled by Xiaoxu Tan personally.
+#### Practice questions from [W3school](https://www.w3schools.com/)
 ____________________________
 Basic:
 - [HTML](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/01html.md)
