@@ -21,10 +21,12 @@
         //get element
         var oBox = document.getElementById('box');
         var oBtn1 = document.getElementById('btn1');
+        var lock =true;
         //Set a marker value to confirm the current position of the box.
         var pos =1; //1 left, 2 right
         // add listener
         oBtn1.onclick = function (){
+            if(!lock) return;
          //and transition
             oBox.style.transition = 'all 2s linear 0s';
             if(pos ==1 ) {
@@ -34,6 +36,10 @@
                 oBox.style.left = '100px';
                 pos =1;
             }
+            lock = false;
+            setTimeout(function () {
+                lock = true;
+            }, 2000);
         };
         </script>
 </body>

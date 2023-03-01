@@ -17,12 +17,17 @@
         if (!lock) return;
         //here is funcion body of the function
         lock = false;//close the lock
+        //2 secs later open the lock
         setTimeout(function () {
             lock = true;
         }, 2000);
     }
 ```
-
+## Exercise
+### [Animation01： Seamless continuous rolling](#animation01)
+### [Animation02](#animation02)
+### [Animation03](#animation03)
+### [Animation04](#animation04)
 
 Demo1: we made a box, press move to control it from left to right, and press move again make it moving from right to left.
 
@@ -69,3 +74,70 @@ Demo1: we made a box, press move to control it from left to right, and press mov
 </body>
 </html>
 ```
+###### [[back to list]](#exercise)
+to better the animation above
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #box{
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+    <button id="btn1">Start</button>
+    <script>
+        //get element
+        var oBox = document.getElementById('box');
+        var oBtn1 = document.getElementById('btn1');
+        var lock =true;
+        //Set a marker value to confirm the current position of the box.
+        var pos =1; //1 left, 2 right
+        // add listener
+        oBtn1.onclick = function (){
+            if(!lock) return;
+         //and transition
+            oBox.style.transition = 'all 2s linear 0s';
+            if(pos ==1 ) {
+                oBox.style.left = '1100px';
+                pos = 2;
+            }else if(pos ==2 ){
+                oBox.style.left = '100px';
+                pos =1;
+            }
+            lock = false;
+            setTimeout(function () {
+                lock = true;
+            }, 2000);
+        };
+        </script>
+</body>
+</html>
+```
+###### [[back to list]](#exercise)
+#### Animation01
+```js
+```
+###### [[back to list]](#exercise)
+#### Animation02
+```js
+```
+###### [[back to list]](#exercise)
+#### Animation03
+```js
+```
+###### [[back to list]](#exercise)
+#### Animation04
+```js
+```
+###### [[back to list]](#exercise)
