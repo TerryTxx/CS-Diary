@@ -14,7 +14,7 @@
 2. animation testing
 ```
 
-[pic sources](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/pics)
+[pic sources](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/pics/CSS)
 ## test 1:
 ```javascript
 <!DOCTYPE html>

@@ -5,9 +5,65 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e8fc147b-984c-4faa-8bf9-7931f68677de" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/WebNote/pics/CSS/0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebNote/pics/CSS/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebNote/pics/CSS/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebNote/pics/CSS/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebNote/pics/CSS/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebNote/pics/CSS/a_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebNote/pics/CSS/a_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebNote/pics/CSS/a_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebNote/pics/CSS/a_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebNote/pics/CSS/cat.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebNote/pics/CSS/dengpao.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebNote/pics/CSS/dog.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebNote/pics/CSS/event01.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebNote/pics/CSS/event02.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebNote/pics/CSS/event03.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebNote/pics/CSS/guang.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebNote/pics/CSS/huojian.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebNote/pics/CSS/icon1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebNote/pics/CSS/icon2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebNote/pics/CSS/icon3.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebNote/pics/CSS/icon4.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebNote/pics/JS+CSS/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebNote/pics/JS+CSS/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebNote/pics/JS+CSS/beijing/0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebNote/pics/JS+CSS/beijing/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebNote/pics/JS+CSS/beijing/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebNote/pics/JS+CSS/beijing/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebNote/pics/JS+CSS/beijing/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebNote/pics/JS+CSS/number/0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebNote/pics/JS+CSS/number/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebNote/pics/JS+CSS/number/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebNote/pics/JS+CSS/number/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebNote/pics/JS+CSS/number/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebNote/pics/JS+CSS/number/5.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebNote/07CSS.md" beforeDir="false" afterPath="$PROJECT_DIR$/WebNote/07CSS.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebNote/111.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebNote/111.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebNote/11Animation.md" beforeDir="false" afterPath="$PROJECT_DIR$/WebNote/11Animation.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebNote/pics/0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebNote/pics/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebNote/pics/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebNote/pics/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebNote/pics/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebNote/pics/a_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebNote/pics/a_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebNote/pics/a_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebNote/pics/a_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebNote/pics/cat.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebNote/pics/dengpao.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebNote/pics/dog.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebNote/pics/event01.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebNote/pics/event02.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebNote/pics/event03.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebNote/pics/guang.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebNote/pics/huojian.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebNote/pics/icon1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebNote/pics/icon2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebNote/pics/icon3.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebNote/pics/icon4.svg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +126,7 @@
       <workItem from="1677530823061" duration="2048000" />
       <workItem from="1677573825220" duration="1725000" />
       <workItem from="1677586869154" duration="1444000" />
-      <workItem from="1677588459578" duration="45251000" />
+      <workItem from="1677588459578" duration="52117000" />
     </task>
     <servers />
   </component>

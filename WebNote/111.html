@@ -4,43 +4,117 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        #box{
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .carousel{
+            width: 650px;
+            height: 360px;
+            border: 1px solid #000;
+            margin: 50px auto;
+            position: relative;
+        }
+        .carousel ul{
+            list-style: none;
+        }
+        .carousel ul li{
             position: absolute;
-            top: 100px;
-            left: 100px;
-            width: 100px;
-            height: 100px;
-            background-color: orange;
+            top: 0;
+            left: 0;
+        /*    make all pic together and transparent, but first 1*/
+        /*    the animation is change the opacity one by one*/
+            opacity: 0;
+            transition: opacity .8s ease 0s;
+        }
+        .carousel ul li:first-child{
+            opacity: 1;
+        }
+
+        .carousel .leftbtn{
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            margin-top: -25px;
+            width: 50px;
+            height: 50px;
+            background-color: grey;
+            border-radius: 50%;
+        }
+        .carousel .rightbtn{
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            margin-top: -25px;
+            width: 50px;
+            height: 50px;
+            background-color: grey;
+            border-radius: 50%;
         }
     </style>
 </head>
 <body>
-    <div id="box"></div>
-    <button id="btn1">Start</button>
+    <div id="box" class="carousel">
+        <ul id="list">
+            <li><img src="pics/JS+CSS/beijing/0.jpg" alt=""></li>
+            <li><img src="pics/JS+CSS/beijing/1.jpg" alt=""></li>
+            <li><img src="pics/JS+CSS/beijing/2.jpg" alt=""></li>
+            <li><img src="pics/JS+CSS/beijing/3.jpg" alt=""></li>
+            <li><img src="pics/JS+CSS/beijing/4.jpg" alt=""></li>
+        </ul>
+
+        <a href="javascript:;" class="leftbtn" id="leftbtn"></a>
+        <a href="javascript:;" class="rightbtn" id="rightbtn"></a>
+    </div>
+
     <script>
-        //get element
-        var oBox = document.getElementById('box');
-        var oBtn1 = document.getElementById('btn1');
-        var lock =true;
-        //Set a marker value to confirm the current position of the box.
-        var pos =1; //1 left, 2 right
-        // add listener
-        oBtn1.onclick = function (){
-            if(!lock) return;
-         //and transition
-            oBox.style.transition = 'all 2s linear 0s';
-            if(pos ==1 ) {
-                oBox.style.left = '1100px';
-                pos = 2;
-            }else if(pos ==2 ){
-                oBox.style.left = '100px';
-                pos =1;
-            }
-            lock = false;
-            setTimeout(function () {
-                lock = true;
-            }, 2000);
-        };
-        </script>
+    //get ul, and btn
+    var leftbtn = document.getElementById('leftbtn');
+    var rightbtn = document.getElementById('rightbtn');
+    var list = document.getElementById('list');
+    var lis = document.getElementsByTagName('li')// an array
+    // local value of current index
+    var idx =0;
+
+    //Throttling
+    var lock = true;
+
+    //right btn listener
+    rightbtn.onclick =function (){
+        //Throttling check
+        if(!lock) return;
+        lock = false
+        // fade out the idx 0 pic
+        lis[idx].style.opacity = 0;
+        idx++;
+        if(idx > 4) idx =0;
+        // idx up, show the new pic
+        lis[idx].style.opacity = 1;
+
+        // reopen the lock, after the animation
+        setTimeout(function (){
+            lock = true;
+        },1000)
+    }
+
+    //left is same of above
+    leftbtn.onclick =function (){
+        //Throttling check
+        if(!lock) return;
+        lock = false
+        // fade out the idx 0 pic
+        lis[idx].style.opacity = 0;
+        idx--;
+        if(idx <0) idx = 4;
+        // idx up, show the new pic
+        lis[idx].style.opacity =1;
+
+        // reopen the lock, after the animation
+        setTimeout(function (){
+            lock = true;
+        },1000)
+    }
+
+  </script>
 </body>
 </html>
