@@ -2,19 +2,34 @@ Frame of HTML
 ```TEXT
 1.[DTD]: document type definition(Browser compatibility issues)
         lang:language
-2.label pairs<html>--start
-    (better indent of head and body labels)
-    <head></head>:Configuration of the web page(cannot be seen by cus)
-    <body></body>:content of web(customer could see)
-    "</html>"-->end
+        
+2.label pairs:
+```
+```html
+<!--start-->
+    <html>
+<!--  better indent of head and body labels-->
+    <head></head>
+<!--Configuration of the web page(cannot be seen by cus)-->
+    <body></body>
+<!--content of web(customer could see)-->
+    "</html>"
+<!--end-->
+```
+```text
 3. in <head></head>
    mata--general
    (<label parameter = "value">)
    (1) char set
    (2)Adaptation settings(later)
    (3)title (The title of the page, which is also a SEO)
+  ```
+```html
    <meta name="Keywords" content="Milk,fresh,good">
+<!--<label parameter = "value">-->
    <meta name="Description" content="long history of our factory">
+```
+ ```text
 4. in<body></body>
    labels are always in pair
    <h></h>(1-6) headline
@@ -22,7 +37,7 @@ Frame of HTML
 5."<div></div>"：Divided structure(box)
    more connected with CSS"(<div class="">)
    "header/logo/nav/banner/content/footer/tool"
-
+   
 6. charter of HTML:
    blank in label
    (1)Blank fold， all blanks into one
@@ -32,7 +47,7 @@ Frame of HTML
    & g t; === >
    & nbsp;===space could not be fold
    & copy;=== copyright
-   ```
+```
 
 
 

@@ -4,14 +4,19 @@
 ```text
 
 1. why need DOM:
+```
+```html
     <div id = "box">
     <p>milk</p
     <p>coffee</p
     <p>juice</p
-    </div>
-    If you want to add coke after the milk tag, the HTML is counted as a string.
-    The DOM treats the div as a node with three P's as children inside, 
-    and then inserts it after the original node 0.
+</div>
+<!--If you want to add coke after the milk tag, the HTML is counted as a string.-->
+<!--The DOM treats the div as a node with three P's as children inside,-->
+<!--and then inserts it after the original node 0.-->
+```
+
+```
 2. What is DOM, Document Object Model, is an interface for js to manipulate HTML documents. 
     (1) It is intended to make document manipulation easier.
      （like a flowchat for a DOM of HTML）
@@ -21,14 +26,16 @@
 *****JS code is generally written after the corresponding HTML node, otherwise JS cannot find the HTML node.
 *****Delayed run: you can make the interface load and then execute the specified code 
 *****by using window.onload = function(){}   -- Can be interpreted as a project or code listener
-     
+```
+```html
     a. document.getElementById();--------by id element
     b. document.getElementByTagName()；--------  by tag name in ARRAY
     c. document.getElementByClassName();-------- by Class name in Array   
     d. document.querySelector();-------- only get the first matched element
     e. document.querySelectorAll();--------get an array, of all elements, must be an array
-    
+```
 
+```
 *4. Node：
     Node Type <p>/<div>(1) char(3)  remark(8)   document(9)   DTD(10)
     （1）Create, Remove, Clone
@@ -57,7 +64,6 @@
     (3) oBx.style.fontSize = '32px';
     (4) oBx.setAttribute('data-n',10);  if the data is not under W3C
          
-
 ```
 ### Exercise
 

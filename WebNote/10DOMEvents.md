@@ -61,7 +61,9 @@ DOM allows us to use js code to make HTML elements react to events.
                 As follows, we can listen for the onclick event, 
                 which will be passed to the ancestor via event bubbling, 
                 regardless of whether any li is clicked on.
-                <ul id="list">
+ ```
+```html
+<ul id="list">
                         <li>list</li>
                         <li>list</li>
                         <li>list</li>
@@ -70,29 +72,76 @@ DOM allows us to use js code to make HTML elements react to events.
                         <li>list</li>
                         <li>list</li>
                     </ul>
-     *** target, the source element that triggered the sub-event.
-        currentTarget, the element to which the event handler is attached.
-        
-        (3) characteristics opposite of (1)
-       *** onmouseenter(not bubble)   onmouseover(bubble)
+<!--*** target, the source element that triggered the sub-event.-->
+<!--currentTarget, the element to which the event handler is attached.-->
+```
+```
+(3) characteristics opposite of (1)
+ *** onmouseenter(not bubble)   onmouseover(bubble)
        
- 5. 
+ 5.
+ (1)Timer:
+        The setInterval() function.
+        A function that can be called repeatedly, with a fixed interval between each call.
+        Usage.
+        a) setInterval(function(){},2000); 2000 means 2000 milliseconds, i.e. one second.
+        b) setInterval(function(a,b){},2000,88,66);
+            The value of the formal parameter a is 88, the value of the formal parameter b is 66, and 2000 means, starting with the third parameter, the parameter passed into the function.
 
+(2)Clear timer.
+        The clearInterval() function.
+        Use case.
+        Generally the timer is set and accepted first in script.
+        var timer = setInterval(function(){},2000);
+        Set a button to give the clear function: when the button is clicked (let's say it's called pause), the clearer.
+        oBtn.onclick = function(){clearInterval(timer);}
+  find demo in exercise of set and clear
+  
+(3)Delayers：
+   Use the setTimeout() function
+       When the specified time is up, the function will be executed once and then not repeated.
+      
+      For example: 
+```
+```js
+    setTimeout (function(){//this function will be executed once after two seconds}, 2000)
+ // clearTimeout is used to remove or invalidate the corresponding delayer, cf. the use of timers.
 
+```
+```
+ Timers and Delayers are studied to understand asynchronous statements
         
-
+        *Asynchronous: does not block CPU execution, while completing asynchronous, will execute the callback function.
+         setTimeout(function(//console.log('A')},2000);
+         setTimeout is the entire scope of the asynchronous statement, and function() is the callback function.
+         It is also the function that returns to the brackets after stopping the timer.
+         so the asynchronous statement does not affect the use of console.log('B') in other places.
+         
+ (4)Timer and animation implementation 
+  --- This section can be skipped---
+```
+```
+--- This section can be skipped---
+        Using the "visual retention" principle.
+    
+     Routine work will not be used on its own 
+     （because it is not convenient to calculate step lengths based on total duration, animation directions have positive 
+     and negative aspects, and multiple movements are difficult to superimpose. 
+     The next section talks in more detail about combining CSS and JS animations.）
 ```
 ### Exercise
 
-### [1.1 Demo of on-sth mouse](#demo-of-on-sth-mouse)
-### [1.3 Demo of on-sth form](#demo-of-on-sth-form)
+### [1.1 Demo of on(+sth) mouse](#demo-of-on-sth-mouse)
+### [1.3 Demo of on(+sth) form](#demo-of-on-sth-form)
 ### [2. Demo of Event propagation order](#demo-of-event-propagation-order)
 ### [3.3 Demo of Event Object functions](#demo-of-event-object-functions)
 ### [3.3.e. Case of using char/keyCode](#case-of-using-char-keycode)
 ### [3.4.a. Case of using preventDefault](#case-of-using-preventdefault)
 ### [3.4.b. Case of using stopPropagation](#case-of-using-stoppropagation)
 ### [4.Add event listeners in batches](#add-event-listeners-in-batches)
-### [5.Use of Event Delegation](#use-of-event-delegation)
+### [4.2. Use of Event Delegation](#use-of-event-delegation)
+### [5.1. Set and Clear Timer](#set-and-clear-timer)
+### [5.4. Demo of Timer control Animation (not recommend)](#demo-of-timer-control-animation)
 
 
 
@@ -599,6 +648,92 @@ Eexercise: there is an unordered list <ul> on the page which has no <li> element
             oList.appendChild(oLi);
         }
     </script>
+</html>
+```
+###### [[back to list]](#exercise)
+
+#### Set and Clear Timer
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1 id="info"></h1>
+    <button id="btn1">Start</button>
+    <button id="btn2">Pause</button>
+    <script>
+        var oInfo = document.getElementById('info');
+        var oBtn1 = document.getElementById('btn1');
+        var oBtn2 = document.getElementById('btn2');
+        var a =0;
+
+        var timer;
+        // setInterval(function (){
+        //     oInfo.innerText = ++a;
+        // },1000)
+    //1,  can staring running time autolly above
+  // 2, so we use onclick listener to make start work
+        oBtn1.onclick = function (){
+            //set timer as initialized obj of setInterval
+            clearInterval(timer);// this setence is explained in step4, you can not add and run to check the differ
+            timer = setInterval(function (){
+                oInfo.innerText = ++a;
+            },1000)
+        };
+    // 3.make pause, and clear time, but we do not have a default timer to remember the time running, so define timer before start
+       // and initialize it in the onclick listener
+        oBtn2.onclick = function (){
+            clearInterval(timer);
+        };
+        //4. because onclick is DOM0, by press more times, the time running will be more faster ,so we should clean timer each time of click start
+    </script>
+</body>
+</html>
+```
+###### [[back to list]](#exercise)
+
+#### Demo of Timer control Animation
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #box{
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+    <button id="btn1">Start</button>
+    <script>
+        //get element
+        var oBox = document.getElementById('box');
+        var oBtn1 = document.getElementById('btn1');
+        //Local variables
+        var left = 100;
+        // add listener
+        oBtn1.onclick = function (){
+            setInterval(function (){
+                left += 2;
+                oBox.style.left = left +"px";
+            },20)
+        }
+  // difficulties: it is hard to define the number to left, 2 or 5?
+   // and hard to back to left
+        //and you need if to stop the box moving
+        </script>
+</body>
 </html>
 ```
 ###### [[back to list]](#exercise)

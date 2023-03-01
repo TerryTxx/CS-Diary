@@ -21,6 +21,7 @@ Upto:
 JS advanced:
 - [DOM of Nodes](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/09DOM.md)
 - [DOM of Events, Timing and Delay](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/10DOMEvents.md)
+- [Animation by JS+CSS](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/11Animation.md)
 - [BOM](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/11BOM.md)
 - [Object](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/object-general.md)(Detailed in JavaObject)
 

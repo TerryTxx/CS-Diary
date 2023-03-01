@@ -21,16 +21,19 @@
    out box distance to other box,
    top and bottom the distance not added, use the longest
    margin-top/right/bottom/left
-
-        (body,ul,pl)has default margin,
-              body,ul,p {       //Concatenation selectors，clear the defaults
-                margin : 0;
-                padding: 0;
-              }
-
-   .box{ margin:0 auto; } Vertical
-   text-align: center    in line
-
+```
+```css
+     /*(body,ul,pl)has default margin,*/
+        body,ul,p {      
+      /*Concatenation selectors，clear the defaults*/
+            margin : 0;
+              padding: 0;
+                 }
+        box{ margin:0 auto;/*Vertical*/
+        text-align: center;/*in line*/
+        } 
+```
+```
    (5) calculation
    base box
 

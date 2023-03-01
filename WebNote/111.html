@@ -3,34 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-</head>
-    <body>
-    <button id="btn">press to add list</button>
-    <ul id="list">
-        <li>list</li>
-        <li>list</li>
-        <li>list</li>
-        <li>list</li>
-        <li>list</li>
-        <li>list</li>
-        <li>list</li>
-    </ul>
-    </body>
-    <script>
-      var oBtn = document.getElementById('btn');
-      var oList = document.getElementById('list');
-      //var lis = oList.getElementsByTagName('li')
-        oList.onclick = function (e) {
-            // e.target
-            e.target.style.color = 'red';
-        };
-        oBtn.onclick = function (e) {
-            //creat li
-            var oLi = document.createElement('li');
-            //content
-            oLi.innerText = 'new member';
-            //append to Node
-            oList.appendChild(oLi);
+    <style>
+        #box{
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            width: 100px;
+            height: 100px;
+            background-color: orange;
         }
-    </script>
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+    <button id="btn1">Start</button>
+    <script>
+        //get element
+        var oBox = document.getElementById('box');
+        var oBtn1 = document.getElementById('btn1');
+        //Set a marker value to confirm the current position of the box.
+        var pos =1; //1 left, 2 right
+        // add listener
+        oBtn1.onclick = function (){
+         //and transition
+            oBox.style.transition = 'all 2s linear 0s';
+            if(pos ==1 ) {
+                oBox.style.left = '1100px';
+                pos = 2;
+            }else if(pos ==2 ){
+                oBox.style.left = '100px';
+                pos =1;
+            }
+        };
+        </script>
+</body>
 </html>

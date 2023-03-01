@@ -13,7 +13,6 @@
    (2)background and text color
    (3)2D & 3D    box5,box6
 
-
 2. Transition jogging effects (linear)   box7
    ease
    linear
