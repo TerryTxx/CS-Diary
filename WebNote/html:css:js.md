@@ -1,6 +1,9 @@
 # HTML/CSS/JS/
 # DOM/BOM
-____________________________
+
+### All texts are summarised and compiled by Xiaoxu Tan personally.
+#### Practice questions from [W3school](https://www.w3schools.com/)
+
 Basic:
 - [HTML](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/01html.md)
 - [HTML_Exercise](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/02html.md)
@@ -20,7 +23,4 @@ JS advanced:
 - [DOM of Events, Timing and Delay](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/10DOMEvents.md)
 - [BOM](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/11BOM.md)
 - [Object](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/object-general.md)(Detailed in JavaObject)
-
-
-
 
