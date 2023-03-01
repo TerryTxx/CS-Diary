@@ -27,7 +27,7 @@
 *****Delayed run: you can make the interface load and then execute the specified code 
 *****by using window.onload = function(){}   -- Can be interpreted as a project or code listener
 ```
-```html
+```javascript
     a. document.getElementById();--------by id element
     b. document.getElementByTagName()；--------  by tag name in ARRAY
     c. document.getElementByClassName();-------- by Class name in Array   
