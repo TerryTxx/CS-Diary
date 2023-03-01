@@ -1,5 +1,7 @@
 # Events, Timing and Delay
-## Events
+
+### [Back to Root Catalogue](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/html:css:js.md)
+#### Events
 ```text
 1. Event Listening
 DOM allows us to use js code to make HTML elements react to events.
@@ -166,7 +168,7 @@ onXXXXX:
 ### [5.1. Set and Clear Timer](#set-and-clear-timer)
 ### [5.4. Demo of Timer control Animation (not recommend)](#demo-of-timer-control-animation)
 
-
+###### [[TOP]](#events)
 
 #### Demo of on-sth mouse
 
@@ -759,4 +761,5 @@ Eexercise: there is an unordered list <ul> on the page which has no <li> element
 </body>
 </html>
 ```
-###### [[back to list]](#exercise)
+###### [[back to exercise list]](#exercise)
+###### [[TOP]](#events)

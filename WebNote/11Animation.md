@@ -1,5 +1,8 @@
 # Animation by JS and CSS
 
+### [Back to Root Catalogue](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/html:css:js.md)
+
+### used quited often
 ```text
 1. The CSS transition over property allows for simple animations.
    JS can use this property to easily animate elements (a bonus question for food pyramids).
@@ -23,8 +26,9 @@
         }, 2000);
     }
 ```
+
 ## Exercise
-#### we could use often in work:
+
 #### [pic sources](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/pics/JS+CSS)
 ### [Animation01： Seamless continuous rolling](#animation01)
 ### [Animation02： Carousel](#animation02)
@@ -490,4 +494,5 @@ to better the animation above
 </body>
 </html>
 ```
-###### [[back to list]](#exercise)
+###### [[back to exercise list]](#exercise)
+###### [[TOP]](#used-quited-often)
