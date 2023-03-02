@@ -1,38 +1,27 @@
-# Object
-####  this is the first part of the advanced start so that a complete understanding of ES6 (which makes extensive use of inheritance),
-#### and access to the framework, can be achieved.
-###### [java OBJ learning link](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/13OBJ-js.md)
-###### -------------------------------------
+# Object Junior
+
+#### [Back to OBJ Cata](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/14OBJlist.md)
+#### ———————————
+
 ### Understanding of OBJ
 [1. WHAT IS object](#what-is-object)
 
 [2. object method](#object-method)
-3. Traversal object
-4. Shallow copy and Deep copy
-#### Understanding the context of functions
-1. general 6 rules
-2. call and apply
+
+[3. Traversal object](#traversal-object)
+
+[4. Shallow copy and Deep copy](#shallow-copy-and-deep-copy)
+
+### Understanding the context of functions
+[1. General 6 rules](#general-6-rules-of-function-context)
+
+[2. Call and Apply](#call-and-apply-of-function-context)
 #### Creat Function
+
 1. 4 steps of new a function
 2. Construct a function
 3. Classes & Instances
-#### Prototype and prototype chains 
-1. prototype and prototype chain search
-2. Adding methods on prototype
-3. find the end of the prototype chain
-4. Inheritance
-##### Up to object-oriented（upcasting）
-case1.
-case2.
-##### Built-in objects in js
-1. Wapper class
-2. Math obj
-3. Date obj
-4. ##### Built-in objects and inheritance
-```text
 
-
-```
 
 
 ### What is Object
@@ -91,11 +80,317 @@ case2.
 2. A method is essentially a function, but is a function property of the object 
      and needs to be called by the object via 'obj.function()'；
 ```
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+    </style>
+</head>
+<body>
+  <script>
+      var peter = {//in JS, use{} to represent object
+          name : 'Peter',  //key: value ,   key for attributes(k:v pair)
+          age: 12,
+          gender: 'male',
+          hobbies:'Compiling',
+          'favourite-book':'harry potter' // if the keyname is not under js rules, '' to cover them
+          sayHello: function (){
+              console.log('hello world')
+          }
+      };
+      peter.sayHello();
+      //console.log();    Math.ceil()
+  </script>
+</body>
+</html>
+```
 [back to list](#understanding-of-obj)
 
-3. Traversal object
-
+#### Traversal object
+#### for (var k in obj)
+###### we have more methods in ES6
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+    </style>
+</head>
+<body>
+  <script>
+      var obj = {
+          a:11,
+          b:22,
+          c:88,
+          d:2
+      };
+      for (var key in obj) {
+          console.log('obj value'+ key+': '+obj[key]);
+      }
+  </script>
+</body>
+</html>
+```
 [back to list](#understanding-of-obj)
-4. Shallow copy and Deep copy
+### Shallow copy and Deep copy
+```text
+  1. Basic and reference types difference:
+    var a = b; BASIC will have new copy but REFERENCE is a point the same obj of b
+    ==;        BASIC is checking the value, REFERENCE is checking same address of obj
+  2. obj is also a reference type, so "=" will not work for clone, and '==,===' is checking add only
+```
+```
+  3. Shallow copy: forin
+```
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+    </style>
+</head>
+<body>
+    <script>
+        var obj1 = {
+            a:1,
+            b:2,
+            c:[44,55,66]
+        };
 
-[back to list](#understanding-of-obj)
+        var obj2 ;// no copy
+        for (const k in obj1) {
+            obj2[k]=obj1[k];
+        }
+    </script>
+</body>
+</html>
+```
+```text
+    4. Deep copy
+    recursion to get the obj by different value types
+```
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+    </style>
+</head>
+<body>
+    <script>
+        var obj1 = {
+            a:1,
+            b:2,
+            c:[55,66,{
+                m:33,
+                n:77,
+                p:[88,99]
+            }],
+            e:'miao'
+        };
+        // deepClone function
+        function deepClone(){
+            if(Array.isArray(0)){
+                //if array
+                var result = [];
+                for (let i = 0; i < o.length; i++) {
+                    result.push(deepClone(o[i]));
+                }
+            }else if(typeof o == 'object'){
+                //if obj
+                var result = {};
+                for (const k in o) {
+                    result[k]= deepClone(o[k]);
+                }
+            }else{
+                // if general value
+                var result = o;
+            }
+            return result;
+        }
+        var obj2 = deepClone(obj1);
+        console.log(obj2);
+    </script>
+</body>
+</html>
+```
+
+[back to list](#understanding-the-context-of-functions)
+
+### general 6 rules of function context
+```text
+this: means the attribute in the nearest field of this OBJ
+```
+DEMO of This
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+    </style>
+</head>
+<body>
+    <script>
+        var peter = {
+           name: 'peter',
+            age: 12,
+            sayHello: function () {
+                console.log('Hello, Myname '+this.name+'; IM '+this.age);
+            }
+        };
+        var sayHello = peter.sayHello();//collect the function as attribute and use as a value
+        sayHello();//then use directly
+ // if not declared it will not show:
+        var obj ={a:1,b:2,
+        fn:function () {
+            console.log(this.a+this.b);
+            //it will show nothing in console
+            console.log(this === window);
+        }
+        }
+        //show be used fn, then could show
+        var a =4; var b=9;
+        var fn = obj.fn;
+        fn();
+    </script>
+</body>
+</html>
+```
+```
+RULE One:   OBJ.FUNCTION()
+        In JS, functions are runtime contextual policies
+
+RULE Two: function()
+        will use the window obj, upcasting
+```
+InterviewQ--Rule1&Rule2
+```js
+    function fun(){
+    return this.a + this.b;
+}
+    var a = 1;
+    var b = 2;
+    var obj = {
+        a:3,
+        b:fun(),//rule 2
+        fun:fun
+    };
+    var result = obj.fun();//rule 1
+    console.log(resule);//out 6
+```
+```text
+RULE Three: arr[index]()
+            loop the function by text
+```
+InterviewQ--Rule3
+```js
+    var arr = ['A','B','C',function(){
+            console.log(this[0]);
+         }]
+        arr[3]();//rule3
+```
+```text
+RULE Four: function is LIFE
+            (function(){
+            
+            })()
+```
+InterviewQ--Rule4
+```js
+    var a =1;
+    var obj ={
+        a:2;
+        fun:(function(){
+            var a = this.a;
+            return function (){
+                console.log(a+this.a)
+            }
+        })()//rule4
+    };
+    obj.fun();//rule1
+    
+```
+
+```text
+RULE Five : setInterval(function,time)
+            setTimeout(function,time)
+            this use the global value in windows
+```
+InterviewQ--R5
+```js
+    var obj ={
+        a:1,
+        b:2,
+        fun:function (){console.log(this.a+this.b);}
+    }   
+    var a =3;
+    var b =4;
+    setTimeout(obj.fun,2000);//rule5
+    setTimeout(function (){
+        obj.fun();//rule1
+    },2000)
+```
+```text
+RULE Six : DOMELEMENT.onclick = function(){};
+            The event handler context is the DOM element to which the event is bound
+```
+InterviewQ--Rule6
+'Implement an effect where whichever box is clicked turns red, 
+requiring the same event handler to be used to implement it.'
+```js
+  <!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    div{
+    width: 200px;
+    height: 200px;
+    float: left;
+    border: 1px solid #000;
+    margin-right: 10px;
+}
+</style>
+</head>
+<body>
+    <div id="box1"></div>
+    <div id="box2"></div>
+    <div id="box3"></div>
+
+    <script>
+        function setColorToRed() {
+        // contest
+        var self = this;
+        setTimeout(function() {
+        self.style.backgroundColor = 'red';
+    }, 2000);
+    }
+
+        var box1 = document.getElementById('box1');
+        var box2 = document.getElementById('box2');
+        var box3 = document.getElementById('box3');
+
+        box1.onclick = setColorToRed;
+        box2.onclick = setColorToRed;
+        box3.onclick = setColorToRed;
+    </script>
+</body>
+</html>
+```
+[back to list](#understanding-the-context-of-functions)
+### call and apply of function context
+
+[[TOP]](#object-junior)
