@@ -20,8 +20,8 @@ study diary of CS skills
 
 ## :cloud: Web
 - [Html/CSS/JS/DOM/BOM](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/html:css:js.md)
-- [HTTP](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/http.md)
 - [ES6](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/ES6.md)
+- [HTTP](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/http.md)
 - [Vue.js](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/Vue_js.md)
 - [node.js](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/node_js.mda)
 - [MangoDB](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/MangoDB.md)

@@ -1,6 +1,7 @@
-# HTTP/DOM/BOM
+# HTTP
 ____________________________
 
 
-- [HTTP]()
-- 
+- Front-end and back-end interaction with HTTP 
+- Local Storage 
+- Ajax & Fetch and cross-domain requests
