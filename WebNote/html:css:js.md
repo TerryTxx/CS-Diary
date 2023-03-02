@@ -32,7 +32,7 @@ JS advanced:
 - [DOM of Events, Timing and Delay](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/10DOMEvents.md)
 - [Animation by JS+CSS](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/11Animation.md)
 - [BOM](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/12BOM.md)
-- [Object](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/14OBJlist.md)
+- [Object](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/140BJlist.md)
 
 ###### [(Java Object Learning)](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/stydyDiary.md)
 

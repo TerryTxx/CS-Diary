@@ -1,7 +1,7 @@
 # Object Junior
 
-#### [Back to OBJ Cata](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/14OBJlist.md)
-#### ———————————
+#### [Back to OBJ Catalogue](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/140BJlist.md)
+# ----------------------------
 
 ### Understanding of OBJ
 [1. WHAT IS object](#what-is-object)
@@ -12,18 +12,19 @@
 
 [4. Shallow copy and Deep copy](#shallow-copy-and-deep-copy)
 
+
 ### Understanding the context of functions
 [1. General 6 rules](#general-6-rules-of-function-context)
 
 [2. Call and Apply](#call-and-apply-of-function-context)
+
+
 #### Creat Function
+[1. Four steps of new a function](#four-steps-of-new-a-function)
 
-1. 4 steps of new a function
-2. Construct a function
-3. Classes & Instances
+[2. Classes & Instances](#classes--instances)
 
-
-
+# -------------------------
 ### What is Object
 ```text
 1. A collection of key-value pairs that represent a mapping relationship between attributes and values.
@@ -391,6 +392,60 @@ requiring the same event handler to be used to implement it.'
 </html>
 ```
 [back to list](#understanding-the-context-of-functions)
+
 ### call and apply of function context
+```text
+    function.call(context);
+    function.apply(context);
+```
+```html
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sum(){
+        alert(this.c + this.m+  this.e);
+    };
+        function sum2(b1,b2){
+        alter(this.c+this.m+this.e+b1+b2);
+    }
+        var peter = {
+        c:100,
+        m:90,
+        e:80
+    };
+        sum.call(peter);
+        sum.apply(peter);
+
+        sum2.call(peter,5,3);
+        sum2.call(peter,[5,3]);
+    </script>
+</body>
+</html>
+```
+[back to list](#understanding-the-context-of-functions)
+### Creat functions
+#### Four steps of new a function
+```text
+    use new to creat function in 4 steps:
+    new function()
+    s1: a blank obj auto created in the function body
+    s2: this in context/field of the function point to the obj
+    s3: the codes in the function will run auto
+    s4: the function will return to the context obj, even no return in it;
+```
+[back to list](#creat-function)
+#### Classes & Instances
+```text
+   like Dog is a class, Poppy is a Instance， WitePoppy is a Instance
+   
+   we will have details in ES6
+```
+
 
 [[TOP]](#object-junior)
