@@ -33,13 +33,6 @@ JS advanced:
 - [Animation by JS+CSS](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/11Animation.md)
 - [BOM](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/12BOM.md)
 - [Object](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/14OBJlist.md)
-- - [Understanding of OBJ](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/13OBJ.md)
-- - [Understanding the context of functions](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/13OBJ.md)
-- - [Creat Function](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/13OBJ.md)
-- - [Prototype and prototype chains](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/15OBJ2.md)
-- - [Up to object-oriented(upcasting)](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/15OBJ2.md)
-- - [Built-in objects in js](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/15OBJ2.md)
-- - [*Built-in objects and inheritance](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/15OBJ2.md)
 
 ###### [(Java Object Learning)](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/stydyDiary.md)
 

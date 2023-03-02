@@ -20,21 +20,30 @@
 #### Creat Function
 
 [1. 4 steps of new a function](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/13OBJ.md)
+
 [2. Construct a function](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/13OBJ.md)
+
 [3. Classes & Instances](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/13OBJ.md)
 
 #### Prototype and prototype chains
-1. prototype and prototype chain search
-2. Adding methods on prototype
-3. find the end of the prototype chain
-4. Inheritance
+[1. prototype and prototype chain search](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/15OBJ2.md)
+
+[2. Adding methods on prototype](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/15OBJ2.md)
+
+[3. find the end of the prototype chain](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/15OBJ2.md)
+
+[4. Inheritance](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/15OBJ2.md)
+
 ##### Up to object-oriented（upcasting）
-case1.
-case2.
+[case1.](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/15OBJ2.md)
+
+[case2.](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/15OBJ2.md)
 ##### Built-in objects in js
-1. Wapper class
-2. Math obj
-3. Date obj
-##### Built-in objects and inheritance
-```text
-```
+
+[1. Wapper class](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/15OBJ2.md)
+
+[2. Math obj](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/15OBJ2.md)
+
+[3. Date obj](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/15OBJ2.md)
+
+##### [Built-in objects and inheritance](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/15OBJ2.md)
