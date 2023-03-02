@@ -1,6 +1,5 @@
 # CS-NOTES
 study diary of CS skills
-谈潇旭/XiaoxuTan&copy;
 
 <br>
 
@@ -37,5 +36,4 @@ study diary of CS skills
 
 - [Java obj general](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/object-general.md)
 - [Java obj steps](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/studyDiary.md)
-
 
