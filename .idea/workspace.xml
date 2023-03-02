@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e8fc147b-984c-4faa-8bf9-7931f68677de" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/WebNote/12BOM.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebNote/pics/Screenshot 2023-03-01 at 20.23.41.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebNote/13OBJ.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebNote/111.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebNote/111.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebNote/12BOM.md" beforeDir="false" afterPath="$PROJECT_DIR$/WebNote/12BOM.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebNote/html:css:js.md" beforeDir="false" afterPath="$PROJECT_DIR$/WebNote/html:css:js.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +72,7 @@
       <workItem from="1677530823061" duration="2048000" />
       <workItem from="1677573825220" duration="1725000" />
       <workItem from="1677586869154" duration="1444000" />
-      <workItem from="1677588459578" duration="56972000" />
+      <workItem from="1677588459578" duration="67317000" />
     </task>
     <servers />
   </component>

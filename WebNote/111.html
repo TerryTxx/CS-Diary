@@ -4,116 +4,124 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
         }
-        .carousel{
-            width: 650px;
-            height: 360px;
-            border: 1px solid #000;
-            margin: 50px auto;
-            position: relative;
+        .content-part {
+            width: 1000px;
+            margin: 0px auto ;
+            margin-bottom: 30px;
+            background-color: gray;
+            font-size: 50px;
         }
-        .carousel ul{
+        .floornav {
+            position:fixed;
+            right: 40px;
+            top: 50%;
+            margin-top: -100px;
+            width: 120px;
+            height: 200px;
+            background-color: orange;
+        }
+        .floornav ul {
             list-style: none;
         }
-        .carousel ul li{
-            position: absolute;
-            top: 0;
-            left: 0;
-        /*    make all pic together and transparent, but first 1*/
-        /*    the animation is change the opacity one by one*/
-            opacity: 0;
-            transition: opacity .8s ease 0s;
+        .floornav ul li {
+            width: 120px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            font-size: 26px;
+        /*    cursor*/
+            cursor: pointer;
         }
-        .carousel ul li:first-child{
-            opacity: 1;
-        }
-
-        .carousel .leftbtn{
-            position: absolute;
-            left: 20px;
-            top: 50%;
-            margin-top: -25px;
-            width: 50px;
-            height: 50px;
-            background-color: grey;
-            border-radius: 50%;
-        }
-        .carousel .rightbtn{
-            position: absolute;
-            right: 20px;
-            top: 50%;
-            margin-top: -25px;
-            width: 50px;
-            height: 50px;
-            background-color: grey;
-            border-radius: 50%;
+        .floornav ul li.current{
+            background: purple;
+            color: wheat;
         }
     </style>
 </head>
 <body>
-    <div id="box" class="carousel">
+    <nav class="floornav">
         <ul id="list">
-            <li><img src="pics/JS+CSS/beijing/0.jpg" alt=""></li>
-            <li><img src="pics/JS+CSS/beijing/1.jpg" alt=""></li>
-            <li><img src="pics/JS+CSS/beijing/2.jpg" alt=""></li>
-            <li><img src="pics/JS+CSS/beijing/3.jpg" alt=""></li>
-            <li><img src="pics/JS+CSS/beijing/4.jpg" alt=""></li>
+
+            <li data-n="Science" class="current">Science</li>
+            <li data-n="Sports">Sports</li>
+            <li data-n="NEWS">NEWS</li>
+            <li data-n="Food">Food</li>
+            <li data-n="Video">Video</li>
         </ul>
+    </nav>
+    <section class="content-part" style="height: 674px;" data-n="Science">
+        Science
+    </section>
+    <section class="content-part" style="height: 567px;" data-n="Sports">
+        Sports
+    </section>
+    <section class="content-part" style="height: 343px;" data-n="NEWS">
+        NEWS
+    </section>
+    <section class="content-part" style="height: 733px;" data-n="Food">
+        Food
+    </section>
+    <section class="content-part" style="height: 244px;" data-n="Video">
+       Video
+    </section>
 
-        <a href="javascript:;" class="leftbtn" id="leftbtn"></a>
-        <a href="javascript:;" class="rightbtn" id="rightbtn"></a>
-    </div>
+  <script>
+      <!-- Event Delegation add listener of li-->
+      var list = document.getElementById('list');
+      var contentPart = document.querySelectorAll('.content-part');
+      var lis = document.querySelectorAll('#list li')
 
-    <script>
-    //get ul, and btn
-    var leftbtn = document.getElementById('leftbtn');
-    var rightbtn = document.getElementById('rightbtn');
-    var list = document.getElementById('list');
-    var lis = document.getElementsByTagName('li')// an array
-    // local value of current index
-    var idx =0;
+      list.onclick = function (e){
+          if(e.target.tagName.toLowerCase() == 'li'){
+              // getAttribute of data-n's attribute
+            //  alert(e.target.getAttribute('data-n'));
+              var n = e.target.getAttribute('data-n');
+              //so use attribute to find the same data-n's content part
+              var contentPart = document.querySelector('.content-part[data-n='+n+']');
+              // console.log(contentPart.offsetTOP);
 
-    //Throttling
-    var lock = true;
+              //Let the scrolling of the page be the offsetTop value of this box
+              document.documentElement.scrollTop = contentPart.offsetTop;
+          }
+      }
+      //Push the offsetTop values of all content-part boxes into the array after the page has loaded.
+    var arr = [];
+      var contentParts = document.querySelectorAll('.content-part');
 
-    //right btn listener
-    rightbtn.onclick =function (){
-        //Throttling check
-        if(!lock) return;
-        lock = false
-        // fade out the idx 0 pic
-        lis[idx].style.opacity = 0;
-        idx++;
-        if(idx > 4) idx =0;
-        // idx up, show the new pic
-        lis[idx].style.opacity = 1;
+      for (let i = 0; i < contentParts.length; i++) {
+          arr.push(contentParts[i].offsetTop);
+      }
+    //to compare the last of arr, push max
+      arr.push(Infinity);
+      //Function Throttle: now floor to check i and curr
+      var nowfloor = -1;
 
-        // reopen the lock, after the animation
-        setTimeout(function (){
-            lock = true;
-        },1000)
-    }
+      //Listening to window scrolling
+      window.onscroll = function (){
+          var scrollTop = document.documentElement.scrollTop;
+          for (let i = 0; i < contentParts.length; i++) {
+              if (scrollTop >= arr[i] && scrollTop < arr[i + 1]) {
+                  break;
+              }
+          }
 
-    //left is same of above
-    leftbtn.onclick =function (){
-        //Throttling check
-        if(!lock) return;
-        lock = false
-        // fade out the idx 0 pic
-        lis[idx].style.opacity = 0;
-        idx--;
-        if(idx <0) idx = 4;
-        // idx up, show the new pic
-        lis[idx].style.opacity =1;
+              if (nowfloor != i) {
+                  nowfloor = i;
 
-        // reopen the lock, after the animation
-        setTimeout(function (){
-            lock = true;
-        },1000)
-    }
+                  // set index i having cur
+                  for (let j = 0; j < lis.length; j++) {
+                      if(j==i){
+                          lis[j].className = 'current';
+                      }else{
+                          lis[j].className = '';
+                      }
+                  }
+              }
+      };
 
   </script>
 </body>
