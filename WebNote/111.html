@@ -4,125 +4,23 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-        .content-part {
-            width: 1000px;
-            margin: 0px auto ;
-            margin-bottom: 30px;
-            background-color: gray;
-            font-size: 50px;
-        }
-        .floornav {
-            position:fixed;
-            right: 40px;
-            top: 50%;
-            margin-top: -100px;
-            width: 120px;
-            height: 200px;
-            background-color: orange;
-        }
-        .floornav ul {
-            list-style: none;
-        }
-        .floornav ul li {
-            width: 120px;
-            height: 40px;
-            line-height: 40px;
-            text-align: center;
-            font-size: 26px;
-        /*    cursor*/
-            cursor: pointer;
-        }
-        .floornav ul li.current{
-            background: purple;
-            color: wheat;
-        }
     </style>
 </head>
 <body>
-    <nav class="floornav">
-        <ul id="list">
-
-            <li data-n="Science" class="current">Science</li>
-            <li data-n="Sports">Sports</li>
-            <li data-n="NEWS">NEWS</li>
-            <li data-n="Food">Food</li>
-            <li data-n="Video">Video</li>
-        </ul>
-    </nav>
-    <section class="content-part" style="height: 674px;" data-n="Science">
-        Science
-    </section>
-    <section class="content-part" style="height: 567px;" data-n="Sports">
-        Sports
-    </section>
-    <section class="content-part" style="height: 343px;" data-n="NEWS">
-        NEWS
-    </section>
-    <section class="content-part" style="height: 733px;" data-n="Food">
-        Food
-    </section>
-    <section class="content-part" style="height: 244px;" data-n="Video">
-       Video
-    </section>
-
   <script>
-      <!-- Event Delegation add listener of li-->
-      var list = document.getElementById('list');
-      var contentPart = document.querySelectorAll('.content-part');
-      var lis = document.querySelectorAll('#list li')
-
-      list.onclick = function (e){
-          if(e.target.tagName.toLowerCase() == 'li'){
-              // getAttribute of data-n's attribute
-            //  alert(e.target.getAttribute('data-n'));
-              var n = e.target.getAttribute('data-n');
-              //so use attribute to find the same data-n's content part
-              var contentPart = document.querySelector('.content-part[data-n='+n+']');
-              // console.log(contentPart.offsetTOP);
-
-              //Let the scrolling of the page be the offsetTop value of this box
-              document.documentElement.scrollTop = contentPart.offsetTop;
+//1. Assignment of attributes
+      var peter = {//in JS, use{} to represent object
+          name : 'Peter',  //key: value ,   key for attributes(k:v pair)
+          age: 12,
+          gender: 'male',
+          hobbies:'Compiling',
+          'favourite-book':'harry potter' // if the keyname is not under js rules, '' to cover them
+          sayHello: function (){
+              console.log('hello world')
           }
-      }
-      //Push the offsetTop values of all content-part boxes into the array after the page has loaded.
-    var arr = [];
-      var contentParts = document.querySelectorAll('.content-part');
-
-      for (let i = 0; i < contentParts.length; i++) {
-          arr.push(contentParts[i].offsetTop);
-      }
-    //to compare the last of arr, push max
-      arr.push(Infinity);
-      //Function Throttle: now floor to check i and curr
-      var nowfloor = -1;
-
-      //Listening to window scrolling
-      window.onscroll = function (){
-          var scrollTop = document.documentElement.scrollTop;
-          for (let i = 0; i < contentParts.length; i++) {
-              if (scrollTop >= arr[i] && scrollTop < arr[i + 1]) {
-                  break;
-              }
-          }
-
-              if (nowfloor != i) {
-                  nowfloor = i;
-
-                  // set index i having cur
-                  for (let j = 0; j < lis.length; j++) {
-                      if(j==i){
-                          lis[j].className = 'current';
-                      }else{
-                          lis[j].className = '';
-                      }
-                  }
-              }
       };
-
+      peter.sayHello();
+      //console.log();    Math.ceil()
   </script>
 </body>
 </html>

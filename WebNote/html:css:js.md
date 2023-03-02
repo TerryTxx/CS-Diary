@@ -1,5 +1,13 @@
 # HTML/CSS/JS/
+### general
+_________
 # DOM/BOM
+### basic
+________
+# Object
+### Not a traditional OOP language, but one that needs to be understood and familiarised with,
+
+________
 
 ### All texts are summarised and compiled by Xiaoxu Tan personally.
 #### Practice questions from [W3school](https://www.w3schools.com/)
