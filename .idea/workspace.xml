@@ -5,14 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e8fc147b-984c-4faa-8bf9-7931f68677de" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/WebNote/ES601.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebNote/ES602.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebNote/ES608.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebNote/ES609.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebNote/ES610.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebNote/pics/coding.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebNote/pics/inpackage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebNote/pics/install.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebNote/ES6.md" beforeDir="false" afterPath="$PROJECT_DIR$/WebNote/ES6.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebNote/ES608.md" beforeDir="false" afterPath="$PROJECT_DIR$/WebNote/ES608.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebNote/ES609.md" beforeDir="false" afterPath="$PROJECT_DIR$/WebNote/ES609.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebNote/ES610.md" beforeDir="false" afterPath="$PROJECT_DIR$/WebNote/ES610.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebNote/http.md" beforeDir="false" afterPath="$PROJECT_DIR$/WebNote/http.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,8 +62,9 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/WebNote" />
       <recent name="$PROJECT_DIR$/WebNote/pics" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/WebNote" />
       <recent name="$PROJECT_DIR$/WebNote/pics/JS+CSS" />
     </key>
   </component>
@@ -80,6 +81,9 @@
       <workItem from="1677586869154" duration="1444000" />
       <workItem from="1677588459578" duration="67317000" />
       <workItem from="1677746918043" duration="31938000" />
+      <workItem from="1677843595176" duration="2093000" />
+      <workItem from="1677851235803" duration="217000" />
+      <workItem from="1677851618834" duration="20969000" />
     </task>
     <servers />
   </component>
