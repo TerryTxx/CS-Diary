@@ -29,12 +29,12 @@ ____________________________
 - [Wrap Ajax](#wrap-ajax)
 - [Transforming wrapped Ajax using promise](#transforming-wrapped-ajax-using-promise)
 ### Ajax Application
-- [Search tips]
-- [Secondary Menu]
-- [Concurrent execution of multiple Ajax requests]
+- [Search tips](#search-tips)
+- [Secondary Menu](#secondary-menu)
+- [Concurrent execution of multiple Ajax requests](#concurrent-execution-of-multiple-ajax-requests)
 ### expands for Ajax
-- [axios]
-- [Fetch]
+- [axios](#axios)
+- [Fetch](#fetch)
 
 ---
 
