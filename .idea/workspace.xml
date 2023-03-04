@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8fc147b-984c-4faa-8bf9-7931f68677de" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/WebNote/Ajax.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebNote/Ajax&amp;Fetch.md" beforeDir="false" afterPath="$PROJECT_DIR$/WebNote/Ajax&amp;Fetch.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebNote/Vue_js.md" beforeDir="false" afterPath="$PROJECT_DIR$/WebNote/Vue_js.md" afterDir="false" />
-    </list>
+    <list default="true" id="e8fc147b-984c-4faa-8bf9-7931f68677de" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -81,7 +75,7 @@
       <workItem from="1677851618834" duration="21858000" />
       <workItem from="1677919892468" duration="12379000" />
       <workItem from="1677943972877" duration="8403000" />
-      <workItem from="1677960403898" duration="8997000" />
+      <workItem from="1677960403898" duration="9159000" />
     </task>
     <servers />
   </component>
