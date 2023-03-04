@@ -1,8 +1,8 @@
 # HTML/CSS/JS
-### general
+### General
 _________
 # DOM/BOM
-### basic
+### Basic
 ________
 # Object
 ### Not a traditional OOP language, but one that needs to be understood and familiarised with,
