@@ -1,13 +1,22 @@
 # HTTP
 ____________________________
+#### [Back to RootPage](https://github.com/TerryTxx/CS-Diary/blob/master/README.md)
+
+----
+#
+### [Front-end and back-end interaction with HTTP](#front-end-and-back-end-interaction-with-http)
+### [understand HTTP (just know)](#understand-http--just-know-)
+- [HTTP Method (just know)](#http-method)
+- [Get and Post difference (just know)](#get-and-post-difference)
+- [HTTP Statue Code (just know)](#http-code)
+###
 
 
-### HTTP
-- Front-end and back-end interaction with HTTP
-- [understand HTTP (just know)](#understand-http--just-know-)
-
+------
 
 #### Front-end and back-end interaction with HTTP
+![web-network.png](pics%2Fweb-network.png)
+when we click something, the network will start communicate, and by html and codes
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -28,7 +37,7 @@ ____________________________
       // User registration
 
       // 4. The process of front and back-end communication
-      // Communication between the front and back ends is done in a 'request-response' process
+      // communication between the front and back ends is done in a 'request-response' process
 
       // 5. Explanation of concepts
       // Front-end: the browser side
@@ -60,7 +69,7 @@ ____________________________
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Understan HTTP</title>
+    <title>Understand HTTP</title>
   </head>
   <body>
     <script>
@@ -89,14 +98,150 @@ ____________________________
 
       // GET request, there is no request body, the data is carried in the request header
       // POST request, with request body, data is carried in request body
+      // Front and back-end interactions are also detailed
 
       // Response
       // Response header: start line + first part
       // response body
-
-      Translated with www.DeepL.com/Translator (free version)
     </script>
   </body>
 </html>
 ```
-### [[back to list]](#http)
+### HTTP Method
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HTTP Method</title>
+  </head>
+  <body>
+    <script>
+      // 1. Common HTTP methods
+      // The method used by the browser to send the request, independent of the response
+
+      // GET, POST, PUT, DELETE
+
+      // Used to define what action to take on a resource, with their own semantics
+
+      // 2. Semantics of HTTP methods
+      // GET to get data
+      // Get a resource (file)
+
+      // POST to create data
+      // Register
+
+      // PUT Update data
+      // Modify personal information, change password
+
+      // DELETE Delete data
+      // Delete a comment
+
+      // add, delete, edit
+
+      // These methods have their own semantics, but they are not mandatory
+
+      // 3. RESTful interface design
+      // An interface design style that takes advantage of the semantics of HTTP methods
+
+      // Get personal information by user ID, using the GET method
+      // https://www.imooc.com/api/http/getUser?id=1
+
+      // GET
+      // https://www.imooc.com/api/http/user?id=1
+
+      // Registering a new user, using the POST method
+      // https://www.imooc.com/api/http/addUser
+
+      // POST
+      // https://www.imooc.com/api/http/user
+
+      // Modify a user, using the POST method
+      // https://www.imooc.com/api/http/modifyUser
+
+      // PUT
+      // https://www.imooc.com/api/http/user
+
+      // Delete a user, using the POST method
+      // https://www.imooc.com/api/http/deleteUser
+
+      // DELETE
+      // https://www.imooc.com/api/http/user
+    </script>
+  </body>
+</html>
+```
+### Get and Post difference
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>GET and POST difference</title>
+  </head>
+  <body>
+    <script>
+      // 1. Semantics
+      // GET: Get the data
+      // POST: creating data
+
+      // 2. Sending data
+      // GET carries data in the request header by means of an address
+      // The amount of data that can be carried depends on the length of the address, which is usually a few kilobytes at most
+
+      // POST can carry data both in the request header via the address and in the request body
+      // The amount of data that can be carried is theoretically unlimited
+
+      // A GET request can be used for small amounts of data, and a POST request can be used for large amounts of data
+
+      // 3. Caching
+      // GET can be cached, POST cannot be cached
+
+      // 4. Security
+      // ?username=alex
+      // Neither GET nor POST is secure
+
+      // Don't use GET when sending passwords or other sensitive information, mainly to avoid having your password snooped on directly or found through your history
+    </script>
+  </body>
+</html>
+```
+### HTTP Statue Code
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HTTP statue Code</title>
+  </head>
+  <body>
+    <script>
+      // 1. What is an HTTP status code
+      // Defines the result of the server's processing of the request, which is returned by the server
+
+      // 2. Semantics of HTTP status codes
+      // 100~199 messages: means the request has been accepted and needs to be processed further
+      // websocket
+
+      // 200~299 Success
+      // 200
+
+      // 300~399 Redirect
+      // http://www.google.com/
+      // https://www.google.com/
+
+      // 301 Moved Permanently
+      // 302 Move Temporarily
+
+      // 304 Not Modified
+
+      // 400~499 Request Error
+      // 404 Not Found
+
+      // 500~599 Server Error
+      // 500 Internal Server Error
+    </script>
+  </body>
+</html>
+```
+#### [[back to list]](#http)
