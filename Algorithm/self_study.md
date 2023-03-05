@@ -16,30 +16,23 @@ and the level of difficulty in understanding them, with leetcode for in-depth un
 
 ## Catalogue
 ### The Big O
-### Binary Sort
-- Basic logic
-- General question types
-- 1. Binary Index
-- 2. Binary answers
-- 3. Complex category
-### Basic Sort
-- Select
-- Insert
-- Shell
-### Advanced Sort
-- Merge
-- Quick
-### Non-comparative Search
-- Counting
-- Radix
-- Bucket
+### [Binary Sort](https://github.com/TerryTxx/CS-Diary/blob/master/Algorithm/BinarySort.md)
+
+### [Basic Sort](https://github.com/TerryTxx/CS-Diary/blob/master/Algorithm/BasicSort.md)
+
+
+### [Advanced Sort](https://github.com/TerryTxx/CS-Diary/blob/master/Algorithm/AdvancedSort.md)
+
+### [Non-comparative Search](https://github.com/TerryTxx/CS-Diary/blob/master/Algorithm/Non-ComparativeSearch.md)
+
 
 -------
-### Arrays
-### LinkedList
+### [Arrays](https://github.com/TerryTxx/CS-Diary/blob/master/Algorithm/Arrays.md)
+### [LinkedList](https://github.com/TerryTxx/CS-Diary/blob/master/Algorithm/LinkedList.md)
+
 ### Stacks and queues
 ### Priority queues
 ### Concurrent sets
-### Binary trees
+### [Binary trees](https://github.com/TerryTxx/CS-Diary/blob/master/Algorithm/BinaryTrees.md)
 ### Backtracking
 ### Dynamic planning

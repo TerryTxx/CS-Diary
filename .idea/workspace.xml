@@ -5,34 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e8fc147b-984c-4faa-8bf9-7931f68677de" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Algorithm/AdvancedSort.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algorithm/Arrays.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algorithm/BasicSort.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algorithm/BinarySort.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algorithm/BinaryTrees.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algorithm/LinkedList.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algorithm/Non-ComparativeSearch.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Algorithm/Exercises.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Algorithm/self_study.md" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/self_study.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java-OBJ/studyDiary.md" beforeDir="false" afterPath="$PROJECT_DIR$/Java-OBJ/studyDiary.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebNote/01html.md" beforeDir="false" afterPath="$PROJECT_DIR$/WebNote/01html.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebNote/02html.md" beforeDir="false" afterPath="$PROJECT_DIR$/WebNote/02html.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebNote/03CSS.md" beforeDir="false" afterPath="$PROJECT_DIR$/WebNote/03CSS.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebNote/04CSS.md" beforeDir="false" afterPath="$PROJECT_DIR$/WebNote/04CSS.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebNote/05CSS.md" beforeDir="false" afterPath="$PROJECT_DIR$/WebNote/05CSS.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebNote/06CSS.md" beforeDir="false" afterPath="$PROJECT_DIR$/WebNote/06CSS.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebNote/07CSS.md" beforeDir="false" afterPath="$PROJECT_DIR$/WebNote/07CSS.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebNote/08JS.md" beforeDir="false" afterPath="$PROJECT_DIR$/WebNote/08JS.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebNote/09DOM.md" beforeDir="false" afterPath="$PROJECT_DIR$/WebNote/09DOM.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebNote/10DOMEvents.md" beforeDir="false" afterPath="$PROJECT_DIR$/WebNote/10DOMEvents.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebNote/11Animation.md" beforeDir="false" afterPath="$PROJECT_DIR$/WebNote/11Animation.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebNote/12BOM.md" beforeDir="false" afterPath="$PROJECT_DIR$/WebNote/12BOM.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebNote/15OBJ2.md" beforeDir="false" afterPath="$PROJECT_DIR$/WebNote/15OBJ2.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebNote/Ajax&amp;Fetch.md" beforeDir="false" afterPath="$PROJECT_DIR$/WebNote/Ajax&amp;Fetch.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebNote/Ajax.md" beforeDir="false" afterPath="$PROJECT_DIR$/WebNote/Ajax.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebNote/ES601.md" beforeDir="false" afterPath="$PROJECT_DIR$/WebNote/ES601.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebNote/ES602.md" beforeDir="false" afterPath="$PROJECT_DIR$/WebNote/ES602.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebNote/ES608.md" beforeDir="false" afterPath="$PROJECT_DIR$/WebNote/ES608.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebNote/ES609.md" beforeDir="false" afterPath="$PROJECT_DIR$/WebNote/ES609.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebNote/ES610.md" beforeDir="false" afterPath="$PROJECT_DIR$/WebNote/ES610.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebNote/Vue_js.md" beforeDir="false" afterPath="$PROJECT_DIR$/WebNote/Vue_js.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebNote/html:css:js.md" beforeDir="false" afterPath="$PROJECT_DIR$/WebNote/html:css:js.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebNote/react_js.md" beforeDir="false" afterPath="$PROJECT_DIR$/WebNote/react_js.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebNote/Git.md" beforeDir="false" afterPath="$PROJECT_DIR$/WebNote/Git.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,24 +43,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Applications/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/WebNote/pics" />
@@ -108,6 +90,7 @@
       <workItem from="1677960403898" duration="9878000" />
       <workItem from="1678004375886" duration="4995000" />
       <workItem from="1678016976278" duration="1979000" />
+      <workItem from="1678020973352" duration="5007000" />
     </task>
     <servers />
   </component>

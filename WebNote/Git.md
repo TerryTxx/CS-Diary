@@ -17,5 +17,3 @@ For different features and interfaces, different branches will be arranged and i
 i.e. nodes for which we have records.
 Switch to Master, merge branches by nod
 ```
-
-
