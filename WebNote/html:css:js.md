@@ -5,14 +5,18 @@ _________
 ### Basic
 ________
 # Object
-### Not a traditional OOP language, but one that needs to be understood and familiarised with,
-
 ________
-
 ### [Back to RootPage](https://github.com/TerryTxx/CS-Diary/blob/master/README.md)
-### All texts are summarised and compiled by Xiaoxu Tan personally.
-#### Practice questions from [W3school](https://www.w3schools.com/)
 
+---
+
+#### Author: Tanxiaoxu
+#### Copyright © 2023, Tanxiaoxu
+(All texts are summarised and compiled by XiaoxuTan personally.)
+#### Exercises Source:  [W3school](https://www.w3schools.com/)
+
+
+---
 Basic:
 - [HTML](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/01html.md)
 - [HTML_Exercise](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/02html.md)

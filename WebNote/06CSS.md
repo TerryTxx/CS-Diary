@@ -235,3 +235,11 @@ DEMO:
 </html>
 
 ```
+
+---
+
+Copyright notice:
+
+Copyright © 2023, Tanxiaoxu
+Unauthorized copying or usage of the contents of this article is prohibited.
+

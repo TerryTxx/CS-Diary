@@ -1,6 +1,9 @@
 # CS-NOTES
 study diary of CS skills
 
+Author: Tanxiaoxu
+Copyright © 2023, Tanxiaoxu
+
 <br>
 
 |      &nbsp;&nbsp;Algorithm&nbsp;      |             &nbsp;Java_Object              | &nbsp;&nbsp;&nbsp;Web&nbsp;&nbsp;&nbsp; |     &nbsp;&nbsp;mySQL&nbsp;&nbsp;      |      Computer_System        | 
@@ -12,9 +15,8 @@ study diary of CS skills
 
 ## :pencil2:  Algorithm
 
+- [Study Schedule Diary](https://github.com/TerryTxx/CS-Diary/blob/master/Algorithm/self_study.md)
 - [Leetcode](https://github.com/TerryTxx/CS-Diary/blob/master/Algorithm/Leetcode.md)
-- [self_study](https://github.com/TerryTxx/CS-Diary/blob/master/Algorithm/self_study.md)
-- [Exercises](https://github.com/TerryTxx/CS-Diary/blob/master/Algorithm/Exercises.md)
 
 ## :computer: Computer_System
 
@@ -22,7 +24,7 @@ study diary of CS skills
 #### Full-Stack of Web
 
 ---
-#### Basic:
+#### Basic:(https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/html:css:js.md)
 - [Html/CSS/JS](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/html:css:js.md)
 - [DOM/BOM](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/html:css:js.md)
 - [ES6](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/ES6.md)
@@ -37,7 +39,8 @@ study diary of CS skills
 - [Vue.js](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/Vue_js.md)
 - [node.js](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/node_js.mda)
 - [MangoDB](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/MangoDB.md)
-- [react.js](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/react_js.md)
+- [TypeScript and react.js](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/react_js.md)
+- [MangoDB](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/Git.md)
 
 ## :floppy_disk: mySQL(to be updated)
 

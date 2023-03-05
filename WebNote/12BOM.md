@@ -347,3 +347,13 @@ DOM elements all have the offsetTop attribute, which identifies the vertical dis
 ```
 ###### [Back to Demo LIST](#------------------------------------------------------)
 ###### [[TOP]](#----------------------)
+
+
+---
+
+Copyright notice:
+
+Copyright © 2023, Tanxiaoxu
+Unauthorized copying or usage of the contents of this article is prohibited.
+
+

@@ -37,3 +37,11 @@
    (1) all about text: color, font, list, text, line
    (2) in extends , we don't need cal weight, but Proximity of the content
 ```
+
+---
+
+Copyright notice:
+
+Copyright © 2023, Tanxiaoxu
+Unauthorized copying or usage of the contents of this article is prohibited.
+
