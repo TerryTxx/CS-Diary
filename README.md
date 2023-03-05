@@ -3,9 +3,9 @@ study diary of CS skills
 
 <br>
 
-|      &nbsp;&nbsp;Algorithm&nbsp;      |             Computer_System             | &nbsp;&nbsp;&nbsp;Web&nbsp;&nbsp;&nbsp; |     &nbsp;&nbsp;mySQL&nbsp;&nbsp;      |        &nbsp;Java_Object       | 
+|      &nbsp;&nbsp;Algorithm&nbsp;      |             &nbsp;Java_Object              | &nbsp;&nbsp;&nbsp;Web&nbsp;&nbsp;&nbsp; |     &nbsp;&nbsp;mySQL&nbsp;&nbsp;      |      Computer_System        | 
 |:-------------------------------:|:---------------------------------------:|:---------------------------------------:|:--------------------------------:|:----------------------------------------:|
-| [:pencil2:](#pencil2-Algorithm) | [:computer:](#computer-Computer_System) |          [:cloud:](#cloud-Web)          | [:floppy_disk:](#floppy_disk-mySQL) | [:coffee:](#coffee-Java_Object) |
+| [:pencil2:](#pencil2-Algorithm) | [:coffee:](#coffee-Java_Object) |          [:cloud:](#cloud-Web)          | [:floppy_disk:](#floppy_disk-mySQL) | [:computer:](#computer-Computer_System) |
 
 <br>
 
@@ -19,9 +19,21 @@ study diary of CS skills
 ## :computer: Computer_System
 
 ## :cloud: Web
-- [Html/CSS/JS/DOM/BOM](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/html:css:js.md)
-- [HTTP](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/http.md)
+#### Full-Stack of Web
+
+---
+#### Basic:
+- [Html/CSS/JS](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/html:css:js.md)
+- [DOM/BOM](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/html:css:js.md)
 - [ES6](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/ES6.md)
+- [Babel and Webpack](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/ES610.md)
+----
+#### Front-end:
+- [front-end, back-end and HTTP](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/http.md)
+- [Cookie, storeLocal](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/Ajax&Fetch.md)
+- [Ajax & Fetch](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/Ajax.md)
+---
+#### Back-end:
 - [Vue.js](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/Vue_js.md)
 - [node.js](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/node_js.mda)
 - [MangoDB](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/MangoDB.md)
@@ -36,4 +48,6 @@ study diary of CS skills
 
 - [Java obj general](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/object-general.md)
 - [Java obj steps](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/studyDiary.md)
+
+
 
