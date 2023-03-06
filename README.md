@@ -15,8 +15,8 @@ Copyright © 2023, Tanxiaoxu
 
 ## :pencil2:  Algorithm
 
-- [Study Schedule Diary](https://github.com/TerryTxx/CS-Diary/blob/master/Algorithm/self_study.md)
-- [Leetcode](https://github.com/TerryTxx/CS-Diary/blob/master/Algorithm/Leetcode.md)
+#### [Study Schedule & Diary](https://github.com/TerryTxx/CS-Diary/blob/master/Algorithm/self_study.md)
+
 
 ## :computer: Computer_System
 
