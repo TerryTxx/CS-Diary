@@ -26,7 +26,7 @@ The interval can be understood as an invariant, we search for target by a while 
   i.e. in whiled single loop, this interval cannot be changed.
 ```
 Demo of codes: -- [left,right]
-```javascript
+```java
     left = 0;
     right = num.size -1 ;//1. as right coud be accessed
     while (left <= right){//2.!!! so it is a [left,right] interval, means left = right is OK
@@ -44,7 +44,7 @@ Demo of codes: -- [left,right]
     }return -1;
 ```
 Demo of codes: -- [left,right)
-```javascript
+```java
     left = 0;
     right = num.size ;//1. as right could not be accessed
     while (left < right){//2.!!! so it is a [left,right) interval, means left never equal right

@@ -21,25 +21,70 @@
 [4. Median of Two Sorted Arrays](#4-median-of-two-sorted-arrays)
 
 ### 704. Binary Search
-```javascript
+```java
+class Solution {
+    public int search(int[] nums, int target) {
+        int len = nums.length;
+        int left  = 0;
+        int right = len -1; //[left,right]
+        while(left <= right ){ //[left,right]
+          int mid = left+(right-left)/2;
+           if(nums[mid]==target){
+                return mid;
+           }else if(nums[mid]<target){
+                left = mid+1;
+           }else{ 
+            right = mid -1; 
+           }
+        }
+        return -1;
+    }
+}
 ```
 
 
 ### 153. Find Minimum in Rotated Sorted Array
     
-```javascript
-
+```java
+class Solution {
+    public int findMin(int[] nums) {
+        int min=Integer.MAX_VALUE;
+        for(int i=0;i<nums.length;i++){
+            if(nums[i]<min)
+            min=nums[i];
+        }
+        return min;
+    }
+}
 ```
 
 
 ### 154. Find Minimum in Rotated Sorted Array II
-```javascript
+```java
+class Solution {
+    public int findMin(int[] nums) {
+        int low = 0;
+        int high = nums.length-1;//[left,right]
 
+        while(low < high){//[low,high)
+            int mid = low + (high-low)/2;
+            if(nums[mid] < nums[high]){
+                high = mid;//for high is not accessable
+            }else if(nums[mid] > nums[high]){
+                low = mid +1;//skip index mid
+            }else{
+                high -= 1;//decending
+            }
+            
+        }return nums[low];
+    }
+}
 ```
 
 ### 33. Search in Rotated Sorted Array
 
 ```javascript
+
 
 ```
 
