@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e8fc147b-984c-4faa-8bf9-7931f68677de" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Algorithm/BinarySort.md" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/BinarySort.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Algorithm/treversalBT.md" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/treversalBT.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -85,7 +84,7 @@
       <workItem from="1678016976278" duration="1979000" />
       <workItem from="1678020973352" duration="5007000" />
       <workItem from="1678097581911" duration="136000" />
-      <workItem from="1678097786705" duration="10695000" />
+      <workItem from="1678097786705" duration="11124000" />
     </task>
     <servers />
   </component>

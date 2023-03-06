@@ -85,6 +85,16 @@ postorder:
 
 Pre-order traversal order: centre-left-right.
 Entry Stack order: centre-right-left
+```text
+   in stack entry first out later
+   in stack 
+      5 in    5 out
+    6,4 in    4 out
+    6,1,2 in  2 out
+    6,1       1 out
+              6 out
+  out value keep in array 5,4,2,1,6
+```
 ```java
 class Solution {
     public List<Integer> preorderTraversal(TreeNode root) {
