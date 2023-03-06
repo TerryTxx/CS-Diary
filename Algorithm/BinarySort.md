@@ -6,7 +6,7 @@
 - Basic Understanding and Usage
 - General question types
 - 1. [Binary Index](https://github.com/TerryTxx/CS-Diary/blob/master/Algorithm/leetcode/binaryIndex.md)
-- 2. [Binary answer]s(https://github.com/TerryTxx/CS-Diary/blob/master/Algorithm/leetcode/Binaryanswers.md)
+- 2. [Binary answers](https://github.com/TerryTxx/CS-Diary/blob/master/Algorithm/leetcode/Binaryanswers.md)
 - 3. [Binary complex conditions](https://github.com/TerryTxx/CS-Diary/blob/master/Algorithm/leetcode/ComplexBinary.md)
 
 ### Basic Understanding and Usage

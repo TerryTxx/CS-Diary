@@ -83,3 +83,81 @@ postorder:
          2   1
 ```
 
+Pre-order traversal order: centre-left-right.
+Entry Stack order: centre-right-left
+```java
+class Solution {
+    public List<Integer> preorderTraversal(TreeNode root) {
+        List<Integer> result = new ArrayList<>();
+        if (root == null){
+            return result;
+        }
+        Stack<TreeNode> stack = new Stack<>();
+        stack.push(root);
+        while (!stack.isEmpty()){
+            TreeNode node = stack.pop();
+            result.add(node.val);
+            if (node.right != null){
+                stack.push(node.right);
+            }
+            if (node.left != null){
+                stack.push(node.left);
+            }
+        }
+        return result;
+    }
+}
+```
+in-order traversal order: left-middle-right
+in stack order: left-right
+```java
+class Solution {
+    public List<Integer> inorderTraversal(TreeNode root) {
+        List<Integer> result = new ArrayList<>();
+        if (root == null){
+            return result;
+        }
+        Stack<TreeNode> stack = new Stack<>();
+        TreeNode cur = root;
+        while (cur != null || !stack.isEmpty()){
+           if (cur != null){
+               stack.push(cur);
+               cur = cur.left;
+           }else{
+               cur = stack.pop();
+               result.add(cur.val);
+               cur = cur.right;
+           }
+        }
+        return result;
+    }
+}
+```
+Post-order traversal order Left-Right-Middle
+Entry stack order: centre-left-right
+Out-stack order: centre-right-left
+finally flip result
+```java
+class Solution {
+    public List<Integer> postorderTraversal(TreeNode root) {
+        List<Integer> result = new ArrayList<>();
+        if (root == null){
+            return result;
+        }
+        Stack<TreeNode> stack = new Stack<>();
+        stack.push(root);
+        while (!stack.isEmpty()){
+            TreeNode node = stack.pop();
+            result.add(node.val);
+            if (node.left != null){
+                stack.push(node.left);
+            }
+            if (node.right != null){
+                stack.push(node.right);
+            }
+        }
+        Collections.reverse(result);
+        return result ;
+    }
+}
+```
