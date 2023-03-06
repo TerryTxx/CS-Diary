@@ -24,7 +24,7 @@ Copyright © 2023, Tanxiaoxu
 #### Full-Stack of Web
 
 ---
-#### Basic:(https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/html:css:js.md)
+#### [Basic:](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/html:css:js.md)
 - [Html/CSS/JS](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/html:css:js.md)
 - [DOM/BOM](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/html:css:js.md)
 - [ES6](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/ES6.md)
