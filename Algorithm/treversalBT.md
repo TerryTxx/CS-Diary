@@ -35,7 +35,7 @@ Steps:(by stack)
            ○   ○  
 ```
 preorder:
-```javascript
+```java
     //1. generally RootNode and Array; return void as paramater is in funcion already
             public void preorder(TreeNode root, List<Integer> result) 
     //2.  stop the recursion as root is null
@@ -48,7 +48,7 @@ preorder:
         preorder(root.right, result);//right
 ```
 inorder:
-```javascript
+```java
     //1. generally RootNode and Array; return void as paramater is in funcion already
             public void preorder(TreeNode root, List<Integer> result) 
     //2.  stop the recursion as root is null
@@ -61,7 +61,7 @@ inorder:
              inorder(root.right, list);
 ```
 postorder:
-```javascript
+```java
     //1. generally RootNode and Array; return void as paramater is in funcion already
             public void preorder(TreeNode root, List<Integer> result) 
     //2.  stop the recursion as root is null
