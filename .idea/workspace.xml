@@ -5,18 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e8fc147b-984c-4faa-8bf9-7931f68677de" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/WebNote/nodeJS.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebNote/nodeJS2.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebNote/pics/Post.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebNote/pics/add in file.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebNote/pics/getforBtoF.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebNote/pics/show in s2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebNote/pics/show in screen.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Algorithm/treversalBT.md" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/treversalBT.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebNote/Vue_js.md" beforeDir="false" afterPath="$PROJECT_DIR$/WebNote/Vue_js.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebNote/node_js.md" beforeDir="false" afterPath="$PROJECT_DIR$/WebNote/node_js.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebNote/nodeJS.md" beforeDir="false" afterPath="$PROJECT_DIR$/WebNote/nodeJS.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +92,8 @@
       <workItem from="1678132034274" duration="6380000" />
       <workItem from="1678139176427" duration="4760000" />
       <workItem from="1678144256449" duration="917000" />
-      <workItem from="1678145185406" duration="869000" />
+      <workItem from="1678145185406" duration="5900000" />
+      <workItem from="1678189657998" duration="5193000" />
     </task>
     <servers />
   </component>

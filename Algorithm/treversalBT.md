@@ -16,6 +16,7 @@
 
 ### [Non-recursive traversal](#non-recursive-traversals)
 
+### [Max. and min. depth]
 ----
 ### 2. BFS
 
@@ -188,3 +189,8 @@ class Solution {
     }
 }
 ```
+
+
+Max. depth
+
+

@@ -1,12 +1,27 @@
 ## Nodejs General
 
+----
+### Basic-
+#### What is Nodejs 
+###### js runtime powered by Chrome V8
+#### Installing
+- [download and install Nodejs](#download-and-using-nodejs-path)
+- [ Demo to set a server](#demo-to-set-a-server-)
+- [use npm](#use-npm)
+- [lodash](#lodash-)
+#### commonjs
+- #### [commonjs for module](#commonjs-usage)
+- #### [three level of commonjs](#three-levels-of-commonjs)
+- #### [Differences in commonjs and ES6module](#commonjs-and-es6modules)
+#### [Nodejs debug](#debug)
+#### [The difference between nodejs and js](#the-difference-nodejs-js)
 
-### What is Nodejs
-```   
- js runtime powered by Chrome V8
-```
+---
+### Advanced
 
-### download and install
+---
+
+### Download and using Nodejs path
 ```text
 ----check your versio
   tanxiaoxu@asahis-MacBook-Pro ~ % node -v
@@ -26,7 +41,7 @@
         15
 (To exit, press Ctrl+C again or Ctrl+D or type .exit)
 ```
-Demo to set a server:
+### Demo to set a server:
 ```text
     Last login: Mon Mar  6 23:01:32 on ttys000
     tanxiaoxu@asahis-MacBook-Pro ~ % ls
@@ -61,15 +76,150 @@ tanxiaoxu@asahis-MacBook-Pro test1 % ls
 index.js
 tanxiaoxu@asahis-MacBook-Pro test1 % node index.js
 ```
-use brower access to localhost:3000
+use brower access to localhost:3000:
+
 ![show in screen.png](pics%2Fshow%20in%20screen.png)
 ![show in s2.png](pics%2Fshow%20in%20s2.png)
+
+[[Back to list]](#basic-)
 ### use npm
 ```text
+tanxiaoxu@asahis-MacBook-Pro test1 % npm init 
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help init` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (test1) 
+version: (1.0.0) 
+description: test1 code demo
+entry point: (test1.js) 
+test command: 
+git repository: 
+keywords: 
+author: TerryTan
+license: (ISC) 
+About to write to /Users/tanxiaoxu/TXX/demo-code/test1/package.json:
+
+{
+  "name": "test1",     (the name you want to use can search in npm web in case of conflict)
+  "version": "1.0.0",
+  "description": "test1 code demo",
+  "main": "test1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "TerryTan",
+  "license": "ISC"
+}
+
+Is this OK? (yes) 
+tanxiaoxu@asahis-MacBook-Pro test1 % 
+```
+[[Back to list]](#basic-)
+### lodash:
+```text
+tanxiaoxu@asahis-MacBook-Pro test1 % npm i lodash --save
+
+up to date, audited 2 packages in 412ms
+
+found 0 vulnerabilities
+tanxiaoxu@asahis-MacBook-Pro test1 % 
+```
+```javascript
+{
+  "name": "test1-icon-demo01",
+  "version": "1.0.0",
+  "description": "test1 code demo",
+  "main": "test1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "TerryTan",
+  "license": "ISC",
+  "dependencies": {//will have
+    "lodash": "^4.17.21"
+  }
+}
+```
+```js
+    const _ = require('lodash')//commonjs
+    
+    const arr = [1,1,2]
+    const otherArr = _.concat(arr,4,5)
+    
+    console.log(otherArr)
+```
+[[Back to list]](#basic-)
+
+### commonjs usage
+```text
+Modularity in ES6
+export or export default
+import... . from...
+```
+```js
+function sum (a, b) {
+    return a + b
+}
+
+function test() {
+    console.log('this is test')
+}
+
+module.exports = {
+    sum,
+    test
+}
+```
+```js
+console.log('start...')
+
+const flag = true
+
+if (flag) {
+    const { sum, test } = require('./utils') // dynamic
+
+    test()
+
+    const res = sum(15, 30)
+    console.log(res)
+}
+```
+[[Back to list]](#basic-)
+### Three levels of commonjs
+```text
+Three levels
+The modules that come with nodejs
+Modules installed by npm
+Modules written by hand
+```
+
+### commonjs and ES6modules
+```text
+Introduced at common execution and is dynamic
+ES6 Module is introduced at packaging time and is static
+```
+### Why use modular
+```text
+Facilitates the development of multi-person projects, splitting modules and allowing for quick organisation and management of code.
+```
+[[Back to list]](#basic-)
+
+### Debug
+```text
+1. inspect debugging
+    Modify scripts, add inspect, then open the page and debug in chrome
+    Add debugger and restart the server to debug
+2. 
 
 ```
-### commonjs
+[[Back to list]](#basic-)
 
-### debug
-
-### the difference between nodejs and js
+### the difference nodejs js
+[[Back to list]](#basic-)
