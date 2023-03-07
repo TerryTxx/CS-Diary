@@ -185,8 +185,57 @@ url is: /favicon.ico
 
 
 ### Define router
-```text
+#### use method and url to define
+1. define a get-router
+```js
+const http = require('http');
 
+const server = http.createServer((req,res) => {//add req and res
+        const url = req.url
+        const method = req.method
+    //3. we donot need ?a=100
+        const path = url.split('?')[0]  // /api/list
+    // 1. console.log('url is ',url)
+    //   console.log('method is ', method)
+   // 2. if (url === '/api/list' && method ==='GET') {//url is  /api/list?a=100
+     if (path === '/api/list' && method ==='GET') {//url is  /api/list?a=100
+        res.end('this is list router')
+    }else{
+     res.end('404')}
+})
+
+server.listen(3000);//listen the http now
+console.log('http is listened now, http://localhost:3000')
+```
+2. define a post-router
+###### we can test post by postman
+```js
+const http = require('http');
+
+const server = http.createServer((req,res) => {//add req and res
+        const url = req.url
+        const method = req.method
+    //we donot need ?a=100
+        const path = url.split('?')[0]  // /api/list
+    //  console.log('url is ',url)
+    // console.log('method is ', method)
+   // if (url === '/api/list' && method ==='GET') {//url is  /api/list?a=100
+     if (path === '/api/list' && method ==='GET') {//url is  /api/list?a=100
+        res.end('this is list router')
+    }
+
+//1. the method is get, so postman needed to test post
+    // console.log('method is ', method)
+     if(path === '/api/create' && method == 'POST'){
+         res.end('this is create router')
+     }
+
+
+     res.end('404')
+})
+
+server.listen(3000);//listen the http now
+console.log('http is listened now, http://localhost:3000')
 ```
 
 [[Back to list]](#handling-http-with-nodejs)
