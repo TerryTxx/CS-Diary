@@ -62,7 +62,7 @@ server returns:
     data:{.....}
     message:"..."
 ```
-    
+
 #### 3. The front-end does not necessarily have only one server port.
 ```text
 what a webpage needs?

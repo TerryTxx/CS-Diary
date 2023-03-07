@@ -36,7 +36,7 @@ Copyright © 2023, Tanxiaoxu
 - [Ajax & Fetch](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/Ajax.md)
 ---
 #### Back-end:
-- [Back-end/Server knows](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/node_js.mda)
+- [Back-end/Server knows](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/server.md)
 - [Nodejs General](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/nodeJS.md)
 - [Nodejs Advanced](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/nodeJS2.md)
 - [MangoDB](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/MangoDB.md)
