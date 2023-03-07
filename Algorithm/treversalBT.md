@@ -3,26 +3,29 @@
 
 
 ### 1.DFS
+
 (pre-order traversal, mid-order traversal and post-order traversal are all DFS;)
 
-### [Recursion of Binary Tree](#recursion-of-binary-tree)
+### [Recursion of Binary Tree](#recursion-of-binary-trees)
 
-[preorder traversal: (leetcode 144)](#)
+[preorder traversal: (leetcode 144)](#preorder-recursion-)
 
-[inorder traversal: (leetcode 145)](#)
+[inorder traversal: (leetcode 94)](#inorder-recursion-)
 
-[postorder traversal: (leetcode 94)](#)
+[postorder traversal: (leetcode 145)](#postorder-recursion-)
 
-### [Non-recursive traversal](#)
+### [Non-recursive traversal](#non-recursive-traversals)
 
-
+----
 ### 2. BFS
+
+
 search line by line in tree, and circle by circle in graph;
 
 (Implementation by queue)
 
 -----
-### Recursion of Binary Tree
+### Recursion of Binary Trees
 Steps:(by stack)
 ```text
 1. Determining the parameters and return values of recursive functions.
@@ -34,10 +37,20 @@ Steps:(by stack)
              /\     
            ○   ○  
 ```
-preorder:
+
+```java
+class Solution {
+    public List<Integer> inorderTraversal(TreeNode root) {
+        List<Integer> result = new ArrayList<Integer>();
+        inorder(root, result);
+        return result;
+    }
+```
+
+#### preorder recursion:
 ```java
     //1. generally RootNode and Array; return void as paramater is in funcion already
-            public void preorder(TreeNode root, List<Integer> result) 
+           public void preorder(TreeNode root, List<Integer> result) {
     //2.  stop the recursion as root is null
             if (root == null) {
             return;
@@ -46,35 +59,38 @@ preorder:
         result.add(root.val);//middle******
         preorder(root.left, result);//left
         preorder(root.right, result);//right
+ }
 ```
-inorder:
+#### inorder recursion:
 ```java
     //1. generally RootNode and Array; return void as paramater is in funcion already
-            public void preorder(TreeNode root, List<Integer> result) 
+    public void inorder(TreeNode root, List<Integer> result) {
     //2.  stop the recursion as root is null
-            if (root == null) {
+        if (root == null) 
             return;
-            }
+        
     //3. left, middle,  right
-            inorder(root.left, list);
-              list.add(root.val);//******
-             inorder(root.right, list);
+        inorder(root.left, result);
+        result.add(root.val);//******
+        inorder(root.right, result);
+    }
 ```
-postorder:
+#### postorder recursion:
 ```java
-    //1. generally RootNode and Array; return void as paramater is in funcion already
-            public void preorder(TreeNode root, List<Integer> result) 
+ //1. generally RootNode and Array; return void as paramater is in funcion already
+       public void postorder(TreeNode root, List<Integer> result) {
     //2.  stop the recursion as root is null
             if (root == null) {
             return;
             }
-    //3.  left,  right,  middle
-        postorder(root.left, list);
-        postorder(root.right, list);
-        list.add(root.val);//*******
+       //3.  left,  right,  middle
+        postorder(root.left, result);
+        postorder(root.right, result);
+        result.add(root.val);//*******
+ }
 ```
 
-### Non-recursive traversal
+### Non-recursive traversals
 ```
               5
             /  \
@@ -95,6 +111,7 @@ Entry Stack order: centre-right-left
               6 out
   out value keep in array 5,4,2,1,6
 ```
+
 ```java
 class Solution {
     public List<Integer> preorderTraversal(TreeNode root) {
