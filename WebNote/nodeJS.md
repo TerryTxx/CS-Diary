@@ -16,8 +16,7 @@
 #### [Nodejs debug](#debug)
 #### [The difference between nodejs and js](#the-difference-nodejs-js)
 
----
-### Advanced
+
 
 ---
 
@@ -216,10 +215,30 @@ Facilitates the development of multi-person projects, splitting modules and allo
 1. inspect debugging
     Modify scripts, add inspect, then open the page and debug in chrome
     Add debugger and restart the server to debug
-2. 
-
+2. like breakpoint in java
 ```
-[[Back to list]](#basic-)
 
-### the difference nodejs js
+### the difference nodejs 
+```text
+    Both are in js syntax
+    
+    Front-end js using web API
+    DOM BOM events, Ajax etc
+    Front-end js is used in the browser environment and therefore not available
+    
+    nodejs uses the nodejs API
+```
+```js
+// const _ = require('lodash')
+
+// const arr = [1, 2, 3]
+// const otherArr = _.concat(arr, 4, 5)
+
+// console.log(otherArr) // [1, 2, 3, 4, 5]
+
+// in the terminal to recall this file, will have'window is not defined'
+console.log(window)
+// in the terminal to recall this file, will have'document is not defined'
+console.log(document)
+```
 [[Back to list]](#basic-)
