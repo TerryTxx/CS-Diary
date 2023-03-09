@@ -5,9 +5,11 @@
 - #### [How nodejs listens to http requests](#how-nodejs-listen-http)
 - #### [Request (req) and Response (res)](#req-and-res)
 - #### [Define router and usage](#define-router)
-- #### querystring
-- #### res returns data
-- #### Get the req body
+- #### [querystring and usage](#querystring)
+- ####  res returns data***
+- 1. [return json](#return-json)
+- 2. [return html](#return-html)
+- #### [Get the req body***](#get-the-req-body)
 
 
 
@@ -242,13 +244,267 @@ console.log('http is listened now, http://localhost:3000')
 
 
 ### querystring
+what is querystring
+```text
+in url,after ? are querystring, also called url parameters;
+& split, in the form of key=value, can continue to expand;
+```
+```javascript
+const http = require('http');
+const querystring = require('querystring')
+
+const server = http.createServer((req,res) => {//add req and res
+    const url = req.url
+    const method = req.method
+    //we donot need ?a=100
+    const path = url.split('?')[0]  // /api/list
+    const queryStr = url.split('?')[1]  // return querystring
+    //  console.log('url is ',url)
+    // console.log('method is ', method)
+
+
+    // check querystring
+    //const query = {}
+    // if(queryStr){
+    //     queryStr.split('&').forEach(item => {
+    //         //item like a=100
+    //         const key = item.split('=')[0]  //'a'
+    //         const val = item.split('=')[1]  //'100
+    //         query[key] = val  //{a:'100', b :'200'}
+    //     })
+    // }
+    const query = querystring.parse(queryStr||'')
+
+    console.log('query is ', query)
+    // if (url === '/api/list' && method ==='GET') {//url is  /api/list?a=100
+    if (path === '/api/list' && method ==='GET') {//url is  /api/list?a=100]
+        if(query.filterType === '1'){
+            res.end('this is a list router, all')
+        }
+        if(query.filterType === '2'){
+            res.end('this is a list router, only mine')
+        }
+        //   res.end('this is list router')
+    }
+//1. the method is get, so postman needed to test post
+    // console.log('method is ', method)
+    else if(path === '/api/create' && method == 'POST') {
+        res.end('this is create router')
+    }else {
+        res.end('404')
+    }
+})
+
+server.listen(3000);//listen the http now
+console.log('http is listened now, http://localhost:3000')
+```
+```text
+http is listened now, http://localhost:3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+http is listened now, http://localhost:3000
+query is  { a: '100', b: '200' }
+query is  {}
+```
+URL's hash could not return to server
+
+```text
+structured and unstructured
+
+Commonly used structured
+Strings are unstructured
+Objects and arrays are structured
+```
+
 [[Back to list]](#handling-http-with-nodejs)
 
-### res returns data
+
+### return json
+```js
+const http = require('http');
+const querystring = require('querystring')
+
+const server = http.createServer((req,res) => {
+    const url = req.url
+    const method = req.method
+    const queryStr = url.split('?')[1]
+    const path = url.split('?')[0]
+    const query = querystring.parse(queryStr||'')
+
+    if (path === '/api/list' && method ==='GET') {
+        const result = {
+            errno: 0,
+            data: [
+                {user: 'terry', content: 'board1'},
+                {user: 'jasmine', content: 'board2'}
+            ]
+        }
+        res.writeHead(200, {'Content-type': 'application/json'})
+        res.write(JSON.stringify(result))
+        res.end()
+        return;
+    }
+
+    if (path === '/api/create' && method === 'POST') {
+        const result = {
+            errno: 0,
+            message: 'working'
+        }
+        res.writeHead(200, {'Content-type': 'application/json'})
+        res.write(JSON.stringify(result))
+        res.end()
+        return
+    }
+
+    res.writeHead(404, {'Content-type': 'text/plain'})
+    res.end('404 Not Found')
+
+})
+
+server.listen(3000);//listen the http now
+console.log('http is listened now, http://localhost:3000')
+```
+### return html (use for pics,html,css)
+```js
+const http = require('http');
+const querystring = require('querystring')
+
+const server = http.createServer((req,res) => {
+    const url = req.url
+    const method = req.method
+    const queryStr = url.split('?')[1]
+    const path = url.split('?')[0]
+    const query = querystring.parse(queryStr||'')
+
+    // if (path === '/api/list' && method ==='GET') {
+    //     const result = {
+    //         errno: 0,
+    //         data: [
+    //             {user: 'terry', content: 'board1'},
+    //             {user: 'jasmine', content: 'board2'}
+    //         ]
+    //     }
+    //     res.writeHead(200, {'Content-type': 'application/json'})
+    //     res.write(JSON.stringify(result))
+    //     res.end()
+    //     return;
+    // }
+    //
+    // if (path === '/api/create' && method === 'POST') {
+    //     const result = {
+    //         errno: 0,
+    //         message: 'working'
+    //     }
+    //     res.writeHead(200, {'Content-type': 'application/json'})
+    //     res.write(JSON.stringify(result))
+    //     res.end()
+    //     return
+    // }
+
+    // res.writeHead(404, {'Content-type': 'text/plain'})
+    // res.end('404 Not Found')
+    res.writeHead(404, { 'Content-type': 'text/html' })
+    res.end(`
+        <!DOCTYPE html>
+        <html>
+           <head>
+            <tittle>404</tittle>
+          </head>
+          <body>
+            <h1>404 NOT FOUND</h1>
+          </body>
+        </html>
+    `)
+
+})
+
+server.listen(3000);//listen the http now
+console.log('http is listened now, http://localhost:3000')
+```
+
 [[Back to list]](#handling-http-with-nodejs)
 
 
 ### Get the req body
+- stream
+```text
+stream:  
+  back: res.end(...),will return as stream
+  front: browser will recognize the stream, and provide the file continuously
+```
+
+- how to get: 
+```js
+const http = require('http');
+const querystring = require('querystring')
+
+const server = http.createServer((req,res) => {
+    const url = req.url
+    const method = req.method
+    const queryStr = url.split('?')[1]
+    const path = url.split('?')[0]
+    const query = querystring.parse(queryStr||'')
+
+    if (path === '/api/list' && method ==='GET') {
+        const result = {
+            errno: 0,
+            data: [
+                {user: 'terry', content: 'board1'},
+                {user: 'jasmine', content: 'board2'}
+            ]
+        }
+        res.writeHead(200, {'Content-type': 'application/json'})
+        res.write(JSON.stringify(result))
+        res.end()
+        return;
+    }
+
+    if (path === '/api/create' && method === 'POST') {
+        const reqType = req.headers['content-type']
+        let bodyStr = ''
+        req.on('data', chunk => {//server to recognize stream
+            //chunk is stream's signal by chunck
+            bodyStr = bodyStr + chunk.toString()
+        })
+        req.on('end', () => {//recognize the stream is over
+            if(reqType === 'application/json'){
+                const body  = JSON.parse(bodyStr)
+                console.log('body is', body)
+            }
+            console.log('bodyStr is', bodyStr)
+            res.end('stream over')
+        })
+
+        //
+        //     const result = {
+        //         errno: 0,
+        //         message: 'working'
+        //     }
+        //     res.writeHead(200, {'Content-type': 'application/json'})
+        //     res.write(JSON.stringify(result))
+        //     res.end()
+        //     return
+        // }
+
+        // res.writeHead(404, {'Content-type': 'text/plain'})
+        // res.end('404 Not Found')
+        res.writeHead(404, {'Content-type': 'text/html'})
+        res.end(`
+        <!DOCTYPE html>
+        <html>
+           <head>
+            <tittle>404</tittle>
+          </head>
+          <body>
+            <h1>404 NOT FOUND</h1>
+          </body>
+        </html>
+    `)
+    }
+server.listen(3000);//listen the http now
+console.log('http is listened now, http://localhost:3000')})
+```
+
 [[Back to list]](#handling-http-with-nodejs)
 
 
