@@ -52,6 +52,7 @@ Copyright © 2023, Tanxiaoxu
 
 - [SQL learning](https://github.com/TerryTxx/CS-Diary/blob/master/mySQL/react_js.md)
 - [SQL exercise]
+- [noSQL:mongoDB](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/MangoDB.md)
 
 
 ## :computer: Computer_System
