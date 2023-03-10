@@ -40,7 +40,8 @@ Copyright © 2023, Tanxiaoxu
 - [Nodejs General](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/nodeJS.md)
 - [Nodejs Advanced](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/nodeJS2.md)
 - [Koa2 & MongoDB](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/MangoDB.md)
-- [TypeScript and react.js](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/react_js.md)
+- [TypeScript](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/react_js.md)
+- [react.js](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/reactjs.md)
 - [Git](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/Git.md)
 
 ## :floppy_disk: mySQL(to be updated)

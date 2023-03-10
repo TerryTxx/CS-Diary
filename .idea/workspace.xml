@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e8fc147b-984c-4faa-8bf9-7931f68677de" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/WebNote/reactjs.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebNote/MangoDB.md" beforeDir="false" afterPath="$PROJECT_DIR$/WebNote/MangoDB.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebNote/react_js.md" beforeDir="false" afterPath="$PROJECT_DIR$/WebNote/react_js.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +98,7 @@
       <workItem from="1678436180562" duration="1269000" />
       <workItem from="1678437488052" duration="1115000" />
       <workItem from="1678438607837" duration="2057000" />
-      <workItem from="1678451087583" duration="3924000" />
+      <workItem from="1678451087583" duration="13383000" />
     </task>
     <servers />
   </component>
