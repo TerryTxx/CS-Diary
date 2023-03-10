@@ -18,13 +18,17 @@ Copyright © 2023, Tanxiaoxu
 #### [Study Schedule & Diary](https://github.com/TerryTxx/CS-Diary/blob/master/Algorithm/self_study.md)
 
 
-## :computer: Computer_System
+## :coffee: Java Object
+
+- [Java obj general](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/object-general.md)
+- [Java obj steps](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/studyDiary.md)
+
 
 ## :cloud: Web
 #### Full-Stack of Web
 
 ---
-#### [Basic:](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/html:css:js.md)
+#### Basic:
 - [Html/CSS/JS](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/html:css:js.md)
 - [DOM/BOM](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/html:css:js.md)
 - [ES6](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/ES6.md)
@@ -34,23 +38,23 @@ Copyright © 2023, Tanxiaoxu
 - [front-end, back-end and HTTP](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/http.md)
 - [Cookie, storeLocal](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/Ajax&Fetch.md)
 - [Ajax & Fetch](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/Ajax.md)
+- [TypeScript](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/react_js.md)
+- [react.js](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/reactjs.md)
 ---
 #### Back-end:
-- [Vue.js](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/Vue_js.md)
-- [node.js](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/node_js.mda)
-- [MangoDB](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/MangoDB.md)
-- [TypeScript and react.js](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/react_js.md)
-- [MangoDB](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/Git.md)
+- [Back-end/Server knows](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/server.md)
+- [Nodejs General](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/nodeJS.md)
+- [Nodejs Advanced](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/nodeJS2.md)
+- [Koa2 & MongoDB](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/MangoDB.md)
+- [Git](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/Git.md)
 
 ## :floppy_disk: mySQL(to be updated)
 
 - [SQL learning](https://github.com/TerryTxx/CS-Diary/blob/master/mySQL/react_js.md)
 - [SQL exercise]
+- [noSQL:mongoDB](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/MangoDB.md)
 
-## :coffee: Java Object
 
-- [Java obj general](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/object-general.md)
-- [Java obj steps](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/studyDiary.md)
-
+## :computer: Computer_System
 
 
