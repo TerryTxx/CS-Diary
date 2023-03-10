@@ -8,7 +8,13 @@
 - [install](#mongodb-installing)
 - [mongoDB compass usage](#mongodb-compass)
 - [know the console command line to operate](#use-the-console-command-line-to-operate)
-- [nodejs connect mongoDB]
+### just know nodejs connect mongoDB
+###### (mongose is quite more used)
+- [MongoDB NPM plug-in](#nodejs-connect-mongodb)
+### mongoose
+- [schema and model](#schema-and-model)
+- [model basic data](#model-basic-data)
+- [Improve the route of the message board](#improve-the-route-of-the-message-board)
 
 
 ----
@@ -142,6 +148,7 @@ We got two customers, both of which have unique IDs
 ![Screenshot 2023-03-10 at 08.49.46.png](pics%2FScreenshot%202023-03-10%20at%2008.49.46.png)
 
 ### Use the console command line to operate
+start and in mongo
 ```text
 > show dbs
 admin   0.000GB
@@ -158,3 +165,275 @@ users
 { "_id" : ObjectId("640aeef4daf79c497ec1e040"), "unsername" : "Marry", "password" : "abc", "age" : "25", "city" : "Parise" }
 > 
 ```
+[[back to list]](#mongodb)
+### nodejs connect mongoDB
+connect directly
+```js
+const MongoClient = require('mongodb').MongoClient;
+
+const url = 'mongodb://localhost:27017';
+const dbName = 'demo';
+
+MongoClient.connect(url, {
+    useUnifiedTopology: true,
+    useNewUrlParser: true,
+}, (err, client) => {
+    if (err) {
+        console.error('连接 MongoDB 失败', err);
+        return;
+    }
+    console.log('连接 MongoDB 成功');
+
+    const db = client.db(dbName);
+    const usersCollection = db.collection('user');
+
+    usersCollection.findOne({username: 'Marry'}, (err, user) => {
+        if (err) {
+            console.error('查询数据失败', err);
+            return;
+        }
+        console.log('该用户数据：', user);
+        client.close();
+    });
+});
+
+```
+
+[[back to list]](#mongodb)
+
+###### why mongoos: Reasons for use, mongodb is too flexible
+### schema and model
+```
+schema specification data format
+model specification collection
+API that regulates data manipulation
+```
+```js
+// connect db（mongodb server）
+
+const mongoose = require('mongoose')
+
+const url = 'mongodb://localhost:27017'
+const dbName = 'comment2'
+
+mongoose.set('useCreateIndex', true)
+mongoose.set('useFindAndModify', true)
+
+// start
+mongoose.connect(`${url}/${dbName}`, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+})
+
+const conn = mongoose.connection
+
+conn.on('error', err => {
+    console.error('mongoose 连接出错', err)
+})
+
+module.exports = mongoose
+```
+[[back to list]](#mongodb)
+#### shecma module:
+```js
+// data module（data format）
+
+const mongoose = require('./db')
+
+// name Schema （specify data format）
+const UserSchema = mongoose.Schema({
+    username: {
+        type: String,
+        required: true, // must
+        unique: true // unique no duplicate
+    },
+    password: String,
+    age: Number,
+    city: String,
+    // gender
+    gender: {
+        type: Number,
+        default: 0 // 0 - secret，1 male，2 female
+    }
+}, {
+    timestamps: true // timestamp autofill text update time
+})
+
+//  User Model
+const User = mongoose.model('user', UserSchema)
+
+//  Comment Schema
+const CommentSchema = mongoose.Schema({
+    content: {
+        type: String,
+        required: true // must
+    },
+    username: String
+}, { timestamps: true })
+
+//  Comment Model
+const Comment = mongoose.model('comment', CommentSchema)
+
+module.exports = {
+    User,
+    Comment
+}
+```
+### model basic data
+test1
+```js
+// use module
+
+const { User } = require('./model')
+
+// get async function，and run。for await inside
+!(async () => {
+
+// new data- 1
+//     const peter = new User({
+//         username: 'Peter',
+//         password: 'abc',
+//         age: 20,
+//         city: 'Londom',
+//         gender: 1
+//     })
+//     peter.save()
+
+//
+    //new data- 2
+//     const lici = await User.create({
+//         username: 'lici',
+//         password: '123',
+//         age: 23,
+//         city: 'Dublin'
+//     })
+//     console.log('lici created', lici)
+// })()
+//     // // search data, return array
+//     const userList = await User.find({ username: 'Peter' })
+//     //const usersList = await User.find().sort({ _id: -1 })
+//     console.log('userList is: ', userList)
+//
+//
+//     const user = await User.findOne({ username: 'Peter' })
+//     console.log('user select', user)
+ })()
+```
+test2
+```js
+//use model to operate
+
+const { User } = require('./model')
+
+// name async function，run for await
+!(async () => {
+    // // update
+    // const updateResult = await User.findOneAndUpdate(
+    //     { username: 'Peter' }, // fliter to change
+    //     { age: 30 }, // update content
+    //     {
+    //         new: true // return data updated
+    //     }
+    // )
+    // console.log('result', updateResult)
+
+    // delete
+    // const removeResult = await User.remove({ username: 'lici' })
+    // console.log('deleted: ', removeResult)
+})()
+```
+[[back to list]](#mongodb)
+
+
+### Improve the route of the message board
+in model
+```js
+// data module（data format）
+
+const mongoose = require('./db')
+
+// name userSchema （specify data format）
+const UserSchema = mongoose.Schema({
+    username: {
+        type: String,
+        required: true, // must
+        unique: true // unique no duplicate
+    },
+    password: String,
+    age: Number,
+    city: String,
+    // gender
+    gender: {
+        type: Number,
+        default: 0 // 0 - secret，1 male，2 female
+    }
+}, {
+    timestamps: true // timestamp autofill text update time
+})
+
+//  UserModel
+const User = mongoose.model('user', UserSchema)
+
+//  Comment Schema
+const CommentSchema = mongoose.Schema({
+    content: {
+        type: String,
+        required: true // must
+    },
+    username: String
+}, { timestamps: true })
+
+//  Comment Model
+const Comment = mongoose.model('comment', CommentSchema)
+
+module.exports = {
+    User,
+    Comment
+}
+```
+in router
+```js
+const router = require('koa-router')()
+const { Comment } = require('../db/model')
+const loginCheck = require('../middlewares/loginCheck')
+
+router.prefix('/api')
+
+// Define the route: Simulate getting the list of message boards
+router.get('/list', loginCheck, async (ctx, next) => {
+    const query = ctx.query // req function
+    console. log('query', query)
+    // ctx.body = 'api list' // res function
+
+    // Get a list of databases
+    const commentList = await Comment. find(). sort({ _id: -1 })
+
+    ctx. body = {
+        errno: 0,
+        data: commentList
+    }
+})
+
+// Define routing: simulate creating a message
+router. post('/create', async (ctx) => {
+    const body = ctx. request. body // request body
+    console. log('body', body)
+
+    // retrieve data
+    const { content, username } = body
+    // insert into database
+    const newComment = await Comment. create({
+        content,
+        username
+    })
+
+    ctx. body = {
+        errno: 0,
+        message: 'success',
+        data: newComment
+    }
+})
+
+module.exports = router // output
+```
+[[back to list]](#mongodb)
