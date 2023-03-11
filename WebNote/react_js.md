@@ -1,5 +1,8 @@
 # TypeScript & react.js
 
+#### [Back to RootPage](https://github.com/TerryTxx/CS-Diary/blob/master/README.md)
+
+----
 ### TypeScript
 ###### es5 and es6,7,8 and decorator
 ### basic data type
@@ -22,20 +25,20 @@
 - [Generics usage](#generics)
 
 ---
-### typeScript and Advanced
-- [TypeGuards]
-- [FunctionOverloading]
-- [CallSignatures]
-- [IndexSignatures]
-- [readonly]
-- [DoubleAssertion]
-- [constAssertion]
-- [this]
-- [typeof operator]
-- [keyof operator
-- [lookuptypes]
-- [MappedTypes]
-- [MappedModifier]
+### typeScript Advanced
+- [TypeGuards](#typeguards)
+- [Function Overloading](#functionoverloading)
+- [Call Signatures](#callsignatures)
+- [Index Signatures](#indexsignatures)
+- [readonly](#readonly)
+- [Double Assertion](#doubleassertion)
+- [const Assertion](#constassertion)
+- [this usage](#this-usage)
+- [typeof operator](#typeof-operator)
+- [keyof operator](#keyof-operator)
+- [lookup types](#lookuptypes)
+- [Mapped Types](#mappedtypes)
+- [Mapped Modifier](#mappedmodifier)
 ---
 
 ### TypeScript
@@ -305,3 +308,414 @@ const v2 = makeTuple<boolean,number>(true , 1);
 ```
 [[back to list]](#typescript)
 
+---
+### TypeGuards
+```typescript
+type Square ={
+    size:number;
+};
+type Rectangle = {
+    width: number;
+    hight: number;
+};
+type Shape = Square | Rectangle;
+//
+//function ifSquare(shape: Shape):boolean {
+function ifSquare(shape: Shape):shape is Square {
+    return "size" in shape;
+}
+//function ifRectangle(shape :Shape):boolean{
+function ifRectangle(shape :Shape):shape is Rectangle{
+    return "size" in shape;
+}
+
+function area(shape:Shape){
+    //if("size" in shape){
+    if(ifSquare(shape)){
+        return shape.size * shape.size;
+    }
+   // if ("width" in shape){
+    if(ifRectangle(shape)){
+        return shape.width * shape.width;
+    }
+}
+```
+
+### FunctionOverloading
+```typescript
+//demo1
+    function reverse(string: string):string;
+    function reverse(array: string[]):string[];
+    // ts should compile by overload ,as run still by js
+    function reverse(stringOrArray: string | string[]){
+        if (typeof stringOrArray == "string") 
+            return stringOrArray.split("").reverse().join("");
+        else
+            return stringOrArray.slice().reverse()
+    }
+    const hello = reverse("hello")
+    const helloa = reverse(['h','e','l','l','o'])//both string if not overload
+
+//demo2
+    function makeDate(timestamp:number):Date;
+    function makeDate(year:number,month:number,day:number);
+    
+    function makeDate(timeStampOrYear: number, month?:number, day?:number){
+        if(month != null && day!=null)
+            return new Date(timeStampOrYear,month-1,day);
+        else
+            return new Date(timeStampOrYear);
+    }
+    const day1 = makeDate(2023,03,10);
+    const day2 = makeDate(1234567789);
+    const day33 = makeDate(2021,1);//error, if not overload
+```
+[[back to list]](#typescript-advanced)
+
+### CallSignatures
+
+```typescript
+type//interface
+    Add = {//(a:number,b:number) =>number;
+    (a: number, b: number): number;
+    //(a:number,b:number,c:number) :number;
+    //debugName: string;
+}
+
+const add: Add = (a: number, b: number) => {
+    return a + b;
+};
+//const add:Add = (a:number, b:number, c?:number) => {return a+b+(c != null?c:0); };
+//add.debugName="apendex thing"
+
+// new function
+type Point = {//new (x:number,y:number) =>{x: number,y:number};
+    new (x:number,y:number) :{x: number,y:number};
+    new (x:number,y:number,z:number) :{x: number,y:number,z:number};
+}
+const point = class {
+    constructor(public x: number, public y:number,public z?:number) {}
+};
+```
+### IndexSignatures
+```typescript
+const obj = {
+    hello:"world",
+};
+const ddd = obj["hello"];//world
+
+////////////////
+const nums ={
+    1234:"leet",
+}
+console.log(nums[1234]);//leet
+
+//demo
+type Dictionary = {
+    [key:string]:any;
+};
+type Person = {
+    name: string;
+    email:string;
+};
+type PersonDictionary ={
+    [username:string]: Person;
+};
+const persons:PersonDictionary = {
+    terry:{
+        name:"Terry",
+        email:"terry@123.com"
+    },
+    marry:{
+        name:"marry",
+        email:"marry@123.com"
+    },
+}
+
+const terry = persons["terry"]
+persons["ddd"]={
+    name:"Terry2",
+    email:"terry2@123.com"
+};
+delete persons["terry"]
+
+//caution!!!
+const abc = persons["missing"]//undifined
+abc.name // ts will still work!!!!
+```
+[[back to list]](#typescript-advanced)
+
+### readonly
+```typescript
+function reverseSorted(input:number[]):number[]{
+    return input.sort().reverse();
+}
+const started = [1,2,3,4,5]
+const result = reverseSorted(started)
+
+//side-effect
+//pure function return what we want, 
+//side-effect return nothing to do with the function
+//AJAX mix dom, even console.log in most function
+
+//so change the function above
+function reverseSorted(input:readonly number[]):number[]{
+  //1  return input.slice().sort().reverse();
+  //2.
+    return [...input].sort().reverse()
+}
+```
+[[back to list]](#typescript-advanced)
+
+### DoubleAssertion
+```typescript
+type Point2D = {x:number, y:number};
+type Point3D = {x:number, y:number, z:number};
+type Person = {name:string; email:string};
+
+let point2:Point2D = {x:0,y:0};
+let point3:Point3D = {x:10,y:10,z:10};
+let person:Person ={name:"terry",email:"terry@123.com"};
+
+point2 = point3;
+//point3 = point2; wrong
+point3 = point2 as Point3D//cheat ts by assertion, but not good operation
+
+// person = point3;//error
+// person3 = person//error
+point3 = person as any as Point3D
+```
+### constAssertion
+```typescript
+//const
+ let  king = "elvis"
+//js ,string is immutable
+king = 'terry'
+
+```
+[[back to list]](#typescript-advanced)
+### this usage
+usage with the context in the js
+```typescript
+function double() {
+    this.value = this.value*2
+}
+const vaild = {
+    value:10,
+    double,
+};
+vaild.double();
+vaild.value//20
+
+const invaild={
+    valve : 10,//wrong here
+    double,
+}
+invaild.double()//still run
+
+// so we change the double in case of mistakes
+function double(this:{value:number}) {//should be the first paramater
+    this.value = this.value*2
+}//will find the problem in invaild function
+```
+[[back to list]](#typescript-advanced)
+### typeof operator
+```typescript
+//demo1
+const center ={
+    x:0,
+    y:0,
+    z:0
+};
+// type Point ={
+//     x:number;
+//     y:number;
+//     z:number
+// }
+
+type Point = typeof center;
+
+const unit:Point = {
+    x: center.x+1,
+    y:center.y+1,
+    z:center.z+1
+};
+
+//demo2
+const personResponse = {
+    name:"Terry",
+    email:"terry@123.com",
+    firstName:"xiaoxu",
+    lastName:"tan"
+};
+type PersonResponse = typeof personResponse;
+
+function porcess(person: typeof personResponse){
+    console.log("name",person.firstName,person.lastName)
+}
+```
+### keyof operator
+```typescript
+type Person = {
+    name:string;
+    age:number;
+    location:string;
+}
+const terry : Person ={
+    name:"Terry",
+    age:18,
+    location:"Paris"
+}
+function getValueByKey(obj:any, key:string){
+    const value = obj[key];
+    return value;
+}
+const age = getValueByKey(terry,"age");
+//the function is dangerous
+const email = getValueByKey(terry,"age");//????
+
+//so:
+type PersonKey = keyof Person
+function getValueByKey<Obj,Key extends keyof Obj>(obj:Obj, key: Key){
+    const value = obj[key];
+    return value;
+}
+function setValueKey  <Obj,Key extends keyof Obj>(
+    obj:Obj, 
+    key: Key,
+    value:Obj[key]
+){
+    obj[key] = value;
+}
+```
+[[back to list]](#typescript-advanced)
+### lookuptypes
+```typescript
+// a demo we received from server
+// We'll re-match the backend data
+// reanctionID   USER    
+export type RequestData = {
+  transactionId: string;
+  user: {
+    name: string;
+    email: string;
+    phone: string;
+    nickname: string;
+    gender: string;
+    dob: string;
+    nationality: string;
+    address: {
+      stress: string;
+      unitNumber: string;
+      city: string;
+      provance: string;
+      contury: string;
+    }[];
+  };
+  dirverInfo: {
+    licenceNumber: string;
+    exporyDate: string;
+    classes: string;
+    status: string;
+  };
+  payment: {
+    creditCardNumber: string;
+  };
+  //   payment: PaymentRequest
+};
+```
+```typescript
+//1. get creditCardNo:
+// type PaymentRequest = {
+//   creditCardNumber: string;
+// };
+type PaymentRequest = RequestData["payment"];
+
+// export function getPayment(): PaymentRequest {
+//   return {
+//     creditCardNumber: "1234567890",
+//   };
+// }
+export function getPayment(): RequestData["payment"] {
+  return {
+    creditCardNumber: "1234567890",
+  };
+}
+
+export function getAddress(): RequestData["user"]["address"][0] {
+  return {
+    stress: "maynooth",
+    unitNumber: "no1",
+    city: "Dublin",
+    provance: "Killdare",
+    contury: "Ireland",
+  };
+}
+```
+### MappedTypes
+```typescript
+type Point = {
+  x: number;
+  y: number;
+  z: number;
+};
+
+// type ReadonlyPoint = {
+//   readonly x: number;
+//   readonly y: number;
+//   readonly z: number;
+// };
+
+type ReadonlyPoint = {
+  readonly [item in keyof Point]: Point[item];
+};
+
+export type ReadOnly<T> = {
+  // [item in Union] : Output
+  // readonly [item in "x" | "y" | "z"]: number;
+  readonly [item in keyof T]: T[item];
+};
+
+// const center: Point = {
+const center: ReadOnly<Point> = {
+  x: 0,
+  y: 0,
+  z: 0,
+};  
+
+center.x = 100;
+```
+### MappedModifier
+```typescript
+type Point = {
+  readonly x: number;
+  y?: number;
+};
+
+type Mapped<T> = {
+  -readonly // readonly [P in keyof T]: T[P]
+  [P in keyof T]-?: T[P];
+};
+
+type Result = Mapped<Point>;
+
+
+//////////////
+
+export class State<T> {
+  constructor(public current: T) {}
+  //  update(next: T){
+  update(next: Partial<T>) {
+    this.current = { ...this.current, ...next };
+  }
+}
+
+export type Partial<T> = {
+    [P in keyof T]?: T[P];
+};
+
+const state = new State({ x: 0, y: 0 });
+state.update({ y: 123 });
+console.log(state.current);
+```
+[[back to list]](#typescript-advanced)

@@ -1,6 +1,9 @@
 # ES6
 From here, the basic concept is translated into the project development phase
 
+#### [Back to RootPage](https://github.com/TerryTxx/CS-Diary/blob/master/README.md)
+
+----
 Basic:
 - [Basic Underlearning of ES6](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/ES601.md)
 - [Module strings and arrow functions](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/ES602.md)
