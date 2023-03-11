@@ -6,7 +6,7 @@ Copyright © 2023, Tanxiaoxu
 
 <br>
 
-|      &nbsp;&nbsp;Algorithm&nbsp;      |             &nbsp;Java_Object              | &nbsp;&nbsp;&nbsp;Web&nbsp;&nbsp;&nbsp; |     &nbsp;&nbsp;mySQL&nbsp;&nbsp;      |      Computer_System        | 
+|      &nbsp;&nbsp;Algorithm&nbsp;      |             &nbsp;Java_Object              | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Web&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |     &nbsp;&nbsp;mySQL&nbsp;&nbsp;      |      Computer_System        | 
 |:-------------------------------:|:---------------------------------------:|:---------------------------------------:|:--------------------------------:|:----------------------------------------:|
 | [:pencil2:](#pencil2-Algorithm) | [:coffee:](#coffee-Java_Object) |          [:cloud:](#cloud-Web)          | [:floppy_disk:](#floppy_disk-mySQL) | [:computer:](#computer-Computer_System) |
 
