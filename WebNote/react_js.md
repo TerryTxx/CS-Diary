@@ -1,4 +1,4 @@
-# TypeScript & react.js
+# TypeScript
 
 #### [Back to RootPage](https://github.com/TerryTxx/CS-Diary/blob/master/README.md)
 
