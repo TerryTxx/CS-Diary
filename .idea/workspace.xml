@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e8fc147b-984c-4faa-8bf9-7931f68677de" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Java-OBJ/classandObj.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java-OBJ/pics/memberMethod.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java-OBJ/pics/objJVM.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebNote/reactjs.md" beforeDir="false" afterPath="$PROJECT_DIR$/WebNote/reactjs.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/object-general.md" beforeDir="false" afterPath="$PROJECT_DIR$/Java-OBJ/object-general.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +58,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Java-OBJ/pics" />
       <recent name="$PROJECT_DIR$/WebNote/pics" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/WebNote" />
@@ -99,6 +103,10 @@
       <workItem from="1678451087583" duration="30977000" />
       <workItem from="1678548175025" duration="20090000" />
       <workItem from="1678570609507" duration="245000" />
+      <workItem from="1678702115910" duration="2878000" />
+      <workItem from="1678705542059" duration="6582000" />
+      <workItem from="1678723260263" duration="3371000" />
+      <workItem from="1678726665551" duration="1359000" />
     </task>
     <servers />
   </component>
