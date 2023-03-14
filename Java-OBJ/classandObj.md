@@ -1,18 +1,18 @@
-## Classes and Objects
+## Object General 01
 
 ##### [back to Root list](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/object-general.md)
 
 ---
-### Class attribute /member variable
+### Classes and Objects
 #### [An overview of classes and object](#an-overview-of-classes-and-objects-)
 #### [Demo of class attribute](#demo-of-class-attribute-)
 #### [!!! Graphical representation of objects in memory-](#---graphical-representation-of-objects-in-memory)
 #### [Java's Memory Distribution](#java-memory-distribution-)
-
 #### [notice of attribute](#notice-of-attribute)
-
+### Member method
 #### [!!! Memory graph showing how method called](#---memory-graph-showing-method-calls)
 #### [!!! Create a method](#---create-a-method)
+### Member method parameter passing mechanism
 #### [!!! The parameter passing in method](#---the-parameter-passing-mechanism-of-the-method-)
 - 1. [Case1 -- Parameter passing of basic data types](#case1----parameter-passing-of-basic-data-types)
 - 2. [Case2 -- Parameter passing by reference data type](#case2----parameter-passing-by-reference-data-type)

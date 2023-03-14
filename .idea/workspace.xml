@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e8fc147b-984c-4faa-8bf9-7931f68677de" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Java-OBJ/classandObj.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java-OBJ/pics/memberMethod.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java-OBJ/pics/objJVM.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java-OBJ/exerises01.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java-OBJ/general02.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java-OBJ/pics/1.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java-OBJ/pics/2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java-OBJ/pics/Process of Object Creation.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/classandObj.md" beforeDir="false" afterPath="$PROJECT_DIR$/Java-OBJ/classandObj.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Java-OBJ/object-general.md" beforeDir="false" afterPath="$PROJECT_DIR$/Java-OBJ/object-general.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -106,7 +109,10 @@
       <workItem from="1678702115910" duration="2878000" />
       <workItem from="1678705542059" duration="6582000" />
       <workItem from="1678723260263" duration="3371000" />
-      <workItem from="1678726665551" duration="1359000" />
+      <workItem from="1678726665551" duration="7578000" />
+      <workItem from="1678736548702" duration="13000" />
+      <workItem from="1678736565166" duration="1917000" />
+      <workItem from="1678739190865" duration="13163000" />
     </task>
     <servers />
   </component>
