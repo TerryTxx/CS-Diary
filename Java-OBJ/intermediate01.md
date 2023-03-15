@@ -10,8 +10,8 @@
 ### !! Inheritance
 - [Schematic diagram](#schematic-diagram)
 - [Case Demo](#case-demo-)
-- [Notice of Inheritance](#notice-of-Inheritance)
-- [JVM drawing of Inheritance](#jvm-drawing-of-Inheritance-)
+- [Notice of Inheritance](#notice-of-inheritance)
+- [JVM drawing of Inheritance](#jvm-drawing-of-inheritance-)
 
 ---
 
