@@ -20,9 +20,9 @@ Copyright © 2023, Tanxiaoxu
 
 ## :coffee: Java Object
 
-- [Java obj general](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/object-general.md)
-- [Java obj steps](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/studyDiary.md)
-
+- [Java learning steps](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/studyDiary.md)
+- [Java OBJ general](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/object-general.md)
+- [Java OBJ intermediate](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/intermediate.md)
 
 ## :cloud: Web
 #### Full-Stack of Web
