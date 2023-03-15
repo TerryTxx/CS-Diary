@@ -1,4 +1,4 @@
-### Object Oriented Intermediate
+##### [Back to RootPage](https://github.com/TerryTxx/CS-Diary/blob/master/README.md)
 
 ---
 #### This Part Elementary：
@@ -9,10 +9,9 @@ Copyright © 2023, Tanxiaoxu
 
 ###### All the drawings and thinking logic are pondered by the author myself, if you have any questions, please point them out ~~
 
-##### [Back to RootPage](https://github.com/TerryTxx/CS-Diary/blob/master/README.md)
-
 ---
 
+### Object Oriented Intermediate:
 - ### [The concept of package](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/intermediate01.md)
 - ### [Access modifiers](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/intermediate01.md)
 
