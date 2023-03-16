@@ -22,8 +22,8 @@ Copyright © 2023, Tanxiaoxu
 - ### [Method overriding](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/intermediate01.md)
 
 ---
-- ### [Polymorphism](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/intermediate01.md)
-- ### [equals and "=="](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/intermediate01.md)
-- ### [hashCode, toString and finalize](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/intermediate01.md)
-- ### [Breakpoint debugging](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/intermediate01.md)
+- ### [Polymorphism](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/intermediate02.md)
+- ### [equals and "=="](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/intermediate02.md)
+- ### [hashCode, toString and finalize](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/intermediate02.md)
+- ### [Breakpoint debugging](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/intermediate02.md)
 

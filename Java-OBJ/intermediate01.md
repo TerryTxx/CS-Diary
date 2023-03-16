@@ -1,6 +1,8 @@
+## OBJ- Intermediate 01
+
 [back to root list](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/intermediate.md)
 
-
+---
 ### [The concept of package](#the-concept-of-packages-)
 ### [Access modifiers](#access-modifiers-)
 ### ! ! Encapsulation
@@ -12,6 +14,9 @@
 - [Case Demo](#case-demo-)
 - [Notice of Inheritance](#notice-of-inheritance)
 - [JVM drawing of Inheritance](#jvm-drawing-of-inheritance-)
+### super
+- [Basic usage](#basic-use-of-super)
+- [The notice of super](#the-notice-of-super-)
 
 ---
 
@@ -317,4 +322,26 @@ public Sub(int n1){
 [[back to list]](#--encapsulation)
 ### JVM drawing of Inheritance:
 ![IMG_7DF84D95213C-1.jpeg](pics%2FIMG_7DF84D95213C-1.jpeg)
+
+Lookup relations to return information:
+1. Check whether the sub-column has this attribute;
+2. The subclass has and can be accessed, and returns the information directly;
+3. If there is no subclass, check the parent class, and return information if it exists and can be accessed;
+4. The parent class does not search for the parent class of the parent class until the Object class
+
+[[back to list]](#--encapsulation)
+
+### super
+### basic use of super
+1. What is accessed is the attribute of the parent class, but the private attribute of the parent class cannot be accessed alone;
+   super. attribute name
+2. Access the method of the parent class, but it cannot be a private method;
+   super. method name (parameter list)
+3. In the subclass constructor, when accessing the constructor of the parent class, super() is not called by default, if the default constructor of the parent class is not overwritten;
+   super (parameter list);//Must be placed on the first line of the subclass constructor
+
+## The notice of super:
+1. Call the constructor of the parent class, the properties of the parent class are initialized by the parent class, and the properties of the subclass are initialized by the subclass, with a clear division of labor;
+2. When the subclass has the same name as the member (property and method) in the parent class, in order to access the members of the parent class, you must pass super. If there is no duplicate name, it can actually be called directly.
+
 [[back to list]](#--encapsulation)
