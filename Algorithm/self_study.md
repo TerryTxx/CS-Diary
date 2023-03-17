@@ -27,11 +27,11 @@ and the level of difficulty in understanding them, with leetcode for in-depth un
 
 
 -------
+### Stacks and queues
+### Priority queues
 ### [Arrays](https://github.com/TerryTxx/CS-Diary/blob/master/Algorithm/Arrays.md)
 ### [LinkedList](https://github.com/TerryTxx/CS-Diary/blob/master/Algorithm/LinkedList.md)
 
-### Stacks and queues
-### Priority queues
 ### Concurrent sets
 ### [Binary trees](https://github.com/TerryTxx/CS-Diary/blob/master/Algorithm/BinaryTrees.md)
 ### Backtracking

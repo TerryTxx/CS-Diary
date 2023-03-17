@@ -200,13 +200,65 @@ class main {  public static void main(String[] args) {
 
 Demo:
 ```java
+public class Person{
+    private String name;
+    private int age;
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;  }
+    public String say(){  return "I am "+ name +" ，I'm "+ age;  }
+    public String getName() { return name; }
+    public void setName(String name) { this.name = name; }
+    public int getAge() {  return age; }
+    public void setAge(int age) {  this.age = age;}
+}
+
+class Student extends Person{
+    private double score;
+    public Student(String name, int age, double score) {
+        super(name, age);
+        this.score = score; }
+    @Override
+    public String say() {
+        return super.say() + ", my score is: "+score;
+    }
+    public void Study(){ System.out.println(this.getName()+" is studying");}
+    public double getScore() { return score; }
+    public void setScore(double score) { this.score = score; }
+}
+
+class Teacher extends Person{
+    private double salary;
+    public Teacher(String name, int age, double salary) {
+        super(name, age);
+        this.salary = salary;
+    }
+    @Override
+    public String say() {return super.say() +", salary is "+ salary; }
+    public void Teach(){System.out.println(this.getName()+" is teaching");}
+    public double getSalary() {return salary;}
+    public void setSalary(double salary) {this.salary = salary;}
+}
+```
+
+[[back to list]](#----polymorphic)
+
+### polymorphic array
+```text
+Case: 
+Create a Person object, 2 Student objects and 2 Teacher objects. person has a name and int attribute, student has a separate score attribute and method for study, and teacher has a separate salary attribute and method for teach
+
+1. Put them in an array uniformly and call the say method of each object?
+2. How do you call the independent STUDY and TEACH methods of STUDENT and TEACHER?
+```
+```java
+
 public class dynamicBinding {
     public static void main(String[] args) {
         A a = new B();
      //Step1:
         System.out.println(a.sum());//40//running type B(), i is local i =20;
         System.out.println(a.sum1());//30//running type B(), i is local i =20;
-       
      //Step2:
          //running type class B, but no sum() in class B, so jvm search in class A;
          //jvm find sun() in A ,and run ,but return getI()--both have in A and B;
@@ -239,10 +291,103 @@ class B extends A {
 //    public int sum1(){ return i+10;}
     public int getI() {  return i;}}
 ```
-[[back to list]](#----polymorphic)
-
-### polymorphic array
+in main: 
+```java
+public class polyArray {
+    public static void main(String[] args) {
+        //2 student and 2 Person in an array
+        Person [] persons = new Person[5];
+        // upcasting to construct the Person Array
+        persons[0] = new Person("Jack",30);
+        persons[1] = new Student("Tom",18,100);
+        persons[2] = new Student("Hib",17,96);
+        persons[3] = new Teacher("Granny",42,4200);
+        persons[4] = new Teacher("Brand", 51,5000);
+        //loop the array,using say
+        for (int i = 0; i < persons.length; i++) {
+            //compile type is Person ,running type is dynamic bind for loop
+            System.out.println(persons[i].say());
+        }
+        // if we want get the function separately in Teacher and Student
+        for (int i = 0; i < persons.length; i++) {
+            if(persons[i] instanceof Student){
+              ((Student)persons[i]).Study();
+            }
+            if (persons[i] instanceof Teacher){
+                ((Teacher)persons[i]).Teach();
+            }
+        }}
+}
+```
 [[back to list]](#----polymorphic)
 
 ### polymorphic parameters
+```text
+Case: 
+Define the employee class, including name and monthly salary, and the method getAnn() for calculating salary; define ordinary employee and manager classes that inherit it, managers have bonus attributes and manage methods, and ordinary workers have independent work methods. Two subclasses override the getAnn method;
+
+Add a showEmpAnnual method to the test class to get the annual salary of any employee object;
+
+Add a method in the test class, testWorkType, if it is an ordinary employee, call the work method, otherwise call the manage method
+```
+```java
+public class Employee {
+    private String name;
+    private double salary;
+    public Employee(String name, double salary) {
+        this.name = name;
+        this.salary = salary; }
+    //get annual
+    public double getAnn(){   return salary*12;  }
+    public String getName() {  return name; }
+    public void setName(String name) { this.name = name; }
+    public double getSalary() {  return salary;  }
+    public void setSalary(double salary) {  this.salary = salary;  }
+}
+public class generalWorker extends Employee{
+    public generalWorker(String name, double salary) {
+        super(name, salary);
+    }
+    public void work(){ System.out.println(getName() + "is working") ;}
+
+    @Override
+    public double getAnn() {   return super.getAnn(); }
+}
+public class Manager extends Employee{
+    private double bonus;
+    public Manager(String name, double salary, double bonus) {
+        super(name, salary);
+        this.bonus = bonus;}
+    public void manage(){  System.out.println(getName()+" is managing"); }
+    @Override
+    public double getAnn() {   return super.getAnn()+bonus; }
+
+    public double getBonus() {  return bonus;}
+    public void setBonus(double bonus) {  this.bonus = bonus;}
+}
+```
+```java
+public class PloyParamater {
+    public static void main(String[] args) {
+       generalWorker tom =  new generalWorker("Tom",2500);
+       Manager marry = new Manager("Marry", 5000, 20000);
+        PloyParamater ployParamater = new PloyParamater();
+        ployParamater.showEmpAnnual(tom);
+        ployParamater.showEmpAnnual(marry);
+        ///
+        ployParamater.testWorkType(tom);
+        ployParamater.testWorkType(marry);
+    }
+    public void showEmpAnnual(Employee e){
+        System.out.println(e.getAnn());//dynamic binding
+    }
+    public void testWorkType(Employee e){
+        if(e instanceof generalWorker){
+            ((generalWorker) e).work();
+        } else if (e instanceof Manager) {
+            ((Manager) e).manage();
+        }
+    }
+}
+```
 [[back to list]](#----polymorphic)
