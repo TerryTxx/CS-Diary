@@ -23,6 +23,8 @@ Copyright © 2023, Tanxiaoxu
 - [Java learning steps](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/studyDiary.md)
 - [Java OBJ general](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/object-general.md)
 - [Java OBJ intermediate](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/intermediate.md)
+- [Object Oriented Intermediate Boost](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/IntermediateBoost.md)
+- [Object Oriented Advanced 01](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/intermediateAdvan.md)
 
 ## :cloud: Web
 #### Full-Stack of Web

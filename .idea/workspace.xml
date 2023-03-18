@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e8fc147b-984c-4faa-8bf9-7931f68677de" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Java-OBJ/exercises02.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java-OBJ/IntermediateBoost.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java-OBJ/intermediateAdvan.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java-OBJ/intermediate.md" beforeDir="false" afterPath="$PROJECT_DIR$/Java-OBJ/intermediate.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java-OBJ/intermediate02.md" beforeDir="false" afterPath="$PROJECT_DIR$/Java-OBJ/intermediate02.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +123,7 @@
       <workItem from="1678999590715" duration="106000" />
       <workItem from="1679000950196" duration="9855000" />
       <workItem from="1679090146612" duration="2738000" />
-      <workItem from="1679139844609" duration="2922000" />
+      <workItem from="1679139844609" duration="4295000" />
     </task>
     <servers />
   </component>
