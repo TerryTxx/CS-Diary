@@ -7,7 +7,6 @@ Copyright © 2023, Tanxiaoxu
 ###### All the drawings and thinking logic are pondered by the author myself, if you have any questions, please point them out ~~
 
 ---
-
 ### Object Oriented Intermediate Boost
 
 ### Class variables
