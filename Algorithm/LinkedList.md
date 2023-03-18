@@ -3,7 +3,13 @@
 [Back to Catalogue](https://github.com/TerryTxx/CS-Diary/blob/master/Algorithm/self_study.md)
 
 ---
+### LeetCode list:
+- [Pointer pointing type questions;](https://github.com/TerryTxx/CS-Diary/blob/master/Algorithm/leetcode/linkedList_ponters.md)
+- [Dummy head node;](https://github.com/TerryTxx/CS-Diary/blob/master/Algorithm/leetcode/DummyheadNode.md)
+- [cyclic linked list;](https://github.com/TerryTxx/CS-Diary/blob/master/Algorithm/leetcode/cyclicLinkedListAndIntersectingList.md)
+- [intersecting linked lists](https://github.com/TerryTxx/CS-Diary/blob/master/Algorithm/leetcode/cyclicLinkedListAndIntersectingList.md)
 
+---
 ### Removing elements from a single linkedList
 - [delete in the linked-list originally](#delete-in-the-origin-linkedlist)
 - [delete in a new dummy node list](#add-a-dummy-head-node)
@@ -11,6 +17,7 @@
 ### Create LinkedList (CRUD)
 - [Create SingleLinked list (CRUD)](#create-a-linkedlist)
 - [Create DoubleLinked list (CRUD)](#create-a-double-linked-list)
+
 
 
 
@@ -290,8 +297,75 @@ ListNode next, prev;
 ```
 [[back to list]](#linkedlist)
 
+### Flipping the chain table.
+The overall idea, head to tail swapping, pointing from tail to head.
+
+Both double pointers and recursion work out.
 
 
+### Double pointers 
+1. current pointer and pre pointer, convenient for current to point to pre; 
+2. we plan for curr and pre to move towards the tail at the same time;
+3. but when we assign the head to null, we cannot move the pre and curr then;
+4. so we add a temp pointer to record the curr.next ,and give the access for pre and curr moving;
+
+
+```java
+class Solution {
+    public ListNode reverseList(ListNode head) {
+        ListNode prev = null;
+        ListNode cur = head;
+        ListNode temp = null;
+        while (cur != null) {
+            temp = cur.next;// store next of cur, move to next in first
+            cur.next = prev;//make one flip next to pre
+            prev = cur;//move pre point to cur position
+            cur = temp;// move cur to temp, next position
+        }
+        return prev;
+    }
+}
+```
+### Recursion
+```java
+//S1: front to back
+class solution {
+    public ListNode reverseList(ListNode head) {
+        return reverse(null, head);
+    }
+
+    private ListNode reverse(ListNode prev, ListNode cur) {
+        if (cur == null) {
+            Returns prev;
+        }
+        ListNode temp = null;
+        temp = cur.next;// save the next node first
+        cur.next = prev;// reverse
+        // update prev, cur position
+        // prev = cur;
+        // cur = temp;
+        return reverse(cur, temp);
+    }
+}
+
+//S2:  recursive from back to front
+class solution {
+    ListNode reverseList(ListNode head) {
+// Edge condition judgement
+        if(head == null) return null;
+        if (head.next == null) return head;
+
+        // Called recursively, reversing the chain from the second node onwards
+        ListNode last = reverseList(head.next);
+        // flip the head node to point to the second node
+        head.next.next = head.
+                // At this point the head node is the tail node and next needs to point to NULL
+                head.next = null.
+                Returns the last node.
+    }
+}
+```
+[[back to list]](#linkedlist)
 
 
 
