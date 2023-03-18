@@ -26,4 +26,6 @@ Copyright © 2023, Tanxiaoxu
 - ### [equals and "=="](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/intermediate02.md)
 - ### [hashCode, toString and finalize](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/intermediate02.md)
 - ### [Breakpoint debugging](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/intermediate02.md)
+- ### [Exercises](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/exercises02.md)
+
 

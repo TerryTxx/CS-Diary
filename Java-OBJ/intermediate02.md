@@ -17,11 +17,11 @@
 - [<span style="color: lightcoral;">polymorphic array ](#polymorphic-array)
 - [polymorphic parameters](#polymorphic-parameters)
 
-### equals and "=="
+### [equals and "=="](#equals-and-symbol)
 
-### hashCode, toString and finalize
+### [Usage: hashCode, toString and finalize](#hashcode-tostring-and-finalize)
 
-### Breakpoint/Debugging
+### [Breakpoint/Debugging Usage](#breakpointdebugging)
 
 ---
 ### override
@@ -391,3 +391,43 @@ public class PloyParamater {
 }
 ```
 [[back to list]](#----polymorphic)
+
+### equals and symbol
+"=="
+1. is a comparison operator;
+2. Judging the basic data type and whether the judged values are equal;
+3. Judging the reference data type, the judgment is whether the address is consistent, that is, the same object;
+   equals:
+1. It is a method in the Object class, so it can judge the reference data type by itself;
+2. Direct use the method : ---- determine whether the address is the same;
+3. Subclasses override the method : ---- generally used to determine whether the content is the same;（For example, in the String class, it comes with rewriting to judge whether the content is consistent）
+[[back to list]](#----polymorphic)
+
+
+
+### hashCode toString and finalize
+hashCode
+1. Improve the efficiency of containers with hash structures;
+2. Two references, if they point to the same object, have the same hash value, otherwise they must be different;
+3. Therefore, it is also detailed and mainly written according to the address number;
+
+toString:
+1. Default: hexadecimal of full class name + 2 + hash value. Subclasses often return the attribute information of the object;
+2. Rewriting is, generally splicing into a string, return;
+3. When directly outputting an object, the toString method will be called by default;
+
+finalize:
+1. When the object is recycled, the system automatically calls the finalize method in the object. Subclasses can override this method to do some operations to release resources;
+2. Recycling time: When an object does not have any references, jvm considers the object to be a garbage object, and uses the garbage collection mechanism to destroy the object. Before destroying, call this method;
+3. The call of the garbage collection mechanism: It is determined by the system, or it can be passed through the system. gc() triggers actively
+[[back to list]](#----polymorphic)
+
+
+### Breakpoint/Debugging
+1. During the development process, breakpoint debugging will be used to find the location of the problem;
+2. During the debugging process, it is in the running state, that is, it is executed according to the running type of the object;
+
+
+
+[[back to list]](#----polymorphic)
+
