@@ -5,20 +5,24 @@
 ---
 ### LeetCode list:
 - [Pointer pointing type questions;](https://github.com/TerryTxx/CS-Diary/blob/master/Algorithm/leetcode/linkedList_ponters.md)
-- [Dummy head node;](https://github.com/TerryTxx/CS-Diary/blob/master/Algorithm/leetcode/DummyheadNode.md)
+- [Dummy head node;](https://github.com/TerryTxx/CS-Diary/blob/master/Algorithm/leetcode/linkedList_ponters.md)
 - [cyclic linked list;](https://github.com/TerryTxx/CS-Diary/blob/master/Algorithm/leetcode/cyclicLinkedListAndIntersectingList.md)
 - [intersecting linked lists](https://github.com/TerryTxx/CS-Diary/blob/master/Algorithm/leetcode/cyclicLinkedListAndIntersectingList.md)
 
 ---
-### Removing elements from a single linkedList
+**Concept:** 
+#### Removing elements from a single linkedList
 - [delete in the linked-list originally](#delete-in-the-origin-linkedlist)
 - [delete in a new dummy node list](#add-a-dummy-head-node)
 
-### Create LinkedList (CRUD)
+#### Create LinkedList (CRUD)
 - [Create SingleLinked list (CRUD)](#create-a-linkedlist)
 - [Create DoubleLinked list (CRUD)](#create-a-double-linked-list)
 
-
+#### [Swap nodes in linkedList](#swap-nodes-in-linked-list)
+#### [Delete the Number N node in the linked list](#delete-the-no-n-node-in-the-linked-list)
+#### [two linkedList intersect](#linked-list-intersect)
+#### [circular linkedList](#circular-linked-list)
 
 
 ---
@@ -32,19 +36,19 @@
 
 ### delete in the origin linkedList
 ```java
-  if(head != null && head.val != val){//if null, no need to delete
+public ListNode removeElements(ListNode head, int val) {
+        while(head!=null && head.val==val){
         head = head.next;
-        
-        cur = head; // to find the head before curr, the pointer
-                    // curr point curr.next.next
-        while(cur != null && cur.next != null){//loop to find
-            if(cur.next.val == target){
-                cur.next = cur.next.next;//find target and its prev point to its next and skip it
-            }else{
-               cur = cur.next // not find , point to the next
-             }   
-        }return head;
-    }
+        }
+        ListNode curr = head;
+        while(curr!=null){
+        while(curr.next!=null && curr.next.val == val){
+        curr.next = curr.next.next;
+        }
+        curr = curr.next;
+        }
+        return head;
+        }
 ```
 
 [[back to list]](#linkedlist)
@@ -360,12 +364,175 @@ class solution {
         // flip the head node to point to the second node
         head.next.next = head.
                 // At this point the head node is the tail node and next needs to point to NULL
-                head.next = null.
-                Returns the last node.
+                head.next = null;
+              //  Returns the last node.
     }
 }
 ```
 [[back to list]](#linkedlist)
 
+###  Swap nodes in linked list
+The overall idea: exchange, to ensure the position of the exchange node and its target node, and at the same time know the pointer of its previous node; 
 
+(such as 1,2,3,4,5——our operation is, dummyhead== operation Pointer; point to 2, 2 points to 1, 1 points to 3 --- completes the first exchange)
+```java
+// recursive version
+class Solution {
+     public ListNode swapPairs(ListNode head) {
+         // base case exit submission
+         if(head == null || head. next == null) return head;
+         // Get the next node of the current node
+         ListNode next = head. next;
+         // do recursion
+         ListNode newNode = swapPairs(next.next);
+         // swap here
+         next.next = head;
+         head.next = newNode;
 
+         return next;
+     }
+}
+```
+```java
+class Solution {
+   public ListNode swapPairs(ListNode head) {
+         ListNode dumyhead = new ListNode(-1); // set a dummy head node
+         dumyhead.next = head; // Point the virtual head node to head, so that the delete operation will be performed later
+         ListNode cur = dumbhead;
+         ListNode temp; // Temporary node, save the node after two nodes
+         ListNode firstnode; // Temporary node, save the first node of the two nodes
+         ListNode secondnode; // Temporary node, save the second node among the two nodes
+         while (cur. next != null && cur. next. next != null) {
+             temp = cur.next.next.next;
+             firstnode = cur.next;
+             secondnode = cur.next.next;
+             cur.next = secondnode; // Step 1
+             secondnode.next = firstnode; // Step 2
+             firstnode.next = temp; // Step 3
+             cur = firstnode; // cur moves, ready for the next round of exchange
+         }
+         return dumyhead. next;
+     }
+}
+```
+[[back to list]](#linkedlist)
+
+### Delete the No n node in the linked list
+
+Delete the node of the reciprocal No.n in the linked list
+
+1. Find the target node and use the dummy head node;
+2. Define the fast pointer and the slow pointer, let the fast pointer move to point n nodes first, and then move the fast and slow pointers at the same time until the fast pointer is empty;
+3. The operation pointer needs to point to the previous node of the target node, so that the target node can be skipped when operating next;
+```java
+public ListNode removeNthFromEnd(ListNode head, int n){
+     ListNode dummyNode = new ListNode(0);
+     dummyNode. next = head;
+
+     ListNode fastIndex = dummyNode;
+     ListNode slowIndex = dummyNode;
+
+     //As long as there is a difference of n nodes between the fast and slow pointers
+     for (int i = 0; i < n ; i++){
+         fastIndex = fastIndex. next;
+     }
+
+     while (fastIndex. next != null){
+         fastIndex = fastIndex. next;
+         slowIndex = slowIndex. next;
+     }
+
+     //At this time, the position of slowIndex is the previous position of the element to be deleted.
+     //For the specific situation, you can draw a picture with a linked list length of 3 to simulate the code to understand
+     slowIndex.next = slowIndex.next.next;
+     return dummyNode. next;
+}
+```
+
+[[back to list]](#linkedlist)
+
+### linked list intersect
+1. To put it simply, it is to find the pointer of the intersection node of the two linked lists. Note that the intersection is not numerical equality, but pointer equality. For the convenience of example, assuming that the values of the node elements are equal, the node pointers are equal.
+2. You can compare whether curA and curB are the same. If not, move curA and curB backward at the same time. If curA == curB, find the intersection point. Otherwise the loop exits by returning a null pointer.
+
+```java
+public class Solution {
+    public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
+        ListNode curA = headA;
+        ListNode curB = headB;
+        int lenA = 0, lenB = 0;
+        while (curA != null) { // Find the length of linked list A
+            lenA++;
+            curA = curA.next;
+        }
+        while (curB != null) { // find the length of linked list B
+            lenB++;
+            curB = curB.next;
+        }
+        curA = headA;
+        curB = headB;
+// Let curA be the head of the longest linked list, and lenA be its length
+        if (lenB > lenA) {
+//1. swap (lenA, lenB);
+            int tmpLen = lenA;
+            lenA = lenB;
+            lenB = tmpLen;
+//2. swap (curA, curB);
+            ListNode tmpNode = curA;
+            curA = curB;
+            curB = tmpNode;
+        }
+// find length difference
+        int gap = lenA - lenB;
+// Let curA and curB be on the same starting point (the end positions are aligned)
+        while (gap-- > 0) {
+            curA = curA.next;
+        }
+// Traverse curA and curB, return directly if they are the same
+        while (curA != null) {
+            if (curA == curB) {
+                return curA;
+            }
+            curA = curA.next;
+            curB = curB.next;
+        }
+        return null;
+    }
+}
+```
+[[back to list]](#linkedlist)
+
+### circular linked list
+#### 1. Determine whether it is a ring;
+- 1. Through the fast and slow pointers, if they meet, it means that there is a ring;
+- 2. The fast pointer walks two nodes at a time, and the slow pointer walks one node at a time. If there is a ring, the fast pointer approaches the slow pointer by walking one node at a time;
+
+#### 2. Find the entrance of the ring;
+- 1. Let X be the start to the entrance, Y be the meeting point from the entrance to the ring, and Z be the distance from the meeting to the leaving the ring;
+- 2. When meeting, the slow pointer moves x+y; the fast pointer moves x+y+n(y+z); it means that the fast pointer moves n circles in the ring;
+- 3. Because the fast pointer takes one step each time, and the slow pointer takes two steps, it means: 2(x+y)=x+y+n(y+z), that is, x+y=n(y +z), so get x = n(y+z) -y , n>=1; final x = (n-1)(y+z)+z;
+- 4. Obtained from the above, n represents the number of turns of the fast pointer when they meet, so assuming n=1, then x=z, indicating that the two pointers must meet at the entrance of the ring,
+```java
+public class Solution {
+     public ListNode detectCycle(ListNode head) {
+         ListNode slow = head;
+         ListNode fast = head;
+         while (fast != null && fast. next != null) {
+             slow = slow. next;
+             fast = fast.next.next;
+             if (slow == fast) {// has a loop
+                 ListNode index1 = fast;
+                 ListNode index2 = head;
+                 // Two pointers, from the head node and the meeting node, each step until they meet, the meeting point is the ring entrance
+                 while (index1 != index2) {
+                     index1 = index1. next;
+                     index2 = index2. next;
+                 }
+                 return index1;
+             }
+         }
+         return null;
+     }
+}
+```
+[[back to list]](#linkedlist)
