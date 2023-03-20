@@ -4,7 +4,7 @@
 
 ---
 
-#### cyclic linked list
+#### cyclic linked list / pointers
 [leetcode 141](#leetcode141)
 
 [leetcode 142](#leetcode-142)

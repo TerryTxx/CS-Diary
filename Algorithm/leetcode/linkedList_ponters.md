@@ -8,13 +8,11 @@
 
 ### Dummy head node
 
-leetcode 2
-
 leetcode 445
 
-leetcode 21
+[leetcode 21](#leetcode-21)
 
-leetcode 23
+[leetcode 23](#leetcode-23)
 
 leetcode 82
 
@@ -27,8 +25,10 @@ leetcode 86
 [leetcode 707](#leetcode-707)
 
 ---
+### delete element/ pointers
 
-### delete element
+[leetcode 2](#leetcode-2)
+
 leetcode 92--reverse
 
 [leetcode 203](#leetcode-203)
@@ -56,7 +56,153 @@ leetcode 234
 [leetcode 19](#leetcode-19)
 
 ---
+#### leetcode 2
+Add Two Numbers
+```java
+class Solution {
+    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+    if(l1==null){
+        return l2;
+    }if(l2==null){
+        return l1;
+    }
+// res for store result and point for loop
+    ListNode res=new ListNode(-1);
+    ListNode point=new ListNode(l1.val+l2.val);
+    res.next=point;
+  //  point.next points to the new
+    point.next=addTwoNumbers(l1.next,l2.next);
+   return update(res.next);
+    }
+    private ListNode update(ListNode obj){
+    ListNode res = new ListNode(-1,obj);
+     while(obj.next!=null){
+         if(obj.val>=10){
+             obj.val-=10;
+             obj.next.val+=1;
+         }
+         obj=obj.next;
+     }
+// if over ten 
+// old node -10，new a node，value is 1，next null
+     if(obj.val>=10){
+         obj.val-=10;
+         obj.next = new ListNode(1,null);
+     }
+     return res.next;
+    } 
+}
+```
+[[back to list]](#create-linked-list)
 
+#### leetcode 21
+Merge Two Sorted Lists
+```java
+class Solution {
+    public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
+        if (l1 == null) {
+            return l2;
+        }
+        else if (l2 == null) {
+            return l1;
+        }
+        else if (l1.val < l2.val) {
+            l1.next = mergeTwoLists(l1.next, l2);
+            return l1;
+        }
+        else {
+            l2.next = mergeTwoLists(l1, l2.next);
+            return l2;
+        }
+    }
+}
+```
+[[back to list]](#create-linked-list)
+#### leetcode 23
+Merge k Sorted Lists
+```java
+
+class Solution {
+//     public ListNode mergeKLists(ListNode[] lists) {
+// //1.  dummyhead  but nest loop is really bad solution
+//         int k = lists.length;
+//         ListNode dummyHead = new ListNode(0);
+//         ListNode tail = dummyHead;
+//         while (true) {
+//             ListNode minNode = null;
+//             int minPointer = -1;
+//             for (int i = 0; i < k; i++) {
+//                 if (lists[i] == null) {
+//                     continue;
+//                 }
+//                 if (minNode == null || lists[i].val < minNode.val) {
+//                     minNode = lists[i];
+//                     minPointer = i;
+//                 }
+//             }
+//             if (minPointer == -1) {
+//                 break;
+//             }
+//             tail.next = minNode;
+//             tail = tail.next;
+//             lists[minPointer] = lists[minPointer].next;
+//         }
+//         return dummyHead.next;
+//     }
+
+//    public ListNode mergeKLists(ListNode[] lists) {
+// //2. pointers lopp seperately
+//         Queue<ListNode> pq = new PriorityQueue<>((v1, v2) -> v1.val - v2.val);
+//         for (ListNode node: lists) {
+//             if (node != null) {
+//                 pq.offer(node);
+//             }
+//         }
+//         ListNode dummyHead = new ListNode(0);
+//         ListNode tail = dummyHead;
+//         while (!pq.isEmpty()) {
+//             ListNode minNode = pq.poll();
+//             tail.next = minNode;
+//             tail = minNode;
+//             if (minNode.next != null) {
+//                 pq.offer(minNode.next);
+//             }
+//         }
+//         return dummyHead.next;
+//     }
+    public ListNode mergeKLists(ListNode[] lists) {
+        if (lists.length == 0) {
+            return null;
+        }
+        return merge(lists, 0, lists.length - 1);
+    }
+    private ListNode merge(ListNode[] lists, int lo, int hi) {
+        if (lo == hi) {
+            return lists[lo];
+        }
+        int mid = lo + (hi - lo) / 2;
+        ListNode l1 = merge(lists, lo, mid);
+        ListNode l2 = merge(lists, mid + 1, hi);
+        return merge2Lists(l1, l2);
+    }
+    // 3. recursion and add one by one
+    private ListNode merge2Lists(ListNode l1, ListNode l2) {
+        if (l1 == null) {
+            return l2;
+        }
+        if (l2 == null) {
+            return l1;
+        }
+        if (l1.val < l2.val) {
+            l1.next = merge2Lists(l1.next, l2);
+            return l1;
+        }
+        l2.next = merge2Lists(l1, l2.next);
+        return l2;
+    }
+}    
+```
+[[back to list]](#create-linked-list)
 #### leetcode 707
 Design Linked List
 ```java
