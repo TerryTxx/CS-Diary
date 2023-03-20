@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e8fc147b-984c-4faa-8bf9-7931f68677de" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Algorithm/leetcode/BinaryTree.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Algorithm/leetcode/cyclicLinkedListAndIntersectingList.md" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/leetcode/cyclicLinkedListAndIntersectingList.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Algorithm/leetcode/linkedList_ponters.md" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/leetcode/linkedList_ponters.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/BinaryTrees.md" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/BinaryTrees.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/treversalBT.md" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +126,8 @@
       <workItem from="1679139844609" duration="4742000" />
       <workItem from="1679144809301" duration="2000" />
       <workItem from="1679155354526" duration="10321000" />
-      <workItem from="1679240748530" duration="22167000" />
+      <workItem from="1679240748530" duration="23094000" />
+      <workItem from="1679344883253" duration="8423000" />
     </task>
     <servers />
   </component>
