@@ -15,7 +15,7 @@ Copyright © 2023, Tanxiaoxu
 
 ## :pencil2:  Algorithm
 
-#### [Study Schedule & Diary](https://github.com/TerryTxx/CS-Diary/blob/master/Algorithm/self_study.md)
+### [Concept List](https://github.com/TerryTxx/CS-Diary/blob/master/Algorithm/self_study.md)
 
 
 ## :coffee: Java Object

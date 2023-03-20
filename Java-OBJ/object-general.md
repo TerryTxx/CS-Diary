@@ -1,12 +1,13 @@
+#### [Back to RootPage](https://github.com/TerryTxx/CS-Diary/blob/master/README.md)
 
-#### Object Oriented Elementary：
+### Object Oriented Elementary：
 ###### Here, the basic data types and reference data types are understood by default. Including the use of arrays, strings, loops and if
-Author: Tanxiaoxu
-Copyright © 2023, Tanxiaoxu
 
+Author: Tanxiaoxu
+
+Copyright © 2023, Tanxiaoxu
 ###### All the drawings and thinking logic are pondered by the author myself, if you have any questions, please point them out ~~
 
-#### [Back to RootPage](https://github.com/TerryTxx/CS-Diary/blob/master/README.md)
 
 ---
 ## Object-Basic:

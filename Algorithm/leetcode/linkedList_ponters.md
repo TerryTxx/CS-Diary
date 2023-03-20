@@ -24,7 +24,7 @@ leetcode 86
 
 ### Create linked list：
 
-[leetcode 707](#leetcode-707--)
+[leetcode 707](#leetcode-707)
 
 ---
 
@@ -57,7 +57,8 @@ leetcode 234
 
 ---
 
-#### leetcode 707--
+#### leetcode 707
+Design Linked List
 ```java
  class MyLinkedList {
         //size store the number of elements of the chain table
@@ -137,6 +138,7 @@ leetcode 234
 [[back to list]](#create-linked-list)
 
 #### leetcode 203
+Remove Linked List Elements
 ```java
 // 1. add int the orginal list
 class Solution {
@@ -202,6 +204,7 @@ class Solution {
 
 
 #### leetcode 206
+Reverse Linked List
 ```java
 class Solution {
 //// 1. two pointers
@@ -299,6 +302,7 @@ class Solution {
 [[back to list]](#create-linked-list)
 
 #### leetcode 19
+Remove Nth Node From End of List
 ```java
 class Solution {
   public ListNode removeNthFromEnd(ListNode head, int n){
@@ -324,6 +328,7 @@ class Solution {
 [[back to list]](#create-linked-list)
 
 #### leetcode 24
+Swap Nodes in Pairs
 ```java
 
 class Solution {

@@ -1,4 +1,9 @@
- ### Exercises for Object-Basic： 
+
+[back to Root list](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/object-general.md)
+
+---
+
+### Exercises for Object-Basic： 
  
 1. Write class A1, implement the method max(), find the maximum value of a double array, and return it;
 

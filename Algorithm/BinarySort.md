@@ -2,13 +2,13 @@
 
 [Back to Catalogue](https://github.com/TerryTxx/CS-Diary/blob/master/Algorithm/self_study.md)
 
-
-- Basic Understanding and Usage
-- General question types
+------
+### Leetcode Types:
 - 1. [Binary Index](https://github.com/TerryTxx/CS-Diary/blob/master/Algorithm/leetcode/binaryIndex.md)
 - 2. [Binary answers](https://github.com/TerryTxx/CS-Diary/blob/master/Algorithm/leetcode/Binaryanswers.md)
 - 3. [Binary complex conditions](https://github.com/TerryTxx/CS-Diary/blob/master/Algorithm/leetcode/ComplexBinary.md)
 
+------
 ### Basic Understanding and Usage
 ```text
 Generally speaking it is in a sequential array that will look for a Target number, whether it is in this array or not, 
