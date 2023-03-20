@@ -5,9 +5,9 @@
 ---
 
 #### cyclic linked list / pointers
-[leetcode 141](#leetcode141)
+[141.Linked List Cycle](#leetcode141)
 
-[leetcode 142](#leetcode-142)
+[142.Linked List Cycle](#leetcode-142)
 
 leetcode 287
 
@@ -20,14 +20,30 @@ leetcode 460
 
 leetcode 1206
 
-[leetcode 160](#leetcode-160)
+[160. Intersection of Two Linked Lists](#leetcode-160)
 
 ---
 
 ### leetcode141
 Linked List Cycle
 ```java
-
+public class Solution {
+    public boolean hasCycle(ListNode head) {
+        if (head == null) {
+            return false;
+        }
+        ListNode slow = head;
+        ListNode fast = head.next;
+        while (slow != fast) {
+            if (fast == null || fast.next == null) {
+                return false;
+            }
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+        return true;
+    }
+}
 ```
 [[back to list]](#cyclic-linked-list)
 ### leetcode 142
@@ -103,3 +119,4 @@ public class Solution {
      }
 }
 ```
+[[back to list]](#cyclic-linked-list)

@@ -1,12 +1,12 @@
 
 ### Traversal Binary Tree
 DFS:
-- [Leetcode 144](#leetcode-144)
-- [Leetcode 94](#leetcode-94)
-- [Leetcode 145](#leetcode-145)
+- [144.Binary Tree Preorder Traversal](#leetcode-144)
+- [94.Binary Tree Inorder Traversal](#leetcode-94)
+- [145.Binary Tree Postorder Traversal](#leetcode-145)
 
 BFS:
-- [Leetcode 102](#leetcode-102)
+- [102.Binary Tree Level Order Traversal](#leetcode-102)
 - Leetcode 107
 - Leetcode 199
 - Leetcode 637

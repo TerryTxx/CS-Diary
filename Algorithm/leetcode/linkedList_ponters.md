@@ -10,9 +10,9 @@
 
 leetcode 445
 
-[leetcode 21](#leetcode-21)
+[21.Merge Two Sorted Lists](#leetcode-21)
 
-[leetcode 23](#leetcode-23)
+[23.Merge k Sorted Lists](#leetcode-23)
 
 leetcode 82
 
@@ -22,28 +22,28 @@ leetcode 86
 
 ### Create linked list：
 
-[leetcode 707](#leetcode-707)
+[707.Design Linked List](#leetcode-707)
 
 ---
 ### delete element/ pointers
 
-[leetcode 2](#leetcode-2)
+[2.Add Two Numbers](#leetcode-2)
 
 leetcode 92--reverse
 
-[leetcode 203](#leetcode-203)
+[203.Remove Linked List Elements](#leetcode-203)
 
-[leetcode 24](#leetcode-24)
+[24.Swap Nodes in Pairs](#leetcode-24)
 
 leetcode 25--reverse
 
-leetcode 143
+[143. Reorder List](#leetcode-143)
 
 leetcode 328
 
 leetcode 61
 
-leetcode 234
+[234. Palindrome Linked List](#leetcode-234)
 
 leetcode 147
 
@@ -51,9 +51,9 @@ leetcode 876
 
 leetcode 234
 
-[leetcode 206](#leetcode-206)
+[206.Reverse Linked List](#leetcode-206)
 
-[leetcode 19](#leetcode-19)
+[19.Remove Nth Node From End of List](#leetcode-19)
 
 ---
 #### leetcode 2
@@ -514,6 +514,191 @@ class Solution {
 //          }
 //          return dumyhead. next;
 //      }
+}
+```
+[[back to list]](#create-linked-list)
+
+### leetcode 234
+Palindrome Linked List
+```java
+
+// method one, use an array
+// class Solution {
+//      public boolean isPalindrome(ListNode head) {
+//          int len = 0;
+//          // Count the length of the linked list
+//          ListNode cur = head;
+//          while (cur != null) {
+//              len++;
+//              cur = cur. next;
+//          }
+//          cur = head;
+//          int[] res = new int[len];
+//          // add elements to the array
+//          for (int i = 0; i < res. length; i++){
+//              res[i] = cur.val;
+//              cur = cur. next;
+//          }
+//          // compare palindrome
+//          for (int i = 0, j = len - 1; i < j; i++, j--){
+//              if (res[i] != res[j]){
+//                  return false;
+//              }
+//          }
+//          return true;
+//      }
+// }
+
+// Method 2, fast and slow pointer
+class Solution {
+     public boolean isPalindrome(ListNode head) {
+         // Return true if empty or only one node
+         if (head == null && head. next == null) return true;
+         ListNode slow = head;
+         ListNode fast = head;
+         ListNode pre = head;
+         while (fast != null && fast. next != null){
+             pre = slow; // record the previous node of slow
+             slow = slow. next;
+             fast = fast.next.next;
+         }
+         pre.next = null; // Split two linked lists
+
+         // first half
+         ListNode cur1 = head;
+         // Second half. Here the reverse linked list is used
+         ListNode cur2 = reverseList(slow);
+
+         while (cur1 != null){
+             if (cur1.val != cur2.val) return false;
+
+             // Note that two nodes need to be moved
+             cur1 = cur1. next;
+             cur2 = cur2.next;
+         }
+         return true;
+     }
+     ListNode reverseList(ListNode head){
+         // reverse linked list
+         ListNode tmp = null;
+         ListNode pre = null;
+         while (head != null){
+             tmp = head. next;
+             head.next = pre;
+             pre = head;
+             head = tmp;
+         }
+         return pre;
+     }
+}
+```
+[[back to list]](#create-linked-list)
+
+### leetcode 143
+Reorder List
+```java
+// // Method 1 Java implementation, using an array to store nodes
+//   class Solution {
+//      public void reorderList(ListNode head) {
+//          // Double pointer approach
+//          ListNode cur = head;
+//          // The bottom layer of ArrayList is an array, which can be accessed randomly using subscripts
+//          List<ListNode> list = new ArrayList<>();
+//          while (cur != null){
+//              list.add(cur);
+//              cur = cur. next;
+//          }
+//          cur = head; // return to the head
+//          int l = 1, r = list.size() - 1; // Note that the left side starts from 1
+//          int count = 0;
+//          while (l <= r){
+//              if (count % 2 == 0){
+//                  // even number
+//                  cur.next = list.get(r);
+//                  r--;
+//              } else {
+//                  // odd number
+//                  cur.next = list.get(l);
+//                  l++;
+//              }
+//              // Every time the pointer needs to be moved
+//              cur = cur. next;
+//              count++;
+//          }
+//          // Pay attention to the end of the wave
+//          cur.next = null;
+//      }
+// }
+// Method 2: Use a double-ended queue to simplify the operation of the array, and the code is more concise than the former (avoid some boundary conditions)
+// class Solution {
+//      public void reorderList(ListNode head) {
+//          // Use double-ended queue method to solve
+//          Deque<ListNode> de = new LinkedList<>();
+//          // Here is the next node to take the head, the head does not need to enter the queue again, to avoid duplication
+//          ListNode cur = head. next;
+//          while (cur != null){
+//              de.offer(cur);
+//              cur = cur. next;
+//          }
+//          cur = head; // go back to the head
+
+//          int count = 0;
+//          while (!de.isEmpty()){
+//              if (count % 2 == 0){
+//                  // Even number, take out the value at the right end of the queue
+//                  cur.next = de.pollLast();
+//              } else {
+//                  // Odd number, take out the value at the left head of the queue
+//                  cur.next = de.poll();
+//              }
+//              cur = cur. next;
+//              count++;
+//          }
+//          cur.next = null;
+//      }
+// }
+
+// method three
+class Solution {
+     public void reorderList(ListNode head) {
+         ListNode fast = head, slow = head;
+         //Find the midpoint
+         while (fast. next != null && fast. next. next != null) {
+             slow = slow. next;
+             fast = fast.next.next;
+         }
+         //right is the right half 12345 is 45 1234 is 34
+         ListNode right = slow. next;
+         // disconnect the left part and the right part
+         slow. next = null;
+         //Reverse the right part right is the starting point of the reversed right part
+         right = reverseList(right);
+         //Start of the left part
+         ListNode left = head;
+         // Connect the left and right parts back and forth
+         //The number of nodes in the left part must be greater than or equal to the number of nodes in the right part, so only judge right
+         while (right != null) {
+             ListNode curLeft = left. next;
+             left. next = right;
+             left = curLeft;
+
+             ListNode curRight = right. next;
+             right. next = left;
+             right = curRight;
+         }
+     }
+     public ListNode reverseList(ListNode head) {
+         ListNode headNode = new ListNode(0);
+         ListNode cur = head;
+         ListNode next = null;
+         while (cur != null) {
+             next = cur. next;
+             cur.next = headNode.next;
+             headNode. next = cur;
+             cur = next;
+         }
+         return headNode. next;
+     }
 }
 ```
 [[back to list]](#create-linked-list)
