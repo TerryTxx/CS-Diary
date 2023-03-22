@@ -52,7 +52,7 @@ Copyright © 2023, Tanxiaoxu
 
 ## :floppy_disk: mySQL(to be updated)
 
-- [SQL learning](https://github.com/TerryTxx/CS-Diary/blob/master/mySQL/react_js.md)
+- [SQL learning](https://github.com/TerryTxx/CS-Diary/blob/master/mySQL/mySQL.md)
 - [SQL exercise]
 - [noSQL:mongoDB](https://github.com/TerryTxx/CS-Diary/blob/master/WebNote/MangoDB.md)
 

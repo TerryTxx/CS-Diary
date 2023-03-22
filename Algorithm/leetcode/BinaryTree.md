@@ -5,16 +5,21 @@ DFS:
 - [94.Binary Tree Inorder Traversal](#leetcode-94)
 - [145.Binary Tree Postorder Traversal](#leetcode-145)
 
+
+
 BFS:
 - [102.Binary Tree Level Order Traversal](#leetcode-102)
 - Leetcode 107
+- Leetcode 100
+- Leetcode 129
+- Leetcode 124
 - Leetcode 199
 - Leetcode 637
 - Leetcode 429
 - Leetcode 515
 - Leetcode 116
 - Leetcode 117
-- Leetcode 104
+- Leetcode 103
 - Leetcode 111
 
 
@@ -32,9 +37,16 @@ BFS:
 - [113. Path Sum II](#leetcode-113)
 - [105. Construct Binary Tree from Preorder and Inorder Traversal](#leetcode-105)
 - [106. Construct Binary Tree from Inorder and Postorder Traversal](#leetcode-106)
+- 429
+- 589
+- 590
 - [654. Maximum Binary Tree](#leetcode-654)
 - [617. Merge Two Binary Trees](#leetcode-617)
 
+
+- 297
+- 543
+- 1443
 
 
 ---
@@ -91,23 +103,25 @@ class Solution {
 Binary Tree Inorder Traversal
 ```java
 class Solution {
-//    public List<Integer> inorderTraversal(TreeNode root) {
-//          List<Integer> result = new ArrayList<Integer>();
-//        inorder(root, result);
-//        return result;
-//    }
-//    
-//    //1. generally RootNode and Array; return void as paramater is in funcion already
-//          public void inorder(TreeNode root, List<Integer> result) {
-//    //2.  stop the recursion as root is null
-//            if (root == null) {
-//            return;
-//            }
-//    //3. left, middle,  right
-//            inorder(root.left, result);
-//              result.add(root.val);//******
-//             inorder(root.right, result);
-//          }
+    public List<Integer> inorderTraversal(TreeNode root) {
+        List<Integer> result = new ArrayList<Integer>();
+        inorder(root, result);
+        return result;
+    }
+
+    //1. generally RootNode and Array; return void as paramater is in funcion already
+    public void inorder(TreeNode root, List<Integer> result) {
+        //2.  stop the recursion as root is null
+        if (root == null) {
+            return;
+        }
+        //3. left, middle,  right
+        inorder(root.left, result);
+        result.add(root.val);//******
+        inorder(root.right, result);
+    }
+
+
 
     public List<Integer> inorderTraversal(TreeNode root) {
         List<Integer> result = new LinkedList<>();
