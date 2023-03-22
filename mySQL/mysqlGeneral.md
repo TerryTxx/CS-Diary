@@ -84,6 +84,87 @@ select * from txx_goods in terminal
 
 
 ### 6. CRUD of database
+#### Insert
+```sql
+INSERT INTO table_name [(column[,column...])]
+VALUES (vlaue [,value...]);
+-- 1.the insert type should excatly same with filds;
+-- 2.care of the value length
+-- 3.char and date should be circled by ''
+-- 4.column could be null, as insert into table value(null)
+-- 5. insert into tab name(vow name), values(),(),()
+-- 6. if add the value to all field, could not have the field name
+-- 7. if not assign value to a field, then will need default value, or erro;
+```
+#### Update
+```sql
+UPDATE tbl_name
+        SET col_name = expr1 [1,col_name2=expr2...]
+        [WHERE where_definition]
+```
+#### Delete
+```sql
+     delete from tbl_name
+     [WHERE where_definition]
+```
+#### ** Select
+single table
+```sql
+SELECT [DISTINCT]*|{column1,column2,column3..}
+        FROM tablename;
 
+SELECT *|{column1|expression, column2|expression...}
+        FROM tablename;
 
+SELECT columnname as NickName from tablename;
+```
+expresions in where
+```
+1. compare: >, <, <= , >=, =,<>,!=
+   BETWEEN...AND...
+   LIKE   /  NOT LIKE
+   IS NULL
+2. logic: and (both or all should meet)
+          or  (at least one should meet)
+          not (none meet)
+```
+order by languages:
+```sql
+SELECT column1,column2,column3...
+        FROM table;
+        order by column asc|desc; ...
+```
 [[back to list]](#mysql-in-general)
+
+### FUNCTIONS of: count() , sum(), avg(), Max()/Min()
+Count return the lines of results you searched;
+```sql
+Select count(*) count(columnName) from table_name
+            [WHERE where_definition]
+-- if the count is not *, it will count the lines and skip the null ones
+```
+SUM:
+```sql
+SELECT SUM(math) FROM student;--all math scores together by the students
+SELECT SUM(math),SUM(english) From student;--all math,and all english scores
+SELECT SUM(math) AS math_intotal FROM student;
+SELECT SUM(math+english+science) FROM student;
+SELECT SUM(math)/COUNT(*) FROM student;--get average score for the class,we can use AVG also
+```
+AVG 
+```sql
+SELECT AVG(math) FROM student;
+SELECT AVG(math+english+science) FROM student;
+```
+Max/min
+```sql
+SELECT MAX(math+english+science),MIN(math+english+science) FROM student;
+-- will have the highest total score and lowest score
+```
+### group by,     having
+```sql
+SELECT column1,column2,column3.. FROM table
+        group by column having...
+```
+
+
