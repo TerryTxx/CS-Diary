@@ -3,12 +3,26 @@
 
 ---
 ## mySQL in General
-- ###  [Installation and path](#1-installation-and-path)
-- ### [The three-tier structure of the databases](#2-the-three-tier-structure-of-the-database)
-- ### [How the data is stored in the databases](#3-how-the-data-is-stored-in-the-database)
-- ### [Classification of SQL statement](#4-classification-of-sql-statements)
-- ### [operate in Java](#5-operate-in-java)
-- ### [database CRUD](#6-crud-of-database)
+####  [1. Installation and path](#1-installation-and-path)
+#### [2. The three-tier structure of the databases](#2-the-three-tier-structure-of-the-database)
+#### [3. How the data is stored in the databases](#3-how-the-data-is-stored-in-the-database)
+#### [4. Classification of SQL statement](#4-classification-of-sql-statements)
+#### [5. operate in Java](#5-operate-in-java)
+#### [6. database CRUD](#6-crud-of-database)
+#### [6.4. General functions in select](#--select)
+#### [6.4. mySQL functions with select](#--select)
+- #### 6.4.1 Statistics functions on single form
+- - 1. [count() , sum(), avg(), Max()/Min()](#functions-of--count----sum----avg----max---min--)
+- - 2. [group by , having](#group-by-having)
+- - 3. [String functions](#string-functions)
+- - 4. [Math functions](#math-functions)
+- - 5. [Date Functions](#date-functions)
+- - 6. [Encryption and system functions](#encryption-functions)
+- - 7. [Flow Control Functions](#control-flow-functions)
+- #### 6.4.2 Multi-table select/enhanced select
+- - 1. [select_increments](#selectincrements)
+- - 2. [select by pages](#select-by-pages)
+
 
 
 ---
@@ -161,10 +175,149 @@ Max/min
 SELECT MAX(math+english+science),MIN(math+english+science) FROM student;
 -- will have the highest total score and lowest score
 ```
+### Functions of group by and having
 ### group by,     having
 ```sql
 SELECT column1,column2,column3.. FROM table
         group by column having...
+-- group by is to show the result in group
+-- having is sorting the group with conditions
 ```
+[[back to list]](#mysql-in-general)
+
+### string functions
+```SQL
+--1. CHARASET(str)
+SELECT CHARSET (ename)FROM emp;
+--2. CINCAT(string2 [,...])
+SELECT CHARSET (ename,' position is : ',job)FROM emp;
+-- 3. UCASE
+-- 4. LCASE
+-- 5. LENGTH(string)
+SELECT LENGTH(ename) FROM emp;
+-- 6. REPLACE(string,search_str,replace_str)
+SELECT ename REPLACE (job, 'Manager','Worker') FROM emp;--change the job from manager to worker
+-- 7. SUBSTRING(str, position [,length])
+SELECT SUBSTRING(ename,1,2)from emp;
+--get 2 chars in ename column from the 1st position 
+```
+[[back to list]](#mysql-in-general)
+
+### Math functions
+```sql
+-- 1. ABS(num)
+SELECT ABS(-10) FROM DUAL;
+-- 2. CEILING(num)
+SELECT CEILING(1.1) FROM DUAL;--2, return the smallest int
+-- 3. FLOOR(num)
+SELECT FLOOR(1.1) FROM DUAL; --1, return the biggest int
+-- 4. FORMAT(number,decimal_place)
+SELECT FORMAT(78.12344 , 2) FROM DUAL;--78.12
+-- 5. LEAST(num1,num2[,..])
+SELECT LEAST(0,1,-14,4) FROM DUAL; -- -14
+-- 6. MOD(numerator,denominator)
+SELECT MOD(10,3) FROM DUAL;  -- 10%3==1
+-- 7. RAND([SEED])
+SELECT RAND() FROM DUAL;
+
+```
+[[back to list]](#mysql-in-general)
+
+### Date Functions
+```sql
+-- 1. CURRENT_DATE()
+-- 2. CURRENT_TIME()
+-- 3. CURRENT_TIMESTAMP()
+-- 4. DATE(datetime)
+-- 5. DATE_ADD(date2,INTERVAL d_value d_type)
+-- 6. DATE_SUB(date2,INTERVAL d_value d_type)
+-- 7. NOW()
+SELECT *
+FROM mes -- ADD IN mes
+WHERE DATA_ADD(send_time, INTERVAL 10 MINUTE) >= NOW();
+-- or
+-- WHERE send_time >= DATE_SUB(NOW(), INTERVAL 10 MINUTE);
+
+-- means get all sth within 10 mins from send to now
+--get time 10 minutes after send time and with 10 mins from now
+-- 8. DATEDIFF(date1,date2)
+SELECT DATEDIFF('2011-11-11','1990-01-01') FROM DUAL;
+-- from 1990 to 2011, how many days between
+SELECT DATEDIFF(NOW(),'1992-01-01') FROM DUAL;
+-- how many days you lived
+
+-- 9. YEAR | MONTH | DAY | DATE(datetime)
+-- 10. FROM_UNIXTIME()  unix_timestamp();
+SELECT YEAR(NOW()) FROM DUAL;
+SELECY UNIX_TIMESTAMP()/(365*24*3600) FROM DUAL;
+SELECT FROM_UNIXTIME(1618483484,'%Y-%m-%d') FROM DUAL;
+```
+[[back to list]](#mysql-in-general)
+
+### Encryption Functions
+```sql
+-- 1. USER()
+SELECT USER() FROM DUAL;
+-- 2. DATABASE()
+-- 3. MD5(str)
+-- 4. PASSWORD(str)
+-- 5. select * from mysql.user \G
+```
+[[back to list]](#mysql-in-general)
+
+### Control Flow Functions
+```sql
+-- 1. IF
+SELECT IF(TRUE, 'DUBLIN', 'PARIS') FROM DUAL;
+-- 2. IFNULL
+SELECT IFNULL(NULL,'TXX') FROM DUAL;--TXX
+SELECT INFNULL('TERRY','TXX') FROM DUAL;--TERRY
+-- 3. CASE... ELSE
+SELECT CASE WHEN expr1 THEN expr2
+            WHEN expr3 THEN expr4
+            ELSE expr5 END;
+```
+[[back to list]](#mysql-in-general)
+
+## Multi-table select/enhanced select
+### select_increments
+1. in mysql, date types could be checked directly
+```sql
+SELECT*FROM emp
+        WHERE hiredate > '2021-01-01'
+```
+2. 'like' select
+```sql
+SELECT ename,sal FROM emp
+        WHERE ename LIKE 'S%';
+        WHERE ename LIKE '__S%';
+SELECT * FROM emp
+        WHERE mgr IS NULL;--should use is not = to check null
+```
+[[back to list]](#mysql-in-general)
+### select by pages
+```sql
+-- SELECT...LIMIT START,ROWS
+-- get row lines from start+1
+SELECT * FROM emp
+         ORDER BY empNO
+         LIMIT 0, 3
+SELECT * FROM emp
+          ORDER BY empNO
+          LIMIT 3, 3
+```
+### Enhance group-by
+```sql
+SELECT COUNT(*),AVG(sal),job
+        FROM emp
+        GROUP BY job;
+```
+[[back to list]](#mysql-in-general)
+
+
+
+
+
+[[back to list]](#mysql-in-general)
 
 
