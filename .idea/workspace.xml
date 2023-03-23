@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8fc147b-984c-4faa-8bf9-7931f68677de" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mySQL/mySQL.md" beforeDir="false" afterPath="$PROJECT_DIR$/mySQL/mySQL.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mySQL/mysqlGeneral.md" beforeDir="false" afterPath="$PROJECT_DIR$/mySQL/mysqlGeneral.md" afterDir="false" />
-    </list>
+    <list default="true" id="e8fc147b-984c-4faa-8bf9-7931f68677de" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -135,7 +131,7 @@
       <workItem from="1679398726960" duration="4564000" />
       <workItem from="1679487071896" duration="6190000" />
       <workItem from="1679507082358" duration="4221000" />
-      <workItem from="1679574775151" duration="10155000" />
+      <workItem from="1679574775151" duration="10175000" />
     </task>
     <servers />
   </component>
