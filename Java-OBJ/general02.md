@@ -21,7 +21,7 @@
 
 ### [Process Analysis of Object Creation](#process-of-object-creation)
 
-### [this concept]（#）
+### this concept:
 - [JVM drawing of this](#jvm-showing----this-)
 - [Notice of using this](#notes-of-using-this-)
 

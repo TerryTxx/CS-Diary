@@ -397,10 +397,12 @@ public class PloyParamater {
 1. is a comparison operator;
 2. Judging the basic data type and whether the judged values are equal;
 3. Judging the reference data type, the judgment is whether the address is consistent, that is, the same object;
-   equals:
+
+equals:
 1. It is a method in the Object class, so it can judge the reference data type by itself;
 2. Direct use the method : ---- determine whether the address is the same;
 3. Subclasses override the method : ---- generally used to determine whether the content is the same;（For example, in the String class, it comes with rewriting to judge whether the content is consistent）
+
 [[back to list]](#----polymorphic)
 
 

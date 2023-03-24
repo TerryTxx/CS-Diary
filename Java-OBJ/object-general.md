@@ -23,3 +23,5 @@ Copyright © 2023, Tanxiaoxu
 - ### [constructor](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/general02.md)
 - ### [this](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/general02.md)
 - ### [exercises](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/exerises01.md)
+- ### [selector01](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/generalExer/selector.md)
+- ### [selector02](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/generalExer/selector02.md)
