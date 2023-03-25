@@ -5,6 +5,9 @@
 [Go back](https://github.com/TerryTxx/CS-Diary/blob/master/Algorithm/LinkedList.md)
 
 ---
+### Create linked list：
+
+[707.Design Linked List](#leetcode-707)
 
 ### Dummy head node
 
@@ -20,16 +23,14 @@ leetcode 83
 
 leetcode 86
 
-### Create linked list：
-
-[707.Design Linked List](#leetcode-707)
-
 ---
 ### delete element/ pointers
 
 [2.Add Two Numbers](#leetcode-2)
 
-leetcode 92--reverse
+[92. Reverse Linked List II](#leetcode-92)
+
+[206.Reverse Linked List](#leetcode-206)
 
 [203.Remove Linked List Elements](#leetcode-203)
 
@@ -50,8 +51,6 @@ leetcode 147
 leetcode 876
 
 leetcode 234
-
-[206.Reverse Linked List](#leetcode-206)
 
 [19.Remove Nth Node From End of List](#leetcode-19)
 
@@ -445,6 +444,72 @@ class Solution {
 // }
 }
 ```
+[[back to list]](#create-linked-list)
+
+#### leetcode 92
+```java
+//// solution 1: dumyhead
+    // class Solution {
+    //     public ListNode reverseBetween(ListNode head, int left, int right) {
+    //     if(head.next==null||head==null){
+    //         return head;
+    //     }
+    //     ListNode dumy = new ListNode(-1);
+    //     dumy.next = head;
+    //     ListNode p =dumy;
+    //     ListNode preleft = null;
+    //     ListNode leftNode = null;
+    //     ListNode pre = null;
+    //     ListNode rightNode = null;
+    //     ListNode nextRight= null;
+    //     for(int i =0; p!=null; i++){
+    //         if(i==left-1){
+    //             preleft = p;
+    //             leftNode = p.next;
+    //         }
+
+    //         if((i == right)&&(p.next != null)){
+    //             nextRight = p.next;
+    //         }
+
+    //         if(i == right){
+    //             rightNode = p;
+    //         }
+    //         p = p.next;
+    //     }
+    //     p = leftNode;
+    //     while(p!=nextRight){
+    //         ListNode moving = p.next;
+    //         p.next = pre;
+    //         pre = p;
+    //         p = moving;
+    //     }
+
+    //     preleft.next = rightNode;
+    //     leftNode.next = nextRight;
+    //     return dumy.next ;
+    //     }
+    // }
+//solution 2: recursion
+    class Solution {
+        public ListNode reverseBetween(ListNode head, int left, int right) {
+            
+            if(right == left) return head;
+            
+            if(left > 1){
+                head.next = reverseBetween(head.next, left-1, right-1);
+                return head;
+            }else{
+                ListNode cur = reverseBetween(head.next, 1 , right-1);
+                ListNode res = head.next.next;
+                head.next.next = head;
+                head.next = res;
+                return cur;
+            }
+        }
+    }
+```
+
 [[back to list]](#create-linked-list)
 
 #### leetcode 19

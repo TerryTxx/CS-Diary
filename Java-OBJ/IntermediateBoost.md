@@ -9,13 +9,13 @@ Copyright © 2023, Tanxiaoxu
 
 ---
 
-### Class variables
-### Class methods
-### Use of man
-### Code blocks
-### Singleton Hungry Man pattern
-### The singleton lazy man pattern
-### Use of final
+### [Class variables](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/IBobj01.md)
+### [Class methods](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/IBobj01.md)
+### [Use of main](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/IBobj01.md)
+### [Code blocks](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/IBobj01.md)
+### [Singleton Hungry Man pattern](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/IBobj01.md)
+### [The singleton lazy man pattern](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/IBobj01.md)
+### [Use of final](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/IBobj01.md)
 
 ### Abstract classes
 ### Interfaces
