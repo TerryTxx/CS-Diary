@@ -18,6 +18,11 @@
 ### [Abstract class](#abstract-classes)
 - [Abstract Class, Template Design Pattern](#abstract-class-template-design-pattern)
 ### Interfaces
+- [Basic understanding of Interface](#basic-understanding-of-interface)
+- [Notes on the interface and details of its use](#notes-on-the-interface-and-details-of-its-use-)
+- [Interface implementation and inheritance:](#interface-implementation-and-inheritance-)
+- [Polymorphism in interface](#polymorphism-in-interfaces)
+
 
 ---
 ### Class variables/ static attributes
@@ -686,5 +691,212 @@ public class main{
 
 
 ### Interfaces
+#### Basic understanding of Interface
+
+- Concept of interfaces:
+```
+An interface is a way of giving methods that are not implemented, encapsulated together, and then written out on a case-by-case basis when a class is to use them;
+```
+
+- Format of an interface:
+```java
+interface [interface name] {
+    //1. attributes;
+        public int n1 = 10;
+    //2. attribute methods, can not have abstract modifier
+        public void hi();
+    //3. nonstatic method with body, with body need default
+        default public void ok(){ System.out.print("OK"); }
+    //4. static method:
+        public static void say(){ System.out.print("cry");  }
+}
+
+// if implements, then need initialize all abstract method
+class [class name] implements [interface name] {
+        //class own attributes;
+        //class own methods;
+       // the abstract methods in the interface that must be implemented in class;
+       @Override
+       public void hi(){System.out.print("hi"); }
+}
+```
+- Common scenarios for interfaces:
+```
+If a project manager, managing three programmers, functions to develop a piece of software, in order to manage and control the process, interfaces are defined and implemented by different people.
+```
+![IMG_4EA8E53B4509-1.jpeg](pics%2FIMG_4EA8E53B4509-1.jpeg)
+
+#### Notes on the interface and details of its use:
+
+1. interfaces cannot be instantiated;
+2. all methods in the interface are public, and methods abstracted by the interface may not be used abstract.
+```
+void aaa() is actually abstract void aaa().
+```
+3. an ordinary class that implements an interface must implement all abstract methods of that interface;
+4. an abstract class may not implement the methods of an interface, but directly implements
+5. a class may implement more than one interface at a time;
+6. the properties in an interface can only be finial and public static final
+   
+For example:
+```
+int a = 1; is actually: public static final int a = 1 ; (must be initialized)
+```
+7. The form of access to attributes in an interface: 
+```
+[interface name]. [attribute name].
+```
+8. An interface cannot inherit from other classes, but can inherit from multiple interfaces, e.g:
+```
+interface A extends B,C{ }
+```
+9. modifiers for interfaces, which can only be public and default, are the same as for classes;
+  
+[[back to list]](#object-oriented-intermediate-boost01)
+#### Interface implementation and inheritance:
+- (1.) The value of inheritance: addressing the reusability of code;
+- (2.) Value of interfaces: design and specification to accomplish various methods for other classes to implement;
+
+- (3.) Interfaces are more flexible than inheritance.
+- - 1. Inheritance is similar to "is ... a" relationship.
+- - 2. Interfaces are similar to "like ... a" relationship;
+
+
+- (4.) Interfaces enable a degree of decoupling of code;
+
+（In collections, such as Lists and Sets, interfaces are used extensively）
+```
+1. when a child class inherits from a parent class, it automatically has the functionality of the parent class;
+2. if a subclass needs to extend functionality, it can do so by interface implementation and method overriding;
+3. interface implementation, therefore, is primarily intended to complement java single inheritance;
+```
+```java
+public class ExtendsVsInterface{
+    public static void main(String[] args) {
+        LittleMonkey Wu = new LittleMonkey("WU");
+        Wu.climbing();
+        Wu.swimming();
+        Wu.flying();
+    }
+}
+class Monkey{
+    private String name;
+    public Monkey(String name){
+        this.name = name;
+    }
+    public void climbing(){
+        System.out.println(name + " is climbing");
+    }
+    public String getName(){
+        return name;
+    }
+}
+// interface
+interface Fishable{
+    void swimming();
+}
+interface Birdable{
+    void flying();
+}
+// inheritance VS implements
+class LittleMonkey extends Monkey implements Fishable,Birdable{
+    public LittleMonkey(String name){
+        super(name);
+    }
+    
+    @Override
+    public void swimming(){
+        System.out.println(getName() + " is learning to swim like fish");
+    }
+
+    @Override
+    public void flying(){
+        System.out.println(getName() + " is learning to fly like birds");
+    }
+}
+```
+[[back to list]](#object-oriented-intermediate-boost01)
+
+
+#### Polymorphism in interfaces
+1. Polymorphic parameters:
+
+Demo: The variable "if01 "of type interface, which can point to all instances of objects that implement the "IF" interface;
+```java
+public class InterfacePolyParameter(){
+    public static void main(String[] args) {
+        //1. poly in interface
+        // variable of interface, could point all instant objects that the classes implement it;
+        IF if01 = new Monster();
+        if01 = new Car();
+        
+      //2. poly in inhier extends
+        // base variable, could point to any of its sub class
+        AAA a = new BBB();
+        a = new CCC();
+    }
+}
+interface IF{}
+class Monster implements IF{}
+class Car implements IF{}
+
+class AAA{}
+class BBB extends AAA{}
+class CCC extends AAA{}
+```
+2. polymorphic arrays:
+
+```java
+import java.util.Calendar;
+
+public class InterfacePolyArr {
+    public static void main(String[] args) {
+        Usb[] usbs = new Usb[2];
+        usbs[0] = new Phone();
+        usbs[1] = new Camera();
+        for (int i = 0; i < usbs.length; i++) {
+            usbs[i].work();
+            if (usbs[i] instanceof Phone){
+                ((phone).usbs[i]).call;
+            }
+        }
+    }
+}
+
+interface Usb { void work();
+}
+
+class Phone implements Usb {
+    @Override
+    public void work(){
+        System.out.println("Phone start to work...");
+    }
+    public void call(){
+        System.out.println("calling by phone...");}
+}
+
+class Camera implements Usb {
+    @Override
+    public void work(){
+        System.out.println("Camera start to work...");
+    }
+}
+```
+
+3. The existence of polymorphic passing of interfaces
+
+```java
+public class InterfacePolyPass {
+    public static void main(String[] args) {
+        IG ig = new Teacher();
+        // as IG extends IH, and Teacher implements IG, si Teacher implements IH autolly
+        // this is poly passing
+        IH ih = new Teacher();
+    }
+}
+interface IH {}
+interface IG extends IH{}
+class Teacher implements IG{}
+```
 
 [[back to list]](#object-oriented-intermediate-boost01)
