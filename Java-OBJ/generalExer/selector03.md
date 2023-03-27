@@ -13,7 +13,8 @@ constructor this&super: remember this means current class, super means base clas
                     1. the Pet has attribute name, and arg constructor, 
                         so no default constructor, so sub could only call super(str);
                     2. a. Dog extends Pet, aDog has arg-construc with int, 
-                        and arg-con with boolean, paramater (str,int),so need keep field in Dog class, this(y) in constructor need, as Dog class has this(int) and this(boolean) only 
+                        and arg-con with boolean, paramater (str,int),so need keep field in Dog class, 
+                        this(y) in constructor need, as Dog class has this(int) and this(boolean) only 
                     3. b. Dog extends Pet, bDog has non-arg-construc and this(Str,int), 
                        so pressing in int, only non-arg constructor could call;
                     4. c. Dog extends Pet, cDog has this(str) construc so choose this("");
@@ -71,8 +72,10 @@ method ,getter and setter: methods in class
                    1. use updater variable to call the method, 
                        and parameter is joneDoe(obj variable point to Person) and a String;
                    2. so changeSurname parameter is (Person thePerson, String newSurname)
-                   3. Since no declared variable is used to accept the result of the method, it is a void method with no return
-                   4. this means this class, but no surname in this class will compile wrong, so should ues theperson.surname
+                   3. Since no declared variable is used to accept the result of the method, 
+                       it is a void method with no return
+                   4. this means this class, but no surname in this class will compile wrong, 
+                       so should ues theperson.surname
 ```
 ---
 

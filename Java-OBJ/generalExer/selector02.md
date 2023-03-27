@@ -159,10 +159,11 @@ EXERCISE 12:
 Analysis:
 ```
 method override: mistake by me is 1. not read as out with string;
-                                  2. method name is taste(), 
-                                     ßthis is a method, so base.method(), then is super.taste();
+                                 2. method name is taste(), 
+                                    this is a method, so base.method(), then is super.taste();
 ```
 [check details](#classes-and-objects-steps)
 
 ---
-EXERCISE 02:
+
+

@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e8fc147b-984c-4faa-8bf9-7931f68677de" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/selector.md" beforeDir="false" afterPath="$PROJECT_DIR$/Java-OBJ/generalExer/selector.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/selector02.md" beforeDir="false" afterPath="$PROJECT_DIR$/Java-OBJ/generalExer/selector02.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/selector03.md" beforeDir="false" afterPath="$PROJECT_DIR$/Java-OBJ/generalExer/selector03.md" afterDir="false" />
     </list>
@@ -145,7 +144,7 @@
       <workItem from="1679742295427" duration="20848000" />
       <workItem from="1679841199044" duration="13148000" />
       <workItem from="1679865485645" duration="117000" />
-      <workItem from="1679908490773" duration="17022000" />
+      <workItem from="1679908490773" duration="17717000" />
     </task>
     <servers />
   </component>
