@@ -75,7 +75,8 @@ EXERCISE02:
 Analysis:
 ```
 NOTE 08, constructor
-          no defined consturctor in class, then have a default constructor, and same function with no-arg constructor
+          no defined consturctor in class, then have a default constructor, 
+          and same function with no-arg constructor
           so no need to have a seperate no-arg constructore
 ```
 [check details](#notes-for-constructor)
@@ -87,7 +88,8 @@ Analysis:
 ```
 NOTE 01, constructor
         constructor is used to initnilize the paramater, use the input to cover the initinal in field
-        with this, then function in the class attribute of name, without this, function start search name from field inside it then in class
+        with this, then function in the class attribute of name, without this, 
+        function start search name from field inside it then in class
 ```
 [check details](#notes-for-constructor)
 
@@ -98,7 +100,8 @@ Analysis:
 ```
 NOTE 01/08, constructor
             create a new obj in main in first step, then comes to the class Person;
-            as we have objName as default, then it is "null", and no defined constructor, means only default constructor do nothing
+            as we have objName as default, then it is "null", 
+            and no defined constructor, means only default constructor do nothing
             then back to MAIN, objname is still "null"
 ```
 [check details](#notes-for-constructor)
@@ -108,7 +111,8 @@ EXERCISE 05:
 ![Screenshot 2023-03-23 at 20.18.35.png](screenshot%2FScreenshot%202023-03-23%20at%2020.18.35.png)
 Analysis:
 ```
-OBJECT: new Person(); in main, then have Person obj in heap with address, and access to objectName in the method pool by classPerson
+OBJECT: new Person(); in main, then have Person obj in heap with address, 
+       and access to objectName in the method pool by classPerson
         then nothing turn out, as codes finished;
 ```
 [check details](#classes-and-objects-steps)
@@ -118,7 +122,8 @@ EXERCISE 06:
 ![Screenshot 2023-03-23 at 20.18.44.png](screenshot%2FScreenshot%202023-03-23%20at%2020.18.44.png)
 Analysis:
 ```
-OBJECT: new Person(); in main, then have Person obj in heap with address, and access to objectName in the method pool by classPerson
+OBJECT: new Person(); in main, then have Person obj in heap with address, 
+        and access to objectName in the method pool by classPerson
         sout the object, will print out its unique address number
 ```
 [check details](#classes-and-objects-steps)
@@ -205,8 +210,10 @@ EXERCISE 13:
 Analysis:
 ```
 == usage:
-        fellow the steps of staments: 1. p1 points a Person obj; 2. p2 points to another Person obj
-                                      3. p1 = p2,  p1 change access to p2, means points the same Person obj as p2 pointed to
+        fellow the steps of staments: 1. p1 points a Person obj; 
+                                      2. p2 points to another Person obj
+                                      3. p1 = p2,  p1 change access to p2, 
+                                           means points the same Person obj as p2 pointed to
                                       the p1 == p2 is true ,as the same obj now
             VS Exercise 14     
 ```
@@ -230,7 +237,8 @@ EXERCISE 15:
 Analysis:
 ```
 equals usage:
-        fellow the steps of staments: 1. p1 points a Person obj; 2. p2 points to another Person obj
+        fellow the steps of staments: 1. p1 points a Person obj; 
+                                      2. p2 points to another Person obj
                                       3. as equals is a function, no override in Person, so it is used to check the obj address as default;
                                       4. p1 = p2,  p1 change access to p2, means points the same Person obj as p2 pointed to
                                       the p1.equals( p2 )is true ,as the same obj now
@@ -245,7 +253,8 @@ Analysis:
 equals usage:
         fellow the steps of staments: 1. p1 points a Person obj;
                                       2. p2 points to another Person obj
-                                      3. as equals is a function, no override in Person, so it is used to check the obj address as default;
+                                      3. as equals is a function, no override in Person, 
+                                          so it is used to check the obj address as default;
                                       the p1.equals( p2 )is false ,as the different objs
 ```
 [check details](#---and-equals-usage-)
@@ -258,7 +267,8 @@ Analysis:
 equals usage:
         fellow the steps of staments: 1. p1 points a Person obj;
                                       2. p2 points to another Person obj
-                                      3. as equals is a function, overrided in Person, now its function is to check the name in this object and the name in input object is same or not
+                                      3. as equals is a function, overrided in Person,
+                                          now its function is to check the name in this object and the name in input object is same or not
                                       the p1.equals( p2 )is true  ,as both objs' name is "bill"
 ```
 [check details](#---and-equals-usage-)
@@ -271,7 +281,8 @@ Analysis:
 equals usage:
         fellow the steps of staments: 1. p1 points a Person obj;
                                       2. p2 points to another Person obj
-                                      3. as equals is a function, overrided in Person, now its function is to check the name in this object and the name in input object is same or not
+                                      3. as equals is a function, overrided in Person, 
+                                         now its function is to check the name in this object and the name in input object is same or not
                                       the p1.equals( p2 )is false ,one is "bill" the other is "bob"
 
 ```
@@ -283,7 +294,7 @@ Analysis:
 ```
 object and constuctor:
                     1. Person p2 = new Person("bill", p1);
-                    so the first parrmater should be String xxx, the second should be Person xxx(p1);
+                      so the first parrmater should be String xxx, the second should be Person xxx(p1);
                     2. as p2 point to an obj, so should return an object by the constructor
 ```
 [check details](#constructor-learning)
@@ -313,7 +324,8 @@ Analysis:
 ```
 Constructor and extends:
                 1.  Cat c = new Cat("tammy");-- c point to the Cat obj in heap
-                2.  as new, so the constructor in Cat should work when running, in Cat constructor ,super directly, so bring the aCatName to Pet class
+                2.  as new, so the constructor in Cat should work when running, 
+                   in Cat constructor ,super directly, so bring the aCatName to Pet class
                 3.  now name in Pet is "tammy", but c.name, the attribute is in Cat field, still "cat"
 ```
 [check details](#constructor-learning)
@@ -324,7 +336,8 @@ Analysis:
 ```
 Constructor and extends:
                 1.  Cat c = new Cat("tammy");-- c point to the Cat obj in heap
-                2.  as new, so the constructor in Cat should work when running, in Cat constructor ,super directly, so bring the aCatName to Pet class
+                2.  as new, so the constructor in Cat should work when running, 
+                   in Cat constructor ,super directly, so bring the aCatName to Pet class
                 3.  now name in Pet is "tammy", as c.getname(), return super.name, so out "tammy"
 ```
 [check details](#constructor-learning)
@@ -351,8 +364,10 @@ EXERCISE 25:
 Analysis:
 ```
 Constructor and extends: 1. the new of two objs is same as exercise 24
-                         2. b1.name, no name attribute in Blackbird， find in Bird, tippy, attribute of type is defined in Blackbird, so is blackbird
-                         3. b2.name, no name attribute in Duck， find in Bird, tippy, no attribute of type in Duck, find in Bird as "robin"
+                         2. b1.name, no name attribute in Blackbird， find in Bird, tippy, 
+                            attribute of type is defined in Blackbird, so is blackbird
+                         3. b2.name, no name attribute in Duck， find in Bird, tippy, 
+                            no attribute of type in Duck, find in Bird as "robin"
 ```
 [check details](#constructor-learning)
 

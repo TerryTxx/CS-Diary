@@ -20,9 +20,12 @@ EXERCISE 01:
 Analysis:
 ```
 extends and constructor:
-                a. new a sub obj, arg constructor, so base default/no-arg constructor run ,Pet has, aRabbitName assign to name in Pet;
-                b. new a sub obj, arg constructor, so base default/no-arg constructor run,OK;  then calls the super(string) in Pet's arg constructor;
-                c. new a sub obj, arg constructor, so base default/no-arg constructor run, Pet has； then assign aRatname to name, as no this name in Rabbit, then assign to Base
+                a. new a sub obj, arg constructor, so base default/no-arg constructor run ,
+                   Pet has, aRabbitName assign to name in Pet;
+                b. new a sub obj, arg constructor, so base default/no-arg constructor run,OK;
+                   then calls the super(string) in Pet's arg constructor;
+                c. new a sub obj, arg constructor, so base default/no-arg constructor run, Pet has；
+                   then assign aRatname to name, as no this name in Rabbit, then assign to Base
                 d. same as C
 ```
 [check details](#classes-and-objects-steps)
@@ -33,8 +36,12 @@ EXERCISE 02:
 Analysis:
 ```
 extends and constructor:
-               a. generally Dog(str) need default constructor, but has super(str)/constructor override in the first, so require Pet(str), has, then compile;
-               b. Rat(str) need default constructor, as has arg in Pet and no defined argconstructor, so could not compile
+               a. generally Dog(str) need default constructor, 
+                   but has super(str)/constructor override in the first, 
+                   so require Pet(str), has, then compile;
+               b. Rat(str) need default constructor, 
+                   as has arg in Pet and no defined argconstructor, 
+                   so could not compile
                c. same with a
                d. same with b
                
@@ -68,7 +75,8 @@ EXERCISE 05:
 Analysis:
 ```
 extends and constructor: override constructor
-                1. no attribute in Espresso, so all defined constructor connect with base Coffee, c is wrong
+                1. no attribute in Espresso, 
+                   so all defined constructor connect with base Coffee, c is wrong
                 2. no new obj in espresso, so d is wrong
                 3. a,b is same, super(double); (= Coffee(double)in Coffee class)
 ```
@@ -80,7 +88,8 @@ EXERCISE 06:
 Analysis:
 ```
 OBJECT and constructor:  false
-                       same as exercise 05, a;  but super(x) should write in the first line in the constructor
+                       same as exercise 05, a;  
+                        but super(x) should write in the first line in the constructor
 ```
 [check details](#classes-and-objects-steps)
 
@@ -135,7 +144,8 @@ EXERCISE 11:
 Analysis:
 ```
 extneds and constructor:
-                        a. no name in the Rat, then assign to Pet, not good, call super(str) will better, to keep the name in Pet
+                        a. no name in the Rat, then assign to Pet, 
+                          not good, call super(str) will better, to keep the name in Pet
                         b. assign the name in Pet by a sub obj ,compile but not good
                         c. same as a
                         d. good
@@ -149,7 +159,8 @@ EXERCISE 12:
 Analysis:
 ```
 method override: mistake by me is 1. not read as out with string;
-                                  2. method name is taste(), this is a method, so base.method(), then is super.taste();
+                                  2. method name is taste(), 
+                                     ßthis is a method, so base.method(), then is super.taste();
 ```
 [check details](#classes-and-objects-steps)
 
