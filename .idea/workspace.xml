@@ -5,10 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e8fc147b-984c-4faa-8bf9-7931f68677de" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Java-OBJ/pics/IMG_4EA8E53B4509-1.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-25 at 21.32.23.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-25 at 21.33.13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-25 at 21.33.25.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-26 at 22.14.27.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-26 at 22.14.54.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-26 at 22.15.04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-26 at 22.15.11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-26 at 22.15.17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-26 at 22.15.24.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-26 at 22.15.33.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-26 at 22.15.41.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-26 at 22.15.47.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-26 at 22.15.52.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-26 at 22.16.03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-26 at 22.16.09.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-26 at 22.16.18.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-26 at 22.16.25.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-26 at 22.16.31.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-26 at 22.16.40.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-26 at 22.16.45.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-26 at 22.16.51.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-26 at 22.17.00.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-26 at 22.17.21.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-26 at 22.17.29.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-26 at 22.17.36.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-26 at 22.17.47.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java-OBJ/generalExer/selector03.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java-OBJ/IBobj01.md" beforeDir="false" afterPath="$PROJECT_DIR$/Java-OBJ/IBobj01.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java-OBJ/IBobj02.md" beforeDir="false" afterPath="$PROJECT_DIR$/Java-OBJ/IBobj02.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/object-general.md" beforeDir="false" afterPath="$PROJECT_DIR$/Java-OBJ/object-general.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,10 +91,10 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Java-OBJ/pics" />
-      <recent name="$PROJECT_DIR$/Java-OBJ/generalExer/screen02" />
       <recent name="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot" />
       <recent name="$PROJECT_DIR$/Java-OBJ/generalExer" />
+      <recent name="$PROJECT_DIR$/Java-OBJ/pics" />
+      <recent name="$PROJECT_DIR$/Java-OBJ/generalExer/screen02" />
       <recent name="$PROJECT_DIR$/WebNote/pics" />
     </key>
   </component>
@@ -143,7 +168,9 @@
       <workItem from="1679607078977" duration="2078000" />
       <workItem from="1679666534268" duration="170000" />
       <workItem from="1679742295427" duration="20848000" />
-      <workItem from="1679841199044" duration="13123000" />
+      <workItem from="1679841199044" duration="13148000" />
+      <workItem from="1679865485645" duration="117000" />
+      <workItem from="1679908490773" duration="15747000" />
     </task>
     <servers />
   </component>

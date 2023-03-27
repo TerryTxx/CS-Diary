@@ -25,3 +25,4 @@ Copyright © 2023, Tanxiaoxu
 - ### [exercises](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/exerises01.md)
 - ### [selector01](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/generalExer/selector.md)
 - ### [selector02](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/generalExer/selector02.md)
+- ### [selector03](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/generalExer/selector03.md)
