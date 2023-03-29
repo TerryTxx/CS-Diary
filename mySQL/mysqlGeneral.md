@@ -19,9 +19,14 @@
 - - 5. [Date Functions](#date-functions)
 - - 6. [Encryption and system functions](#encryption-functions)
 - - 7. [Flow Control Functions](#control-flow-functions)
-- #### 6.4.2 Multi-table select/enhanced select
+- #### 6.4.2 enhanced select
 - - 1. [select_increments](#selectincrements)
 - - 2. [select by pages](#select-by-pages)
+- - 3. [multi-clause](#multi-clause-query)
+- #### 6.4.3 Multi-table select
+- - 1. [multi-table query](#multi-table-query)
+- - 2. [self-join](#self-join)
+
 
 
 
@@ -313,11 +318,77 @@ SELECT COUNT(*),AVG(sal),job
         GROUP BY job;
 ```
 [[back to list]](#mysql-in-general)
+### multi-clause in one query
+```sql
+SELECT column1,column2,column3.. AS AVG FROM table
+        group by column
+        having condition
+        order by column
+        limit start, rows;
+```
+[[back to list]](#mysql-in-general)
 
+### multi-table query
+```
+That is, the query of two or more tables. 
+In practical applications, querying a single table may not meet the requirements.
+For example, dept and emp are required
+```
+```sql
+SELETC ename,sal,dname,emp,deptno    -- to find the columns you want to show
+    FROM emp,dept
+    WHERE emp.deptno = dept.deptno   -- the most import is to confirm the flitter condition
+```
+[[back to list]](#mysql-in-general)
+### self-join
 
-
-
-
+A self-join is a SQL query in which a single table is referenced twice in the query, as if it were two separate tables.
+```
+1. a single table used as two tables;
+2. need to alias the table to prevent duplicate names (table name AS 'xxx')
+3. a column alias can also be specified if the column name information is not clear (column name AS 'XXX')
+```
+```sql
+SELECT worker.ename as worker_name, boss.ename as boss_name
+        from emp worker, emp boss;
+        where worker.mgr = boss.empno;
+```
 [[back to list]](#mysql-in-general)
 
 
+### Subqueries, nested queries
+select statements embedded in other sql statements;
+```
+single-row subquery: a single-row subquery is a subquery statement that returns only one row of data;
+Multi-row subquery: subqueries that return multiple rows of data, keyword in
+```
+```sql
+SELECT * 
+        FROM emp
+        WHERE deptno = (
+                SELECT deptno
+                FROM emp
+                where enmae = 'SMITH'
+             )
+-- SELECT deptno    this part is used as a subquery
+--           FROM emp
+--           where enmae = 'SMITH'
+```
+```sql
+SELECT job from emp
+            where deptno = 10;
+SELETC ename, job, sal, deptno
+        from emp
+        where jo IN(
+                SELECT DISTINCT job
+                FROM emp
+                Where deptno = 10
+        ) AND deptnpo != 10
+
+```
+
+[[back to list]](#mysql-in-general)
+### 
+
+
+[[back to list]](#mysql-in-general)

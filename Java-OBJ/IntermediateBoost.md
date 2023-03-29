@@ -16,9 +16,11 @@ Copyright © 2023, Tanxiaoxu
 ### [Singleton Hungry Man pattern](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/IBobj01.md)
 ### [The singleton lazy man pattern](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/IBobj01.md)
 ### [Use of final](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/IBobj01.md)
+### [Abstract classes](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/IBobj01.md)
+### [Interfaces](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/IBobj01.md)
 
-### Abstract classes
-### Interfaces
+-----
+
 ### The four inner classes
 ### Enumerated classes
 ### The four meta-annotations
@@ -28,7 +30,4 @@ Copyright © 2023, Tanxiaoxu
 ### Boxing and Unboxing
 ### Assemblies
 ### Generics
-
-
-
 
