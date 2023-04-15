@@ -1,7 +1,7 @@
 
 ### The four inner classes
-- Local Inner Classes
-- [***Anonymous InnerClasses**]
+- [Local Inner Classes](#internal-class)
+- [***Anonymous InnerClasses**](#anonymous-innerclasses)
 - Member Inner Class
 - Static Inner Class
 ### Enumerated classes
@@ -46,7 +46,8 @@
                 m2();
             }//5. the local internal class,directly accesses members of external classes members--n1/m2()
         }//outside innerlocal
-        //6. the external class ---- creates objects in the scope of the local class ----> then access members of the local internal class 
+        //6. the external class ---- creates objects in the scope of the local class 
+        // ----> then access members of the local internal class 
         InnerLocal innerlocal = new InnerLocal();
         innerlocal.f1();
     }//outside m1()
@@ -59,5 +60,54 @@ class main {
                     // f1run, then out n1, m2()
     }
 }
+```
+[[back to list]](#enumerated-classes)
+
+
+### Anonymous InnerClasses
+```
+Still essentially a class, it is an internal class and is shown externally without a name
+Generally defined in a local of an external class, such as a method. No class name
+
+1. Syntax of anonymous internal classes:
+new class or or interface (parameters) {
+        class body};
+```
+```java
+interface IA{
+    public void cry();
+}
+
+class main{
+    public static void main(String[] args) {
+        IA tiger = new IA(){
+            public void cry(){
+                System.out.println("crying......")
+            }
+        };
+
+        tiger.cry(); 
+    }
+}
+
+```
+```text
+The run type is IA
+Compile type is anonymous internal class(outer04$1)
+```
+```java
+class Father{
+    public Father(String name){}
+    public void test(){}
+    } 
+class MAIN{
+    public static void main(String[] args) {
+        new Father("Tan"){};
+    }
+}
+```
+```text
+The run type is IA
+Compile type is outer04$2(anonymous internal class)
 ```
 
