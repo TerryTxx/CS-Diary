@@ -73,6 +73,8 @@ Generally defined in a local of an external class, such as a method. No class na
 new class or or interface (parameters) {
         class body};
 ```
+
+based on interface:
 ```java
 interface IA{
     public void cry();
@@ -95,6 +97,8 @@ class main{
 The run type is IA
 Compile type is anonymous internal class(outer04$1)
 ```
+
+based on class:
 ```java
 class Father{
     public Father(String name){}
@@ -107,7 +111,63 @@ class MAIN{
 }
 ```
 ```text
-The run type is IA
-Compile type is outer04$2(anonymous internal class)
+if a class 
+1. getClass(); to check the running type;
+2. if an abstract class, need the Instantiate the class;
+3. the new XXX(XXX), means pass the constructor also;
+```
+
+Details and notes:
+```text
+1. anonymous internal classes can be used both as classes and as objects;
+2. idioms that can directly access external classes, including private ones;
+3. cannot add access modifiers, since its status is that of a local variable;
+4. scope: only in the method or code block that defines it;
+5. access by the anonymous internal class ---- to the members of the external class 
+----- (direct access);
+6. external other class - NO access to ---- anonymous internal class 
+(anonymous internal class is essentially a local variable by status)
+7. external classes and anonymous internal classes are renamed, access is based on the principle of proximity, 
+using this to access external class members (outer.this.XXX)
+```
+EXAMPLE:
+
+```java
+public class main {
+    public static void main(String[] args) {
+        Outer outer = new Outer();
+        outer.f1();
+    }
+}
+
+class Outer {
+    private int n1 = 99;
+
+    public void f1() {
+        Person p = new Person() {//class anoy extends person
+            @Override
+            public void hi() {
+                System.out.println("hi in anoy class");
+            }
+
+            @Override
+            public void ok(String str) {
+                super.ok(str);
+            }
+        }.ok("Jack");
+        p.hi();//Dynamic binding
+    }
+}
+
+class Person {// class
+
+    public void hi() {
+        System.out.println("hi in persong");
+    }
+
+    public void ok(String str) {
+        System.out.println(str);
+    }
+}
 ```
 
