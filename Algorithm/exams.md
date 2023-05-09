@@ -8,7 +8,7 @@
 - 考核单双链表的CRUD，以及查找位置打印
 
 ```
-建议画链表，然后通过双指针理解数据变化，转成递归无非是条件语句作为拦截语句；
+建议画链表，然后通过双指针理解数据变化，转成递归无非是条件语句作为停止递归的拦截语句；
 模拟卷有一道翻转双链表，已经写在考点三
 ```
 
@@ -215,20 +215,20 @@ LAB03 -- 都是单双链表的查+改组合
 ```java
 class doubllist {
     public static Node reverse(Node head) {
-        // 基本情况：链表为空或者只有一个节点
         if (head == null || head.next == null) {
             return head;
         }
-        // 递归情况：翻转剩余部分的链表，然后交换当前节点的前驱和后继指针
+
         Node newHead = reverse(head.next);
-        head.next.next = head.prev; // 交换当前节点的前驱和后继指针
-        head.prev = head.next;
-        head.next = null;
+//翻转双链表
+        head.next.prev = head.next.next; // Update the prev pointer of the next node
+        head.next.next = head; // Update the next pointer of the current node
+        head.prev = head.next; // Update the prev pointer of the current node
+        head.next = null; // Set the next pointer of the current node to null
 // 如果翻转单链表        
 //        Node newHead = reverse(head.next);
 //        head.next.next = head;
 //        head.next = null;
-
         return newHead;
     }
 }
@@ -311,9 +311,83 @@ class list {
     }
 }
 ```
-
+3. 考点3：计算最大深度
+```java
+class solution {
+    /**
+     * 递归法
+     */
+    public int maxDepth(TreeNode root) {
+        if (root == null) {
+            return 0;
+        }
+        int leftDepth = maxDepth(root.left);
+        int rightDepth = maxDepth(root.right);
+        return Math.max(leftDepth, rightDepth) + 1;
+    }
+}
+```
+最小深度
+```java
+class Solution {
+    /**
+     * 递归法，相比求MaxDepth要复杂点
+     * 因为最小深度是从根节点到最近**叶子节点**的最短路径上的节点数量
+     */
+    public int minDepth(TreeNode root) {
+        if (root == null) {
+            return 0;
+        }
+        int leftDepth = minDepth(root.left);
+        int rightDepth = minDepth(root.right);
+        if (root.left == null) {
+            return rightDepth + 1;
+        }
+        if (root.right == null) {
+            return leftDepth + 1;
+        }
+        // 左右结点都不为null
+        return Math.min(leftDepth, rightDepth) + 1;
+    }
+}
+```
+节点个数
+```java
+class Solution {
+    // 通用递归解法
+    public int countNodes(TreeNode root) {
+        if(root == null) {
+            return 0;
+        }
+        return countNodes(root.left) + countNodes(root.right) + 1;
+    }
+}
+```
 ### AVL tree：
--考点：将有序数组变成AVL树
+- 考点：将有序数组变成AVL树
+- 验证二叉搜索树
+```java
+class Solution {//代码验证二叉搜索树
+    // 递归
+    TreeNode max;
+    public boolean isValidBST(TreeNode root) {
+        if (root == null) {
+            return true;
+        }// 左
+        boolean left = isValidBST(root.left);
+        if (!left) {
+            return false;
+        }// 中
+        if (max != null && root.val <= max.val) {
+            return false;
+        }
+        max = root;// 右
+        boolean right = isValidBST(root.right);
+        return right;
+    }
+}
+```
+---
 ```text
 Given an empty AVL tree, show how the tree is updated after inserting each value listed below.
 12, 9, 8, 7, 5, 4, 1
