@@ -57,6 +57,7 @@
 Draw the 11-entry hash table that results from using the hash function, h(i) = (3i+5) mod 11, to hash the
 keys 12, 44, 13, 88, 23, 94, 11, 39, 20, 16, and 5, assuming collisions are handled by linear probing?
 ```
+[代码实现](#lab08)
 ```
 1. mod多少，就有多少个位（add），从0开始计数；
 2. 方法分为：开放地址--线性探测和平方探测；拉链法
@@ -73,7 +74,7 @@ keys 12, 44, 13, 88, 23, 94, 11, 39, 20, 16, and 5, assuming collisions are hand
 |  |    |     |   |     |     | 94  |     |   |   |     | 5   | 16  |
 |  | hash | 1   |   |     | 1   | 2   | 1   |   |   | 1   | 2   | 2   |
 
-### 动态背包--lab9
+### [动态背包--lab9](#lab09)
 
 ### 图论问题，BFS&DFS(搭配G图)--lab10
 - 模拟卷：画大G图，并分析使用BFS和DFS怎么操作
@@ -96,13 +97,14 @@ b. Give the sequence of vertices of G visited using a DFS traversal starting at 
 c. Give the sequence of vertices visited using a BFS traversal starting at vertex1.
 ```
 ![Screenshot 2023-05-10 at 15.05.49.png](Screenshot%202023-05-10%20at%2015.05.49.png)
-dfs可以理解为树的前序遍历（其他两种序遍历也是dfs）
+- dfs可以理解为树的前序遍历（其他两种序遍历也是dfs）
 ![Screenshot 2023-05-10 at 14.51.49.png](Screenshot%202023-05-10%20at%2014.51.49.png)
 
 
 ### Dijkstra算法找最小路径--lab11
 ![Screenshot 2023-05-10 at 15.37.04.png](Screenshot%202023-05-10%20at%2015.37.04.png)
 ![Screenshot 2023-05-10 at 15.54.48.png](Screenshot%202023-05-10%20at%2015.54.48.png)
+
 ### huffman tree
 - 构造哈夫曼树
 ```
@@ -136,9 +138,10 @@ S5: 47+53-->100;
   14:001.....
 ```
 
-### 动态和二叉树
 ### 贪心
+
 ### 快速排序
+理解左右指针，从最左边找轴点，判断左右指针的值，交换后轴点还是不动，换另一个指针逼近
 
 ---------
 
@@ -565,6 +568,8 @@ class tree{
      }
  }}
 ```
+[返回目录](#list-of-labs)
+
 ### LAB07
 ```java
 class main{
@@ -582,10 +587,136 @@ class main{
 }
 ```
 ### LAB08
+```java
+public class LinearProbingHash {
+    private int[] table;
 
+    public LinearProbingHash() {
+        table = new int[11];
+    }
+
+    private int hashFunc(int key) {
+        return (3 * key + 5) % 11;
+    }
+
+    public void insert(int key) {
+        int index = hashFunc(key);
+        if (table[index] == 0) {
+            table[index] = key;
+        } else {
+            while (table[index] != 0) {
+                index = (index + 1) % 11;
+            }
+            table[index] = key;
+        }
+    }
+
+    public void printTable() {
+        for (int i = 0; i < table.length; i++) {
+            System.out.println("Index " + i + ": " + table[i]);
+        }
+    }
+
+    public static void main(String[] args) {
+        LinearProbingHash hashTable = new LinearProbingHash();
+        int[] keys = {12, 44, 13, 88, 23, 94, 11, 39, 20, 16, 5};
+        for (int key : keys) {
+            hashTable.insert(key);
+        }
+        hashTable.printTable();
+    }
+}
+
+```
+[返回目录](#list-of-labs)
 ### LAB09
+```java
+public class BagProblem {
+    public static void main(String[] args) {
+        int[] weight = {1,3,4};
+        int[] value = {15,20,30};
+        int bagSize = 4;
+        testWeightBagProblem(weight,value,bagSize);
+    }
 
+    /**
+     * 动态规划获得结果
+     * @param weight  物品的重量
+     * @param value   物品的价值
+     * @param bagSize 背包的容量
+     */
+    public static void testWeightBagProblem(int[] weight, int[] value, int bagSize){
+
+        // 创建dp数组
+        int goods = weight.length;  // 获取物品的数量
+        int[][] dp = new int[goods][bagSize + 1];
+
+        // 初始化dp数组
+        // 创建数组后，其中默认的值就是0
+        for (int j = weight[0]; j <= bagSize; j++) {
+            dp[0][j] = value[0];
+        }
+        // 填充dp数组
+        for (int i = 1; i < weight.length; i++) {
+            for (int j = 1; j <= bagSize; j++) {
+                if (j < weight[i]) {
+                    /**
+                     * 当前背包的容量都没有当前物品i大的时候，是不放物品i的
+                     * 那么前i-1个物品能放下的最大价值就是当前情况的最大价值
+                     */
+                    dp[i][j] = dp[i-1][j];
+                } else {
+                    /**
+                     * 当前背包的容量可以放下物品i
+                     * 那么此时分两种情况：
+                     *    1、不放物品i
+                     *    2、放物品i
+                     * 比较这两种情况下，哪种背包中物品的最大价值最大
+                     */
+                    dp[i][j] = Math.max(dp[i-1][j] , dp[i-1][j-weight[i]] + value[i]);
+                }
+            }
+        }
+        // 打印dp数组
+        for (int i = 0; i < goods; i++) {
+            for (int j = 0; j <= bagSize; j++) {
+                System.out.print(dp[i][j] + "\t");
+            }
+            System.out.println("\n");
+        }
+    }
+}
+```
+```java
+class main{
+    public static void main(String[] args) {
+        int[] weight = {1, 3, 4};
+        int[] value = {15, 20, 30};
+        int bagWight = 4;
+        testWeightBagProblem(weight, value, bagWight);
+    }
+    public static void testWeightBagProblem(int[] weight, int[] value, int bagWeight){
+        int wLen = weight.length;
+        //定义dp数组：dp[j]表示背包容量为j时，能获得的最大价值
+        int[] dp = new int[bagWeight + 1];
+        //遍历顺序：先遍历物品，再遍历背包容量
+        for (int i = 0; i < wLen; i++){
+            for (int j = bagWeight; j >= weight[i]; j--){
+                dp[j] = Math.max(dp[j], dp[j - weight[i]] + value[i]);
+            }
+        }
+        //打印dp数组
+        for (int j = 0; j <= bagWeight; j++){
+            System.out.print(dp[j] + " ");
+        }
+    }
+}
+```
+[返回目录](#list-of-labs)
 ### LAB10
+
+[返回目录](#list-of-labs)
 
 ### LAB11
 
+[返回目录](#list-of-labs)
