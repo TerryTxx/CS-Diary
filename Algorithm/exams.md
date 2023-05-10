@@ -50,32 +50,92 @@
 
 ----
 ### 优先队列和堆--lab7
+不知道要考什么
 ### 哈希表和哈希冲突--lab8
 - 模拟卷：用线性探测法处理冲突，并绘制哈希表 ：附加拉链探测和平方探测
+```text
+Draw the 11-entry hash table that results from using the hash function, h(i) = (3i+5) mod 11, to hash the
+keys 12, 44, 13, 88, 23, 94, 11, 39, 20, 16, and 5, assuming collisions are handled by linear probing?
 ```
-1. mod多少，就有多少个键（add），从0开始计数；
+```
+1. mod多少，就有多少个位（add），从0开始计数；
 2. 方法分为：开放地址--线性探测和平方探测；拉链法
 3. 通过计算得到每一个key的add（add=余数），然后按次序填写
----线性探测，按照数列顺序依次排入表格
+---线性探测，按照数列顺序依次排入表格，如果被占用，就向后占位，直到有空位
+---平方探测：1的二次方，向前看一位，﹣1的二次方，向后看一位，2的平方向前看4位，-2..向后四位，3..9位，直到找到空位
+---拉链法：参考下表，竖过来，key变成带指向的链表，就是拉链   
 ```
 以下只是思路，不是结果：
 
-|  | add  | 0   | 1 | 2   | 3   | 4   | 5   | 6 | 7 | 8   | 9   | 10  |
- |------|-----|-----|---|-----|-----|-----|---|---|-----|-----|-----|----|
-|  | Key  | 13  |   |     | 88  | 44  | 11  |   |   | 12  | 23  | 20  |
-|  |      |     |   |     |     | 94  |     |   |   |     | 5   | 16  |
+|  | d： | 0   | 1 | 2   | 3   | 4   | 5   | 6 | 7 | 8   | 9   | 10  |
+ |----|-----|-----|---|-----|-----|-----|---|---|-----|-----|-----|----|
+|  | Key | 13  |   |     | 88  | 44  | 11  |   |   | 12  | 23  | 20  |
+|  |    |     |   |     |     | 94  |     |   |   |     | 5   | 16  |
 |  | hash | 1   |   |     | 1   | 2   | 1   |   |   | 1   | 2   | 2   |
 
 ### 动态背包--lab9
 
 ### 图论问题，BFS&DFS(搭配G图)--lab10
 - 模拟卷：画大G图，并分析使用BFS和DFS怎么操作
+```text
+Let G be an undirected graph whose vertices are the integers 1 through 8, and let the adjacent vertices of
+each vertex be given by the table below:
+vertex adjacent vertices
+1 (2, 3, 4)
+2 (1, 3, 4)
+3 (1, 2, 4)
+4 (1, 2, 3, 6)
+5 (6, 7, 8)
+6 (4, 5, 7)
+7 (5, 6, 8)
+8 (5, 7)
+Assume that, in a traversal of G, the adjacent vertices of a given vertex are returned in the same order as
+they are listed in the table above.
+a. Draw G.
+b. Give the sequence of vertices of G visited using a DFS traversal starting at vertex 1.
+c. Give the sequence of vertices visited using a BFS traversal starting at vertex1.
+```
+
+
 
 ### Dijkstra算法找最小路径--lab11
 
-### 贪心
+
 ### huffman tree
+- 构造哈夫曼树
+```
+1. 先排序：5，8，14，23，24，26
+2. 找出两个最小的序号
+3. 将选出的两个数从序列中删除，并将两数和放入数列
+S1:5+8,-->13
+   13,14,23,24,26
+S2:13+14-->27
+    23,24,26,27
+S3:23+24-->47
+    26,27,47
+S4:26+27-->53
+    47,53
+S5: 47+53-->100;
+
+然后开始使用每一步的第一行构造huffman树
+           (100)
+         0/1    0\1
+        (53)      (47)
+      0/1  0\1   0/1  0\1
+     (27)   26   23    24
+   0/1   0\1
+  (13)     14
+ 0/1 0\1
+ 5     8
+  
+ 哈夫曼编码：左0右1
+  5:0000
+  8:0001
+  14:001.....
+```
+
 ### 动态和二叉树
+### 贪心
 
 ----
 
