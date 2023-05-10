@@ -51,10 +51,19 @@
 ----
 ### 优先队列和堆--lab7
 ### 哈希表和哈希冲突--lab8
-- 模拟卷：用线性探测法处理冲突，并绘制哈希表
+- 模拟卷：用线性探测法处理冲突，并绘制哈希表 ：附加链表解决
+
+|  | add  | 0   | 1 | 2   | 3   | 4   | 5   | 6 | 7 | 8   | 9   | 10  |
+ |------|-----|-----|---|-----|-----|-----|---|---|-----|-----|-----|----|
+|  | Key  | 13  |   |     | 88  | 44  | 11  |   |   | 12  | 23  | 20  |
+|  |      |     |   |     |     | 94  |     |   |   |     | 5   | 16  |
+|  | hash | 1   |   |     | 1   | 2   | 1   |   |   | 1   | 2   | 2   |
+
 ### 动态背包--lab9
+
 ### 图论问题，BFS&DFS(搭配G图)--lab10
 - 模拟卷：画大G图，并分析使用BFS和DFS怎么操作
+
 ### Dijkstra算法找最小路径--lab11
 
 ### 贪心
@@ -487,7 +496,21 @@ class tree{
  }}
 ```
 ### LAB07
-
+```java
+class main{
+    public static void main(String[] args) {
+        HeapPriorityQueue<Integer, String> pq01 = new HeapPriorityQueue<>();
+        Integer[] nums = {10, 6, 2, 8, 5, 12, 20, 18, 19};
+        for (Integer num : nums) {
+            pq01.insert(num, num.toString());
+        }
+        while (!pq01.isEmpty()) {
+            Entry<Integer, String> entry = pq01.removeMin();
+            System.out.print(entry.getValue() + " ");//2 5 6 8 10 12 18 19 20
+        }
+    }
+}
+```
 ### LAB08
 
 ### LAB09
