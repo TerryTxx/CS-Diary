@@ -95,9 +95,9 @@ a. Draw G.
 b. Give the sequence of vertices of G visited using a DFS traversal starting at vertex 1.
 c. Give the sequence of vertices visited using a BFS traversal starting at vertex1.
 ```
-
-
-
+![Screenshot 2023-05-10 at 15.05.49.png](Screenshot%202023-05-10%20at%2015.05.49.png)
+dfs可以理解为树的前序遍历（其他两种序遍历也是dfs）
+![Screenshot 2023-05-10 at 14.51.49.png](Screenshot%202023-05-10%20at%2014.51.49.png)
 ### Dijkstra算法找最小路径--lab11
 
 
@@ -136,8 +136,9 @@ S5: 47+53-->100;
 
 ### 动态和二叉树
 ### 贪心
+### 快速排序
 
-----
+---------
 
 ### LAB01
 
