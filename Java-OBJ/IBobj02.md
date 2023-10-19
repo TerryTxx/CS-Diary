@@ -1,3 +1,6 @@
+### [Back to list](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/IntermediateBoost.md)
+
+_____
 
 ### The four inner classes
 - [Local Inner Classes](#internal-class)
@@ -6,7 +9,7 @@
 - Static Inner Class
 ### Enumerated classes
 ### The four meta-annotations
-### Exception handling mechanisms
+### Exception
 
 
 -----

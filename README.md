@@ -21,10 +21,10 @@ Copyright © 2023, Tanxiaoxu
 ## :coffee: Java Object
 
 - [Java learning steps](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/studyDiary.md)
-- [Java OBJ general](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/object-general.md)
-- [Java OBJ intermediate](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/intermediate.md)
-- [Object Oriented Intermediate Boost](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/IntermediateBoost.md)
-- [Object Oriented Advanced 01](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/intermediateAdvan.md)
+- [1. OOP -- Class loading and its members](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/object-general.md)
+- [2. OOP -- Encapsulation，Internhance and Polymorphism](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/intermediate.md)
+- [3. OOP -- Facilitate data and Functionality sharing across classes](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/IntermediateBoost.md)
+- [4. OOP Project --Learning and Implementing Multithreading, Input/Output, Network Programming, and Reflection](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/intermediateAdvan.md)
 
 ## :cloud: Web
 #### Full-Stack of Web

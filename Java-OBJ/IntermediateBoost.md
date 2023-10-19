@@ -21,13 +21,15 @@ Copyright © 2023, Tanxiaoxu
 
 -----
 
-### The four inner classes
-### Enumerated classes
-### The four meta-annotations
-### Exception handling mechanisms
+### [The four inner classes](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/IBobj02.md)
+### [Enumerated classes](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/IBobj02.md)
+### [The four meta-annotations](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/IBobj02.md)
+### [Exception handling mechanisms](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/IBobj02.md)
 
-### Eight Wrapper Classes
-### Boxing and Unboxing
-### Assemblies
-### Generics
+-------
+
+### [Eight Wrapper Classes](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/IBobj03.md)
+### [Boxing and Unboxing](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/IBobj03.md)
+### [Collections](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/IBobj03.md)
+### [Generics](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/IBobj03.md)
 

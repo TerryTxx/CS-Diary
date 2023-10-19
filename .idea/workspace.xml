@@ -5,7 +5,133 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e8fc147b-984c-4faa-8bf9-7931f68677de" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Java-OBJ/Advan01.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java-OBJ/collections.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java-OBJ/pics/collections frame.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/Screenshot 2023-05-10 at 14.51.49.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/Screenshot 2023-05-10 at 15.05.49.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/Screenshot 2023-05-10 at 15.37.04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/Screenshot 2023-05-10 at 15.54.48.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/IBobj01.md" beforeDir="false" afterPath="$PROJECT_DIR$/Java-OBJ/IBobj01.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/IBobj02.md" beforeDir="false" afterPath="$PROJECT_DIR$/Java-OBJ/IBobj02.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/IBobj03.md" beforeDir="false" afterPath="$PROJECT_DIR$/Java-OBJ/IBobj03.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/IntermediateBoost.md" beforeDir="false" afterPath="$PROJECT_DIR$/Java-OBJ/IntermediateBoost.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screen02/Screenshot 2023-03-24 at 16.01.09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screen02/Screenshot 2023-03-24 at 16.01.21.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screen02/Screenshot 2023-03-24 at 16.01.37.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screen02/Screenshot 2023-03-24 at 16.01.47.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screen02/Screenshot 2023-03-24 at 16.35.53.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screen02/Screenshot 2023-03-24 at 16.36.04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screen02/Screenshot 2023-03-24 at 16.37.12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screen02/Screenshot 2023-03-24 at 16.37.19.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screen02/Screenshot 2023-03-24 at 16.37.24.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screen02/Screenshot 2023-03-24 at 16.37.29.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screen02/Screenshot 2023-03-24 at 16.37.37.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screen02/Screenshot 2023-03-24 at 16.38.07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screen02/Screenshot 2023-03-24 at 16.38.18.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screen03/Screenshot 2023-05-03 at 21.38.50.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screen03/Screenshot 2023-05-03 at 21.38.59.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screen03/Screenshot 2023-05-03 at 21.39.04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screen03/Screenshot 2023-05-03 at 21.39.27.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screen03/Screenshot 2023-05-03 at 21.39.34.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screen03/Screenshot 2023-05-03 at 21.39.41.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screen03/Screenshot 2023-05-03 at 21.39.45.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screen03/Screenshot 2023-05-03 at 21.39.48.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screen03/Screenshot 2023-05-03 at 21.40.34.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screen03/Screenshot 2023-05-03 at 21.40.38.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screen03/Screenshot 2023-05-03 at 21.40.42.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screen03/Screenshot 2023-05-03 at 21.40.46.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screen03/Screenshot 2023-05-03 at 21.40.54.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screen03/Screenshot 2023-05-03 at 21.40.57.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screen03/Screenshot 2023-05-03 at 21.41.00.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screen03/Screenshot 2023-05-03 at 21.41.18.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screen03/Screenshot 2023-05-03 at 21.41.21.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screen03/Screenshot 2023-05-03 at 21.41.24.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screen03/Screenshot 2023-05-03 at 21.41.29.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screen03/Screenshot 2023-05-03 at 21.41.33.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screen03/Screenshot 2023-05-03 at 21.41.36.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screen03/Screenshot 2023-05-03 at 21.42.09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screen03/Screenshot 2023-05-03 at 21.42.16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screen03/Screenshot 2023-05-03 at 21.42.28.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screen03/Screenshot 2023-05-03 at 21.42.32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screen03/Screenshot 2023-05-03 at 21.42.35.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screen03/Screenshot 2023-05-03 at 21.42.38.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screen03/Screenshot 2023-05-03 at 21.42.41.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screen03/Screenshot 2023-05-03 at 21.42.44.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screen03/Screenshot 2023-05-03 at 21.42.50.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screen03/Screenshot 2023-05-03 at 21.43.35.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screen03/Screenshot 2023-05-03 at 21.43.39.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screen03/Screenshot 2023-05-03 at 21.43.43.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screen03/Screenshot 2023-05-03 at 21.43.47.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screen03/Screenshot 2023-05-03 at 21.43.50.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screen03/Screenshot 2023-05-03 at 21.43.59.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screen03/Screenshot 2023-05-03 at 21.44.10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screen03/Screenshot 2023-05-03 at 21.44.15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screen03/Screenshot 2023-05-03 at 21.44.18.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screen03/Screenshot 2023-05-03 at 21.44.21.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screen03/Screenshot 2023-05-03 at 21.44.43.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screen03/Screenshot 2023-05-03 at 21.44.55.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screen03/Screenshot 2023-05-03 at 21.45.00.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screen03/Screenshot 2023-05-03 at 21.45.06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screen03/Screenshot 2023-05-03 at 21.45.11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-23 at 20.17.29.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-23 at 20.17.50.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-23 at 20.18.06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-23 at 20.18.23.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-23 at 20.18.35.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-23 at 20.18.44.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-23 at 20.18.55.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-23 at 20.19.03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-23 at 20.19.11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-23 at 21.16.21.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-23 at 21.28.42.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-23 at 21.28.57.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-23 at 21.29.33.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-23 at 21.29.59.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-23 at 21.30.10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-23 at 21.30.23.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-23 at 21.30.33.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-23 at 21.30.42.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-23 at 22.01.23.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-23 at 22.01.42.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-23 at 22.02.28.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-23 at 22.02.40.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-23 at 22.02.47.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-23 at 22.03.43.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-23 at 22.04.21.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-25 at 21.32.23.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-25 at 21.33.13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-25 at 21.33.25.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-26 at 22.14.27.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-26 at 22.14.54.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-26 at 22.15.04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-26 at 22.15.11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-26 at 22.15.17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-26 at 22.15.24.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-26 at 22.15.33.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-26 at 22.15.41.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-26 at 22.15.47.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-26 at 22.15.52.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-26 at 22.16.03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-26 at 22.16.09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-26 at 22.16.18.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-26 at 22.16.25.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-26 at 22.16.31.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-26 at 22.16.40.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-26 at 22.16.45.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-26 at 22.16.51.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-26 at 22.17.00.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-26 at 22.17.21.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-26 at 22.17.29.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-26 at 22.17.36.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/generalExer/screenshot/Screenshot 2023-03-26 at 22.17.47.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/pics/Process of Object Creation.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-OBJ/pics/memberMethod.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebNote/pics/Screenshot 2023-03-10 at 07.57.30.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebNote/pics/Screenshot 2023-03-10 at 08.37.10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebNote/pics/Screenshot 2023-03-10 at 08.49.46.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +291,15 @@
       <workItem from="1683536754567" duration="598000" />
       <workItem from="1683550585091" duration="1877000" />
       <workItem from="1683577472133" duration="11881000" />
-      <workItem from="1683656190268" duration="16699000" />
+      <workItem from="1683656190268" duration="16774000" />
+      <workItem from="1683734965816" duration="1111000" />
+      <workItem from="1684835892869" duration="234000" />
+      <workItem from="1684836246487" duration="29000" />
+      <workItem from="1684836485188" duration="439000" />
+      <workItem from="1685376456090" duration="807000" />
+      <workItem from="1685545667646" duration="566000" />
+      <workItem from="1697380200488" duration="86000" />
+      <workItem from="1697722725007" duration="5420000" />
     </task>
     <servers />
   </component>
