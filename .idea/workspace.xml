@@ -7,7 +7,6 @@
     <list default="true" id="e8fc147b-984c-4faa-8bf9-7931f68677de" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Java-OBJ/Advan01.md" beforeDir="false" afterPath="$PROJECT_DIR$/Java-OBJ/Advan01.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mySQL/mySQL.md" beforeDir="false" afterPath="$PROJECT_DIR$/mySQL/mySQL.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,6 +186,8 @@
       <workItem from="1698440880896" duration="1913000" />
       <workItem from="1698944118155" duration="2709000" />
       <workItem from="1698955816207" duration="5227000" />
+      <workItem from="1699271290024" duration="113000" />
+      <workItem from="1699302585521" duration="503000" />
     </task>
     <servers />
   </component>
