@@ -10,12 +10,12 @@ Copyright © 2023, Tanxiaoxu
 
 ## Object Oriented Advanced
 
-### Threads
+### [Threads](https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/Advan01.md)
 
-### IO Streaming
+### [[IO Streaming]((https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/Advan01.md))]
 
-### Project Implementation Multithreading
+### [Project Implementation Multithreading]((https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/Advan01.md))
 
-### Network Programming (TCP/UDP)
+### [Network Programming (TCP/UDP)]((https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/Advan02.md))
 
-### Reflection
+### [Reflection]((https://github.com/TerryTxx/CS-Diary/blob/master/Java-OBJ/Advan02.md))
