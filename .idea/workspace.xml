@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e8fc147b-984c-4faa-8bf9-7931f68677de" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Java-OBJ/CA04_22252322.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java-OBJ/pics/Abstract Factory.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java-OBJ/pics/Factory Method.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java-OBJ/pics/Simple Factory.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java-OBJ/Advan01.md" beforeDir="false" afterPath="$PROJECT_DIR$/Java-OBJ/Advan01.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java-OBJ/intermediateAdvan.md" beforeDir="false" afterPath="$PROJECT_DIR$/Java-OBJ/intermediateAdvan.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,11 +68,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Java-OBJ/pics" />
       <recent name="$PROJECT_DIR$/Java-OBJ" />
       <recent name="$PROJECT_DIR$/WebNote" />
       <recent name="$PROJECT_DIR$/Algorithm" />
       <recent name="$PROJECT_DIR$/Java-OBJ/generalExer/screen03" />
-      <recent name="$PROJECT_DIR$/Java-OBJ/generalExer" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -189,6 +191,8 @@
       <workItem from="1698955816207" duration="5227000" />
       <workItem from="1699271290024" duration="113000" />
       <workItem from="1699302585521" duration="1910000" />
+      <workItem from="1699980864333" duration="151000" />
+      <workItem from="1699981509539" duration="7944000" />
     </task>
     <servers />
   </component>
