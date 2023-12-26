@@ -13,7 +13,7 @@
 - [** using details of code block](#using-details-of-code-block)
 ### Singleton Design Pattern
 - [Eagerly Initialized Singleton](#eager-initialization-singleton-pattern)
-- [Eagerly Initialized Singleton](#lazy-initialization-singleton-pattern)
+- [Lazy Initialized Singleton](#lazy-initialization-singleton-pattern)
 ### [Usage of final](#use-of-final)
 ### [Abstract class](#abstract-classes)
 - [Abstract Class, Template Design Pattern](#abstract-class-template-design-pattern)
