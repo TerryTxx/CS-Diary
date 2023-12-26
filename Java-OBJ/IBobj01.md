@@ -12,8 +12,8 @@
 - [Concept of code block](#code-block)
 - [** using details of code block](#using-details-of-code-block)
 ### Singleton Design Pattern
-- [Eager Initialization Singleton Pattern](#eager-initialization-singleton-pattern)
-- [Lazy Initialization Singleton Pattern](#lazy-initialization-singleton-pattern)
+- [Eagerly Initialized Singleton](#eager-initialization-singleton-pattern)
+- [Eagerly Initialized Singleton](#lazy-initialization-singleton-pattern)
 ### [Usage of final](#use-of-final)
 ### [Abstract class](#abstract-classes)
 - [Abstract Class, Template Design Pattern](#abstract-class-template-design-pattern)
@@ -530,6 +530,21 @@ class Cat {
 1. Because the object will only be returned or created when the user call getInstance(), while calling it again will only return the last created object
 2. Avoid memory wastage, but there are thread safety issues
 ```
+- ### "Double-checked locking" mode 
+- can ensure thread safety, but will reduce performance
+```java
+public static Cat getInstance() {
+     if (cat == null) { // first check
+         synchronized (Cat.class) { // Synchronized
+             if (cat == null) { // Second check
+                 cat = new Cat("Mimi");
+             }
+         }
+     }
+     return cat;
+}
+```
+
 [[back to list]](#object-oriented-intermediate-boost01)
 
 
